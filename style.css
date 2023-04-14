@@ -17,7 +17,7 @@ header>a>section
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(images/fond.gif);
+    background-image: url(images/fond2.jpg);
     background-size: cover;
 }
 
@@ -75,9 +75,26 @@ main>section>article>div
     padding: 10px;
     margin-left: 10px;
 }
+main>section>article>div>div
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
 main>section>article>div>p
 {
     width: 50%;
+    line-height: 30px;
+    text-align: center;
+}
+main>section>article>div>div>p
+{
+    line-height: 25px;
+    text-align: center;
+}
+main>section>article>div>div>p>a
+{
+    line-height: 10px;
 }
 main>section>div
 {
@@ -86,5 +103,6 @@ main>section>div
     width: 760px;
     /* height: 200px; */
     border-radius: 20px;
+    line-height: 25px;
 }
 
