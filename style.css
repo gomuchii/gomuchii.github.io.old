@@ -18,6 +18,7 @@ header>a>section
     align-items: center;
     justify-content: center;
     background-image: url(images/fond2.jpg);
+    
     background-size: cover;
 }
 
