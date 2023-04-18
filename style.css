@@ -9,6 +9,10 @@
 }
 
 
+
+/**************
+    HEADER
+**************/
 header>a>section
 {
     height: 100vh;
@@ -17,7 +21,7 @@ header>a>section
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(images/fond2.jpg);
+    background-image: url(images/fonds/fond2.jpg);
     
     background-size: cover;
 }
@@ -41,7 +45,12 @@ header>a>section>div
 
 
 
-main>section
+
+/**************
+    MAIN
+**************/
+
+#sec1
 {
     height: 100vh;
     background-color: rgb(36, 24, 59);
@@ -53,12 +62,10 @@ main>section
     color: white;
     
 }
-#PPmain
-{
-    border-radius: 100%;
-    width: 200px;
-}
-main>section>article
+
+/*informations*/
+
+#infos
 {
     display: flex;
     width: 800px;
@@ -66,38 +73,68 @@ main>section>article
     justify-content: space-between;
     margin-bottom: 10px;
 }
-main>section>article>div
+
+#PPmain
+{
+    border-radius: 100%;
+    width: 250px;
+}
+#infos>div
 {
     display: flex;
     background-color: rgb(49, 75, 97);
     width: 600px;
     border-radius: 20px;
-    height: 180px;
+    height: 250px;
     padding: 10px;
     margin-left: 10px;
 }
-main>section>article>div>div
+#infos>div>div
 {
     display: flex;
     flex-direction: column;
     width: 50%;
 }
-main>section>article>div>p
+#competences>div
 {
-    width: 50%;
-    line-height: 30px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
 }
-main>section>article>div>div>p
+#competences>div>figure
+{
+
+    padding-right: 20px;
+}
+
+
+
+#infos>div>div>p
 {
     line-height: 25px;
-    text-align: center;
+    text-align: left;
+    margin-left: 30px;
+    height: 50%;
 }
-main>section>article>div>div>p>a
+#infos>div>div>p>a
 {
     line-height: 10px;
+    margin-left: 10px;
 }
-main>section>div
+
+.icones
+{
+     margin-left: -25px;
+    width: 15px;
+}
+.icones_comp
+{
+    height: 35px;
+    width: 35px;
+}
+
+
+
+#presentation
 {
     background-color: rgb(49, 49, 49);
     padding: 20px;
@@ -107,3 +144,67 @@ main>section>div
     line-height: 25px;
 }
 
+
+
+
+/*PROJETS*/
+
+#projets
+{
+    background-color: rgb(36, 24, 59);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#projets>nav
+{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0px 5%;
+    padding: 15px;
+    background-color: blueviolet;
+    border-radius: 35px;
+    
+}
+#projets>nav>a
+{
+    background-color: rgb(96, 30, 157);
+    width: 10%;
+    list-style: none;
+    border-radius: 25px;
+    font-size: 14px;
+}
+#projets>nav>a>li
+{
+    line-height: 30px;
+}
+#projets>h2
+{
+    margin-bottom: 30px;
+}
+
+
+#comp1
+{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+#comp1>div
+{
+    background-color: rgb(49, 75, 97);
+    width: 80%;
+    border-radius: 40px;
+    margin-left: 30px;
+}
+
+#comp1>img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
