@@ -1,0 +1,267 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    --color1 : rgb(255, 255, 255);
+    --color2 : rgb(157, 212, 248);
+    --color3 : rgb(141, 221, 255);
+    --colorblack : rgb(0, 0, 0);
+    --colorwhite : rgb(255, 255, 255);
+    --colortest: rgb(237, 183, 218);
+    
+    --charte1_1 : #BDD9F2;
+    --charte1_2 : #0597F2;
+    --charte1_3 : #77C3F2;
+    --charte1_4 : #05AFF2;
+    --charte1_5 : #D8EBF2;
+
+    --charte2_1 : #022340;
+    --charte2_2 : #0788D9;
+    --charte2_3 : #0568A6;
+    --charte2_4 : #07B2D9;
+    --charte2_5 : #07D9D9;
+
+}
+
+
+
+/**************
+    HEADER
+**************/
+header>a>section
+{
+    height: 100vh;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/fonds/fond_ciel.jpg);
+    
+    background-size: cover;
+}
+
+#PPheader
+{
+    border-radius: 100%;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+header>a>section>div
+{
+    padding: 3px 20px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+
+
+
+/**************
+    MAIN
+**************/
+
+#sec1
+{
+    height: 100vh;
+    background-color: var(--charte1_5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*informations*/
+
+#infos
+{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#PPmain
+{
+    border-radius: 100%;
+    height: 250px;
+}
+#infos>div
+{
+    display: flex;
+    background-color: var(--charte1_1);
+    width: 75%;
+    border-radius: 20px;
+    height: 250px;
+    padding: 10px;
+    margin-left: 10px;
+}
+#infos>div>div
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+#competences>div
+{
+    display: flex;
+    flex-direction: row;
+}
+#competences>div>figure
+{
+
+    padding-right: 20px;
+}
+
+
+
+#infos>div>div>p
+{
+    line-height: 25px;
+    text-align: left;
+    margin-left: 30px;
+    height: 50%;
+}
+#infos>div>div>p>a
+{
+    line-height: 10px;
+    margin-left: 10px;
+}
+
+.icones
+{
+     margin-left: -25px;
+    width: 15px;
+}
+.icones_comp
+{
+    height: 35px;
+    width: 35px;
+}
+
+
+
+#presentation
+{
+    background-color: var(--charte1_3);
+    padding: 20px;
+    width: 80%;
+    /* height: 200px; */
+    border-radius: 20px;
+    line-height: 25px;
+}
+
+
+
+
+/*PROJETS*/
+
+#projets
+{
+    background-color: var(--charte1_5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#projets>nav
+{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0px 5%;
+    padding: 10px;
+    background-color: var(--charte1_4);
+    border-radius: 35px;
+    
+}
+#projets>nav>a
+{
+    background-color: var(--charte1_1);
+    width: 10%;
+    list-style: none;
+    border-radius: 25px;
+    font-size: 14px;
+}
+#projets>nav>a>li
+{
+    line-height: 40px;
+}
+#projets>h2
+{
+    margin-bottom: 30px;
+}
+
+
+.comp
+{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 80%;
+    background-color: var(--charte1_3);
+    border-radius: 30px;
+}
+.comp>h2
+{
+
+}
+.comp>p
+{
+
+}
+.comp>div
+{
+    display: flex;
+    justify-content: stretch;
+    margin: 25px;
+    width: 80%;
+}
+.comp>div>a>img
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+.comp>div>div
+{
+    background-color: var(--charte1_1);
+    border-radius: 20px;
+    width: 80%;
+}
+.comp>div>div>p
+{
+    text-align: justify;
+    width: 90%;
+    margin: 10px 5%;
+}
+.comp>div>div>div
+{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 15px 5%;
+}
+.comp>div>div>div>strong>a
+{
+    text-decoration: underline;
+    color: var(--charte1_2);
+
+}
+
+
+footer
+{
+    padding-top: 30px;
+    text-align: center;
+    background-color: var(--charte1_5);
+}
