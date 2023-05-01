@@ -262,3 +262,39 @@ footer
 }
 
 }
+
+button
+{
+    background-color: #1c87c9;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+#popupForm
+{
+    display: none;
+    background-color: var(--charte1_4);
+    position: fixed;
+    z-index: 999;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 60%;
+    height: 800px;
+    border: solid black 1px;
+    border-radius: 10px;
+    padding: 0;
+}
+#popupForm>div
+{
+    width: 90%;
+    height: 700px;
+    margin: 50px 5%;
+    background-color: var(--charte1_1);
+    padding: 0;
+    bo
+}

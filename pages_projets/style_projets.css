@@ -36,36 +36,46 @@ h1
 {
     text-align: center;
 }
-#index
+section
 {
     background-color: var(--charte1_3);
     width: 70%;
     margin: 0 10%;
     border-radius: 50px;
-    padding: 5%;
+    padding: 2% 5%;
     display: flex;
+    flex-direction: column;
 }
 #index>img
 {
     border-radius: 30px;
-    width: 200px;
+    width: 500px;
 }
-#index>article
+#index
 {
-    
-    padding: 10px 50px;
+    display: flex;
+    padding: 20px;
     border-radius: 20px;
-    background-color: var(--charte1_2);
+    background-color: var(--charte1_1);
+}
+#index>div
+{
+    padding: 10px 50px;
 }
 
-.etape
-{
-    background-color: var(--charte1_3);
-    padding: 20px;
-    margin: 10px 10%;
-    border-radius: 20px
-}
+
 ul, ol
 {
     padding-left: 20px;
+}
+.etape
+{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--charte1_1);
+    margin: 20px 0;
+}
+.etape>h2
+{
+    text-align: center;
 }
