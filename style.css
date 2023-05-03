@@ -267,7 +267,7 @@ button
 {
     background-color: #1c87c9;
     color: white;
-    padding: 12px 20px;
+    padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -285,6 +285,7 @@ button
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     background-color: var(--charte1_4);
 
     position: fixed;
@@ -295,20 +296,33 @@ button
     margin: 0;
     padding: 20px;
     width: 760px;
-    height: 760px;
+    height: 710px;
 
     border: solid black 1px;
     border-radius: 10px;
 }
 
-#popupForm>div
+#topPopup
 {
-    overflow: scroll;
-    width: 760px;
-    height: 760px;
-    background-color: var(--charte1_1);
-    display: flex;
+    height: 50px;
 }
+#croix
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#centrePopup
+{
+    display: flex;
+    overflow: scroll;
+    margin-top: 20px;
+    width: 760px;
+    height: 600px;
+    background-color: var(--charte1_1);
+    
+}
+
 /* #popupForm>div::-webkit-scrollbar
 {
     display: none;
@@ -319,15 +333,27 @@ button
     width: 50%;
 }
 
-.etape 
+.etapes
 {
     width: 50%;
+    font-size: 16px;
 }
-
 
 
 
 ul, ol
 {
     margin-left: 30px;
+}
+
+.btnBas
+{
+    margin: 7px;
+    margin-bottom: -2px;
+    width: 760px;
+}
+
+.etape>h2
+{
+    font-size: 1.3em;
 }

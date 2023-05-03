@@ -214,8 +214,9 @@
 
 
                             <div id="popupForm">
-                                <h1>Puissance 4</h1>
-                                <div>
+                                <h1 id="topPop">Puissance 4</h1>
+                                <button onclick="closeForm()" id="croix">x</button>
+                                <div id="centrePopup">
                                     
                                     <article id="index">
                                         <img src="./images/projets/P4.png" alt="photo du projet">
@@ -262,14 +263,10 @@
                                         
                                     </article>
                                     
+                                    <hr>
 
-
-                                    <div>
-                                        <article class = "etape">
-                                            <p>
-                                                accedez au projet sur github en cliqaunt <a href="">ici</a>
-                                            </p>
-                                        </article>
+                                    <div class="etapes">
+                                        
                                         <article class="etape">
                                             <h2>étape 1 : maquette</h2>
                                             <p>
@@ -320,7 +317,11 @@
                                     </div>
                                     
                                 </div>
-                                <button  onclick="closeForm()">fermer</button>
+                                <a href="https://www.github.com">
+                                    <button class="btnBas">Voir sur github</button>
+                                </a>
+                                <button class="btnBas" onclick="closeForm()">Fermer</button>
+                                
                             </div>
                             
                         </div>
