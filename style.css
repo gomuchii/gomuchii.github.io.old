@@ -304,8 +304,10 @@ button
 
 #topPopup
 {
-    height: 50px;
+    color: White;
+    text-shadow: black 2px 2px, black 0px 0px,black 0px 2px, black 2px 0px;
 }
+
 #croix
 {
     position: absolute;
@@ -315,12 +317,11 @@ button
 #centrePopup
 {
     display: flex;
-    overflow: scroll;
     margin-top: 20px;
     width: 760px;
     height: 600px;
     background-color: var(--charte1_1);
-    
+    border-radius: 20px;
 }
 
 /* #popupForm>div::-webkit-scrollbar
@@ -330,16 +331,35 @@ button
 
 #index
 {
-    width: 50%;
+    width: 44%;
+    text-align: justify;
+    margin: 0 3%;
+    font-size: 1em;
 }
-
+#index>img
+{
+    width: 100%;
+    margin: 15px 0;
+    border: solid 3px var(--charte1_4);
+    border-radius: 15px;
+}
+#index>div
+{
+    /* margin: 0 20px; */
+}
 .etapes
 {
-    width: 50%;
+    width: 44%;
     font-size: 16px;
+    text-align: justify;
+    margin: 0 3%;
 }
 
-
+.etapes>h2
+{
+    text-align: center;
+    font-size: 1.3em;
+}
 
 ul, ol
 {
@@ -353,7 +373,17 @@ ul, ol
     width: 760px;
 }
 
-.etape>h2
+.etape>h3
 {
-    font-size: 1.3em;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 8px 0;
+    text-align: start;
+}
+
+
+.etape>ul>li, .etape>p
+{
+    font-size: 0.9em;
+    /* margin-left: 15px; */
 }
