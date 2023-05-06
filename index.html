@@ -10,6 +10,10 @@
 
 
     <body>
+        <div>
+            SITE EN CHANTIER
+        </div>
+
         <header>
             <a href="#main">
                 <section>
@@ -166,19 +170,48 @@
             <section id="projets">
                 <h2>Mes compétences et projets associés</h2>
                 <nav>
-                    <a href="#comp1"><li>compétence 1</li></a>
-                    <a href="#comp2"><li>compétence 2</li></a>
-                    <a href="#comp3"><li>compétence 3</li></a>
-                    <a href="#comp4"><li>compétence 4</li></a>
-                    <a href="#comp5"><li>compétence 5</li></a>
-                    <a href="#comp6"><li>compétence 6</li></a>
+                    <button id="btnNav1" class="btnNav" onclick="openComp('comp1', 'btnNav1')">compétence 1</button>
+                    <button id="btnNav2" class="btnNav" onclick="openComp('comp2', 'btnNav2')">compétence 2</button>
+                    <button id="btnNav3" class="btnNav" onclick="openComp('comp3', 'btnNav3')">compétence 3</button>
+                    <button id="btnNav4" class="btnNav" onclick="openComp('comp4', 'btnNav4')">compétence 4</button>
+                    <button id="btnNav5" class="btnNav" onclick="openComp('comp5', 'btnNav5')">compétence 5</button>
+                    <button id="btnNav6" class="btnNav" onclick="openComp('comp6', 'btnNav6')">compétence 6</button>
                 </nav>
 
 
+                <script>
+                    function openComp(comp, num) {
+                        document.getElementById("compVide").style.display = "none";
+                        var compAFermer = document.getElementsByClassName("comp");
+                        for (let index = 0; index < compAFermer.length; index++) {
+                            compAFermer[index].style.display = "none"
+                        }
+                        document.getElementById(comp).style.display = "flex";
+                        var btn = document.getElementsByClassName("btnNav");
+                        for (let i = 0; i < btn.length; i++) {
+                            if(btn[i].id == num)
+                            {
+                                btn[i].style.color = "white";
+                                btn[i].style.background = "black";
+                            }
+                            else
+                            {
+                                btn[i].style.color = "black";
+                                btn[i].style.background = "var(--charte1_1)";
+                            }
+                        }
+                    }
+
+                    var pop = document.getElementsByClassName("popupForm");
+                            for (var index = 0; index < pop.length; index++) {
+                                pop[index].style.display = "flex";
+                            }
+                </script>
 
 
-
-
+                <article id="compVide">
+                    <h3>Choisir une compétence à explorer</h3>
+                </article>
                 <article id="comp1" class="comp">
                     <h2>
                         COMPETENCE 1
@@ -200,11 +233,9 @@
                                 <br>
                                 <strong>Date:</strong> novembre 2022
                             </p>
-                            <div>
+                            <div id="liens">
                                 <button onclick="openForm()">
-                                    <strong>
-                                        Découvrir
-                                    </strong>
+                                    Découvrir
                                 </button> 
                                 <p>
                                     
@@ -213,15 +244,15 @@
                             </div>
 
 
-                            <div id="popupForm">
-                                <h1 id="topPopup">Puissance 4</h1>
-                                <button onclick="closeForm()" id="croix">x</button>
-                                <div id="centrePopup">
+                            <div class="popupForm">
+                                <h1 class="topPopup">Puissance 4</h1>
+                                <button onclick="closeForm()" class="croix">x</button>
+                                <div class="centrePopup">
                                     
-                                    <article id="index">
+                                    <article class="popGauche">
                                         <img src="./images/projets/P4.png" alt="photo du projet">
                                         <div>
-
+                                            <h3>Description</h3>
                                             <p>
                                                 Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
                                                 <br>
@@ -248,7 +279,52 @@
                                     
                                     <hr>
 
-                                    <div class="etapes">
+                                    <article class="popDroite">
+                                        <div>
+                                            <h3>Compétences utilisées</h3>
+                                            <p>
+                                                Compétences techniques
+                                            </p>
+                                            <ul>
+                                                <li>C</li>
+                                                <li>DOXYGEN</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h3>Réalisation</h3>
+                                            <p>
+                                                J'ai effectué ce projet individuellement et en étapes successives:
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Pour commencer, j'ai créé une maquette simple de mon projet
+                                                </li>
+                                                <li>
+                                                    Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
+                                                </li>
+                                                <li>
+                                                    Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
+                                                </li>
+                                                <li>
+                                                    Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
+                                                </li>
+                                                <li>
+                                                    Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h3>
+                                                Prise de recul
+                                            </h3>
+                                            <p>
+                                                Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
+                                                De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
+                                            </p>
+                                        </div>
+                                    </article>
+
+                                    <!-- <div class="etapes">
                                         <h2>ETAPES</h2>
                                         <article class="etape">
                                             <h3>Maquette</h3>
@@ -298,7 +374,7 @@
                                                 Redaction d'un rapport avec les résultats obtenus et leur comparaison avec ceux attendus
                                             </p>
                                         </article>
-                                    </div>
+                                    </div> -->
                                     
                                 </div>
                                 <a href="https://www.github.com">
@@ -314,13 +390,19 @@
 
                     <script>
                         function openForm() {
-                            document.getElementById("popupForm").style.display = "flex";
-                            document.getElementById("popupForm").style.transform = "squale(2)"
+                            var pop = document.getElementsByClassName("popupForm");
+                            for (var index = 0; index < pop.length; index++) {
+                                pop[index].style.display = "flex";
+                            }
                         }
 
                         function closeForm() {
-                            document.getElementById("popupForm").style.display = "none";
+                            var pop = document.getElementsByClassName("popupForm");
+                            for (var index = 0; index < pop.length; index++) {
+                                pop[index].style.display = "none";
+                            }
                         }
+                        
                     </script>
 
 

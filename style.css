@@ -20,7 +20,19 @@
 
 }
 
-@media screen and (min-width:1000px) {
+body>div
+{
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    position: fixed;
+    top:  5%;
+    left: 50%;
+    transform: translate(-50%, -95%);
+
+}
+/* @media screen and (min-width:1000px) { */
 
 /**************
     HEADER
@@ -43,6 +55,12 @@ header>a>section
     border-radius: 100%;
     width: 300px;
     margin-bottom: 20px;
+}
+
+#PPheader:hover
+{
+    width: 350px;
+    
 }
 
 header>a>section>div
@@ -177,43 +195,49 @@ header>a>section>div
     border-radius: 35px;
     
 }
-#projets>nav>a
+#projets>nav>button
 {
     background-color: var(--charte1_1);
     width: 10%;
+    height: 40px;
     list-style: none;
     border-radius: 25px;
     font-size: 14px;
+    color: black;
 }
-#projets>nav>a>li
+
+#projets>nav>button:active
 {
-    line-height: 40px;
+    color: white;
 }
+
 #projets>h2
 {
     margin-bottom: 30px;
 }
 
-
+#compVide
+{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .comp
 {
-    margin-top: 50px;
-    display: flex;
+    /* display: flex; */
+    display: none;
+    
     flex-direction: column;
     align-items: center;
 
+    margin-top: 50px;
     width: 80%;
     background-color: var(--charte1_3);
     border-radius: 30px;
 }
-.comp>h2
-{
 
-}
-.comp>p
-{
-
-}
 .comp>div
 {
     display: flex;
@@ -239,7 +263,7 @@ header>a>section>div
     width: 90%;
     margin: 10px 5%;
 }
-.comp>div>div>div
+.liens
 {
     display: flex;
     justify-content: space-between;
@@ -261,17 +285,24 @@ footer
     background-color: var(--charte1_5);
 }
 
-}
+/* } */
 
 button
 {
-    background-color: #1c87c9;
+    background-color: var(--charte1_2);
     color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    opacity: 0.8;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+button:hover
+{
+    background-color: var(--charte1_4);
+    color: black;
 }
 
 
@@ -279,10 +310,17 @@ button
 
 
 
-#popupForm
+
+
+
+
+
+
+
+.popupForm
 {
-    /* display: none; */
-    display: flex;
+    display: none;
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -302,19 +340,19 @@ button
     border-radius: 10px;
 }
 
-#topPopup
+.topPopup
 {
     color: White;
     text-shadow: 2px 0 0 black, 2px 2px 0 black, 0 2px 0 black, -2px 2px 0 black, -2px 0 0 black, -2px -2px 0 black, 0 -2px 0 black, 2px -2px 0 black;
 }
 
-#croix
+.croix
 {
     position: absolute;
     top: 10px;
     right: 10px;
 }
-#centrePopup
+.centrePopup
 {
     display: flex;
     margin-top: 20px;
@@ -324,30 +362,27 @@ button
     border-radius: 20px;
 }
 
-/* #popupForm>div::-webkit-scrollbar
+/* .popupForm>div::-webkit-scrollbar
 {
     display: none;
 } */
 
-#index
+.popGauche
 {
     width: 44%;
     text-align: justify;
     margin: 0 3%;
     font-size: 1em;
 }
-#index>img
+.popGauche>img
 {
     width: 100%;
     margin: 15px 0;
     border: solid 3px var(--charte1_4);
     border-radius: 15px;
 }
-#index>div
-{
-    /* margin: 0 20px; */
-}
-.etapes
+
+.popDroite
 {
     width: 44%;
     font-size: 16px;
@@ -355,15 +390,11 @@ button
     margin: 0 3%;
 }
 
-.etapes>h2
-{
-    text-align: center;
-    font-size: 1.3em;
-}
+
 
 ul, ol
 {
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .btnBas
@@ -372,19 +403,22 @@ ul, ol
     margin-bottom: -2px;
     width: 760px;
 }
-
-.etape>h3
+.popDroite>div
 {
-    font-size: 1.1em;
+    margin: 20px 0;
+}
+
+.popDroite>div>h3
+{
+    font-size: 1.2em;
     font-weight: bold;
-    margin: 8px 0;
+    margin: 5px 0;
     text-align: start;
 }
 
 
-.etape>ul>li, .etape>p
+.popDroite>div>ul>li, .popDroite>div>p
 {
-    font-size: 0.9em;
-    /* margin-left: 15px; */
-    border: 1px solid #000000;
+    font-size: 1em;
 }
+
