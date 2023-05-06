@@ -15,9 +15,9 @@
         </div>
 
         <header>
-            <a href="#main">
+            <a href="#sec1">
                 <section>
-                    <img src="images/114.jpg" alt="" id="PPheader">
+                    <img src="images/114.jpg" alt="photo de Yoann GAUTIER" id="PPheader">
                     <div>
                         <h1>
                             Yoann GAUTIER 
@@ -34,18 +34,17 @@
                 
         </header>
 
-        <main id ='main'>
-            
+        <main>
             <section id="sec1">
                 <article id="infos">
-                    <img src="images/114.jpg" alt="photo de yoann" id="PPmain">
+                    <img src="images/114.jpg" alt="photo de Yoann GAUTIER" id="PPmain">
                     <div>
                         <div>
                             <p>
                                 Yoann GAUTIER - 18 ans <br>
                                 1ère année de BUT Informatique <br>
                                 Recherche une alternance: <br>
-                                <a href="">Mon cv</a>
+                                <img src="./images/icones/" alt="icone téléchargement"><a href="">Mon cv</a>
 
                                 
 
@@ -130,13 +129,6 @@
                             
                             
                         </div>
-                        <!--<p>
-                            HTML - CSS - PHP <br>
-                            C - JAVA - JAVAF - Python<br>
-                            Batch - Bash - Docker - Git<br>
-                            SQL - Tutorial D
-
-                        </p>-->
                     </div>
                     
                 </article>
@@ -558,7 +550,7 @@
                         Concevoir et mettre en place une base de données à partir d'un cahier des charges client
                     </p>
                     <div>
-                        <a href=""><img src="images/puissance4.png" alt="image de puissance 4"></a>
+                        <a href="./pages_projets/Puissance4.html"><img src="images/projets/P4.png" alt="image de puissance 4"></a>
                         <div>
                             <h3>
                                 Puissance 4
@@ -566,24 +558,149 @@
                             <p>
                                 Elaboration d'un Puissance 4 executable et jouable dans un terminal. <br>
                                 Ce jeu pouvait etre joué à 2, chacun son tour, directement dans le meme terminal. <br>
+                                <br>
+                                <strong>Etat:</strong> Fini<br>
+                                <br>
+                                <strong>Date:</strong> novembre 2022
                             </p>
-                            <div>
-                                <strong><a href="">Découvrir</a></strong> 
+                            <div id="liens">
+                                <button onclick="openForm()">
+                                    Découvrir
+                                </button> 
                                 <p>
+                                    
                                     <strong>Langages:</strong>  C, DOXYGEN
                                 </p>
+                            </div>
+
+
+                            <div class="popupForm">
+                                <h1 class="topPopup">Puissance 4</h1>
+                                <button onclick="closeForm()" class="croix">x</button>
+                                <div class="centrePopup">
+                                    
+                                    <article class="popGauche">
+                                        <img src="./images/projets/P4.png" alt="photo du projet">
+                                        <div>
+                                            <h3>Description</h3>
+                                            <p>
+                                                Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
+                                                <br>
+                                                Pour y jouer rien de plus simple: <br>
+                                                <ul>
+                                                    
+                                                    <li>
+                                                        Q pour aller à gauche
+                                                    </li>
+                                                    <li>
+                                                        D pour aller a droite
+                                                    </li>
+                                                    <li>
+                                                        ESPACE pour placer le pion
+                                                    </li>
+                                                </ul>
+                                                <br>
+                                                
+                                            </p>
+                                        </div>
+                                        
+                                        
+                                    </article>
+                                    
+                                    <hr>
+
+                                    <article class="popDroite">
+                                        <div>
+                                            <h3>Compétences utilisées</h3>
+                                            <p>
+                                                Compétences techniques
+                                            </p>
+                                            <ul>
+                                                <li>C</li>
+                                                <li>DOXYGEN</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h3>Réalisation</h3>
+                                            <p>
+                                                J'ai effectué ce projet individuellement et en étapes successives:
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Pour commencer, j'ai créé une maquette simple de mon projet
+                                                </li>
+                                                <li>
+                                                    Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
+                                                </li>
+                                                <li>
+                                                    Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
+                                                </li>
+                                                <li>
+                                                    Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
+                                                </li>
+                                                <li>
+                                                    Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h3>
+                                                Prise de recul
+                                            </h3>
+                                            <p>
+                                                Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
+                                                De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
+                                            </p>
+                                        </div>
+                                    </article>
+
+                                    
+                                    
+                                </div>
+                                <a href="https://www.github.com">
+                                    <button class="btnBas">Voir sur github</button>
+                                </a>
+                                <button class="btnBas" onclick="closeForm()">Fermer</button>
+                                
                             </div>
                             
                         </div>
                     </div>
+
+
+                    <script>
+                        function openForm() {
+                            var pop = document.getElementsByClassName("popupForm");
+                            for (var index = 0; index < pop.length; index++) {
+                                pop[index].style.display = "flex";
+                            }
+                        }
+
+                        function closeForm() {
+                            var pop = document.getElementsByClassName("popupForm");
+                            for (var index = 0; index < pop.length; index++) {
+                                pop[index].style.display = "none";
+                            }
+                        }
+                        
+                    </script>
+
+
+
+
+
                     <div>
-                        <a href=""><img src="" alt="photo du projet"></a>
+                        <a href="./pages_projets/hotel.html"><img src="images/puissance4.png" alt="photo du projet"></a>
                         <div>
                             <h3>
                                 Logiciel de gestion d'un hotel
                             </h3>
                             <p>
-                                Logiciel de gestion d'un hotel, avec son interface en JavaFX.
+                                Logiciel de gestion d'un hotel, avec son interface en JavaFX. <br>
+                                <br>
+                                <strong>Etat:</strong> En cours<br>
+                                <br>
+                                <strong>Date:</strong> mai 2023
                             </p>
                             <div>
                                 <strong><a href="">Découvrir</a></strong> 
@@ -605,7 +722,7 @@
                         Identifier les besoins métiers des clients et des utilisateurs
                     </p>
                     <div>
-                        <a href=""><img src="images/puissance4.png" alt="image de puissance 4"></a>
+                        <a href="./pages_projets/Puissance4.html"><img src="images/projets/P4.png" alt="image de puissance 4"></a>
                         <div>
                             <h3>
                                 Puissance 4
@@ -613,24 +730,149 @@
                             <p>
                                 Elaboration d'un Puissance 4 executable et jouable dans un terminal. <br>
                                 Ce jeu pouvait etre joué à 2, chacun son tour, directement dans le meme terminal. <br>
+                                <br>
+                                <strong>Etat:</strong> Fini<br>
+                                <br>
+                                <strong>Date:</strong> novembre 2022
                             </p>
-                            <div>
-                                <strong><a href="">Découvrir</a></strong> 
+                            <div id="liens">
+                                <button onclick="openForm()">
+                                    Découvrir
+                                </button> 
                                 <p>
+                                    
                                     <strong>Langages:</strong>  C, DOXYGEN
                                 </p>
+                            </div>
+
+
+                            <div class="popupForm">
+                                <h1 class="topPopup">Puissance 4</h1>
+                                <button onclick="closeForm()" class="croix">x</button>
+                                <div class="centrePopup">
+                                    
+                                    <article class="popGauche">
+                                        <img src="./images/projets/P4.png" alt="photo du projet">
+                                        <div>
+                                            <h3>Description</h3>
+                                            <p>
+                                                Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
+                                                <br>
+                                                Pour y jouer rien de plus simple: <br>
+                                                <ul>
+                                                    
+                                                    <li>
+                                                        Q pour aller à gauche
+                                                    </li>
+                                                    <li>
+                                                        D pour aller a droite
+                                                    </li>
+                                                    <li>
+                                                        ESPACE pour placer le pion
+                                                    </li>
+                                                </ul>
+                                                <br>
+                                                
+                                            </p>
+                                        </div>
+                                        
+                                        
+                                    </article>
+                                    
+                                    <hr>
+
+                                    <article class="popDroite">
+                                        <div>
+                                            <h3>Compétences utilisées</h3>
+                                            <p>
+                                                Compétences techniques
+                                            </p>
+                                            <ul>
+                                                <li>C</li>
+                                                <li>DOXYGEN</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h3>Réalisation</h3>
+                                            <p>
+                                                J'ai effectué ce projet individuellement et en étapes successives:
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Pour commencer, j'ai créé une maquette simple de mon projet
+                                                </li>
+                                                <li>
+                                                    Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
+                                                </li>
+                                                <li>
+                                                    Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
+                                                </li>
+                                                <li>
+                                                    Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
+                                                </li>
+                                                <li>
+                                                    Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h3>
+                                                Prise de recul
+                                            </h3>
+                                            <p>
+                                                Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
+                                                De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
+                                            </p>
+                                        </div>
+                                    </article>
+
+                                    
+                                    
+                                </div>
+                                <a href="https://www.github.com">
+                                    <button class="btnBas">Voir sur github</button>
+                                </a>
+                                <button class="btnBas" onclick="closeForm()">Fermer</button>
+                                
                             </div>
                             
                         </div>
                     </div>
+
+
+                    <script>
+                        function openForm() {
+                            var pop = document.getElementsByClassName("popupForm");
+                            for (var index = 0; index < pop.length; index++) {
+                                pop[index].style.display = "flex";
+                            }
+                        }
+
+                        function closeForm() {
+                            var pop = document.getElementsByClassName("popupForm");
+                            for (var index = 0; index < pop.length; index++) {
+                                pop[index].style.display = "none";
+                            }
+                        }
+                        
+                    </script>
+
+
+
+
+
                     <div>
-                        <a href=""><img src="" alt="photo du projet"></a>
+                        <a href="./pages_projets/hotel.html"><img src="images/puissance4.png" alt="photo du projet"></a>
                         <div>
                             <h3>
                                 Logiciel de gestion d'un hotel
                             </h3>
                             <p>
-                                Logiciel de gestion d'un hotel, avec son interface en JavaFX.
+                                Logiciel de gestion d'un hotel, avec son interface en JavaFX. <br>
+                                <br>
+                                <strong>Etat:</strong> En cours<br>
+                                <br>
+                                <strong>Date:</strong> mai 2023
                             </p>
                             <div>
                                 <strong><a href="">Découvrir</a></strong> 
@@ -653,7 +895,7 @@
                         Identifier ses aptitudes pour travailler dans une équipe
                     </p>
                     <div>
-                        <a href=""><img src="images/puissance4.png" alt="image de puissance 4"></a>
+                        <a href="./pages_projets/Puissance4.html"><img src="images/projets/P4.png" alt="image de puissance 4"></a>
                         <div>
                             <h3>
                                 Puissance 4
@@ -661,24 +903,149 @@
                             <p>
                                 Elaboration d'un Puissance 4 executable et jouable dans un terminal. <br>
                                 Ce jeu pouvait etre joué à 2, chacun son tour, directement dans le meme terminal. <br>
+                                <br>
+                                <strong>Etat:</strong> Fini<br>
+                                <br>
+                                <strong>Date:</strong> novembre 2022
                             </p>
-                            <div>
-                                <strong><a href="">Découvrir</a></strong> 
+                            <div id="liens">
+                                <button onclick="openForm()">
+                                    Découvrir
+                                </button> 
                                 <p>
+                                    
                                     <strong>Langages:</strong>  C, DOXYGEN
                                 </p>
+                            </div>
+
+
+                            <div class="popupForm">
+                                <h1 class="topPopup">Puissance 4</h1>
+                                <button onclick="closeForm()" class="croix">x</button>
+                                <div class="centrePopup">
+                                    
+                                    <article class="popGauche">
+                                        <img src="./images/projets/P4.png" alt="photo du projet">
+                                        <div>
+                                            <h3>Description</h3>
+                                            <p>
+                                                Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
+                                                <br>
+                                                Pour y jouer rien de plus simple: <br>
+                                                <ul>
+                                                    
+                                                    <li>
+                                                        Q pour aller à gauche
+                                                    </li>
+                                                    <li>
+                                                        D pour aller a droite
+                                                    </li>
+                                                    <li>
+                                                        ESPACE pour placer le pion
+                                                    </li>
+                                                </ul>
+                                                <br>
+                                                
+                                            </p>
+                                        </div>
+                                        
+                                        
+                                    </article>
+                                    
+                                    <hr>
+
+                                    <article class="popDroite">
+                                        <div>
+                                            <h3>Compétences utilisées</h3>
+                                            <p>
+                                                Compétences techniques
+                                            </p>
+                                            <ul>
+                                                <li>C</li>
+                                                <li>DOXYGEN</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h3>Réalisation</h3>
+                                            <p>
+                                                J'ai effectué ce projet individuellement et en étapes successives:
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Pour commencer, j'ai créé une maquette simple de mon projet
+                                                </li>
+                                                <li>
+                                                    Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
+                                                </li>
+                                                <li>
+                                                    Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
+                                                </li>
+                                                <li>
+                                                    Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
+                                                </li>
+                                                <li>
+                                                    Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h3>
+                                                Prise de recul
+                                            </h3>
+                                            <p>
+                                                Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
+                                                De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
+                                            </p>
+                                        </div>
+                                    </article>
+
+                                    
+                                    
+                                </div>
+                                <a href="https://www.github.com">
+                                    <button class="btnBas">Voir sur github</button>
+                                </a>
+                                <button class="btnBas" onclick="closeForm()">Fermer</button>
+                                
                             </div>
                             
                         </div>
                     </div>
+
+
+                    <script>
+                        function openForm() {
+                            var pop = document.getElementsByClassName("popupForm");
+                            for (var index = 0; index < pop.length; index++) {
+                                pop[index].style.display = "flex";
+                            }
+                        }
+
+                        function closeForm() {
+                            var pop = document.getElementsByClassName("popupForm");
+                            for (var index = 0; index < pop.length; index++) {
+                                pop[index].style.display = "none";
+                            }
+                        }
+                        
+                    </script>
+
+
+
+
+
                     <div>
-                        <a href=""><img src="" alt="photo du projet"></a>
+                        <a href="./pages_projets/hotel.html"><img src="images/puissance4.png" alt="photo du projet"></a>
                         <div>
                             <h3>
                                 Logiciel de gestion d'un hotel
                             </h3>
                             <p>
-                                Logiciel de gestion d'un hotel, avec son interface en JavaFX.
+                                Logiciel de gestion d'un hotel, avec son interface en JavaFX. <br>
+                                <br>
+                                <strong>Etat:</strong> En cours<br>
+                                <br>
+                                <strong>Date:</strong> mai 2023
                             </p>
                             <div>
                                 <strong><a href="">Découvrir</a></strong> 
