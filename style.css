@@ -18,6 +18,8 @@
     --charte2_4 : #07B2D9;
     --charte2_5 : #07D9D9;
 
+     
+
 }
 
 body>div
@@ -34,47 +36,169 @@ body>div
 }
 /* @media screen and (min-width:1000px) { */
 
+
 /**************
-    HEADER
+    HEADER 
+
 **************/
-header>a>section
+header
 {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url(images/fonds/fond_ciel.jpg);
-    
-    background-size: cover;
+    position: fixed;
+    top: 0px;
+    left: 15%;
+    transform: translate(-15%);
+    height: 50px;
 }
-
-#PPheader
+header>nav>a
 {
-    border-radius: 100%;
-    width: 300px;
-    margin-bottom: 20px;
+    color: white;
+    font-size: 2em;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
-
-#PPheader:hover
-{
-    width: 350px;
-}
-
-header>a>section>div
-{
-    padding: 3px 20px;
-    border-radius: 20px;
-    text-align: center;
-    font-size: 18px;
-}
-
-
 
 
 /**************
     MAIN
 **************/
+
+/*couverture*/
+#couverture
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    background-image: url(images/fonds/fond_header.jpg);
+    
+    background-size: cover;
+}
+
+
+#couverture>article
+{
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-align: center;
+    
+}
+#couverture>article>h1
+{
+    color: white;
+    font-size: 40px;
+    margin: 10px 60px;
+}
+#couverture>article>h2
+{
+    color: white;
+    font-size: 24px;
+    margin: 10px 60px;
+}
+#couverture>a>button
+{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px 20px; 
+    background-color: var(--charte1_2);
+    color: white;
+    font-size: 24px;
+}
+#couverture>a>button:hover
+{
+    color: black;
+    background-color: var(--charte1_3);
+    padding: 15px 30px; 
+    top: 69.5%;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+/* A propos*/
+
+#aPropos
+{
+    background-color: white;
+    width: 100%
+}
+#aPropos>article
+{
+    width: 40%;
+    padding: 100px 30%;
+    display: flex;
+    flex-direction: column;
+}
+#aPropos>article>h2
+{
+    text-align: center;
+    font-size: 2em;
+}
+#aPropos>article>div
+{
+    margin-top: 50px;
+    display: flex;
+}
+#aPropos>article>div>img
+{
+    width: 200px;
+    object-fit: contain;
+    
+}
+#aPropos>article>div>p
+{
+    padding-left: 20px;
+    text-align: justify;
+    line-height: 25px;
+    font-size: 1em;
+}
+#aPropos>article>div>p>a
+{
+    font-size: 1.1em;
+    color: var(--charte1_2);
+    text-decoration: underline;
+}
+
+
+/* actuellement*/
+#actuellement
+{
+    background-image: url(./images/fonds/fond_ciel.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+}
+#actuellement>article
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 0 0 white, 2px 2px 0 white, 0 2px 0 white, -2px 2px 0 white, -2px 0 0 white, -2px -2px 0 white, 0 -2px 0 white, 2px -2px 0 white;
+}
+
+#actuellement>article>h2
+{
+    font-size: 2em;
+    margin-bottom: 80px;
+}
+#actuellement>article>p
+{
+    font-size: 1.5em;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+
+
+
 
 #sec1
 {
@@ -125,7 +249,6 @@ header>a>section>div
 {
     display: flex;
     flex-direction: row;
-    justify-content: ;
 }
 #competences>div>figure
 {
@@ -299,7 +422,7 @@ button
 
 button:hover
 {
-    background-color: var(--charte1_4);
+    background-color: white;
     color: black;
 }
 

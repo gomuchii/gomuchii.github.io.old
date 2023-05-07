@@ -15,26 +15,65 @@
         </div>
 
         <header>
-            <a href="#sec1">
-                <section>
-                    <img src="images/114.jpg" alt="photo de Yoann GAUTIER" id="PPheader">
-                    <div>
-                        <h1>
-                            Yoann GAUTIER 
-                        </h1>
-                    </div>
-                    <div>
-                        <h2>
-                            Etudiant en BUT Informatique
-                        </h2> 
-                    </div>
-                    
-                </section>
-            </a>
-                
+            <nav>
+                <a href="#couverture">Accueil</a>
+                <a href="#sec1">Profil</a>
+                <a href="#">Compétences</a>
+                <a href="#">Projets</a>
+            </nav>
         </header>
 
         <main>
+            
+            <section id="couverture">
+                <article>
+                    <h1>
+                        Yoann GAUTIER 
+                    </h1>
+                
+                    <h2>
+                        Développeur - Etudiant
+                    </h2>
+                </article>
+                
+                <a href="#aPropos" >
+                    <button>Decouvir</button>
+                </a>
+                
+            </section>
+            
+            <section id="aPropos">
+                <article>
+                    <h2>A propos de moi</h2>
+                    <div>
+                        <img src="./images/114.jpg" alt="">
+                        
+                        
+                        <p>
+                            Bonjour, moi c'est Yoann, ravi de vous voir ici! <br>
+                            <br>
+                            Passionné de la programmation depuis mes 15 ans, je me suis formé par moi-même grâce à OpenClassroom, puis j'ai intégré un BUT Informatique après mon baccalauréat général en 2022. <br>
+                            J'ai effectué de nombreux <a href="#projets">projets</a>, qu'ils soient personels ou en lien avec mes études, ce qui m'a peu à peu forgé mon niveau actuel. <br>
+                            Lors de ces derniers, j'ai aimé surmonter les difficultés rencontrées ainsi qu'explorer de nombreuses options, faire en sorte que le projet soit completement fini(le travail baclé/abandonné c'est pas pour moi). <br>
+                        </p>
+                    </div>
+                    
+                    
+                </article>
+            </section>
+
+            <section id="actuellement">
+                <article>
+                    <h2>
+                        Actuellement : 
+                    </h2>
+                    <p>
+                        Etudiant en 1ère année de BUT Informatique <br>
+                        Recherche une alternance pour la 2e année
+                    </p>
+                </article>
+            </section>
+
             <section id="sec1">
                 <article id="infos">
                     <img src="images/114.jpg" alt="photo de Yoann GAUTIER" id="PPmain">
@@ -167,35 +206,11 @@
                     <button id="btnNav3" class="btnNav" onclick="openComp('comp3', 'btnNav3')">compétence 3</button>
                     <button id="btnNav4" class="btnNav" onclick="openComp('comp4', 'btnNav4')">compétence 4</button>
                     <button id="btnNav5" class="btnNav" onclick="openComp('comp5', 'btnNav5')">compétence 5</button>
-                    <button id="btnNav6" class="btnNav" onclick="openComp('comp6', 'btnNav6')">compétence 6</button>
+                    <button id="btnNav6" class="btnNav" onclick="openComp('comp6', 'btnNav6')" >compétence 6</button>
                 </nav>
 
 
-                <script>
-                    function openComp(comp, num) {
-                        document.getElementById("compVide").style.display = "none";
-                        var compAFermer = document.getElementsByClassName("comp");
-                        for (let index = 0; index < compAFermer.length; index++) {
-                            compAFermer[index].style.display = "none"
-                        }
-                        document.getElementById(comp).style.display = "flex";
-                        var btn = document.getElementsByClassName("btnNav");
-                        for (let i = 0; i < btn.length; i++) {
-                            if(btn[i].id == num)
-                            {
-                                btn[i].style.color = "white";
-                                btn[i].style.background = "black";
-                            }
-                            else
-                            {
-                                btn[i].style.color = "black";
-                                btn[i].style.background = "var(--charte1_1)";
-                            }
-                        }
-                    }
-
-                    
-                </script>
+                
 
 
                 <article id="compVide">
@@ -377,22 +392,7 @@
                     </div>
 
 
-                    <script>
-                        function openForm() {
-                            var pop = document.getElementsByClassName("popupForm");
-                            for (var index = 0; index < pop.length; index++) {
-                                pop[index].style.display = "flex";
-                            }
-                        }
-
-                        function closeForm() {
-                            var pop = document.getElementsByClassName("popupForm");
-                            for (var index = 0; index < pop.length; index++) {
-                                pop[index].style.display = "none";
-                            }
-                        }
-                        
-                    </script>
+                    
 
 
 
@@ -668,22 +668,7 @@
                     </div>
 
 
-                    <script>
-                        function openForm() {
-                            var pop = document.getElementsByClassName("popupForm");
-                            for (var index = 0; index < pop.length; index++) {
-                                pop[index].style.display = "flex";
-                            }
-                        }
-
-                        function closeForm() {
-                            var pop = document.getElementsByClassName("popupForm");
-                            for (var index = 0; index < pop.length; index++) {
-                                pop[index].style.display = "none";
-                            }
-                        }
-                        
-                    </script>
+                    
 
 
 
@@ -840,22 +825,7 @@
                     </div>
 
 
-                    <script>
-                        function openForm() {
-                            var pop = document.getElementsByClassName("popupForm");
-                            for (var index = 0; index < pop.length; index++) {
-                                pop[index].style.display = "flex";
-                            }
-                        }
-
-                        function closeForm() {
-                            var pop = document.getElementsByClassName("popupForm");
-                            for (var index = 0; index < pop.length; index++) {
-                                pop[index].style.display = "none";
-                            }
-                        }
-                        
-                    </script>
+                    
 
 
 
@@ -1013,22 +983,7 @@
                     </div>
 
 
-                    <script>
-                        function openForm() {
-                            var pop = document.getElementsByClassName("popupForm");
-                            for (var index = 0; index < pop.length; index++) {
-                                pop[index].style.display = "flex";
-                            }
-                        }
-
-                        function closeForm() {
-                            var pop = document.getElementsByClassName("popupForm");
-                            for (var index = 0; index < pop.length; index++) {
-                                pop[index].style.display = "none";
-                            }
-                        }
-                        
-                    </script>
+                   
 
 
 
@@ -1067,4 +1022,5 @@
             gomuchi - Touts droits réservés
         </footer>
     </body>
+    <script src="./js/script.js"></script>
 </html>
