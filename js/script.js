@@ -26,7 +26,7 @@ function openComp(comp, num) {
 }
 
 function openForm(lapop) {
-    var pop = document.getElementsByClassName("popupForm");
+    var pop = document.getElementsByClassName("popeur");
     for (var index = 0; index < pop.length; index++) {
         pop[index].style.display = "none";
     }
@@ -38,9 +38,19 @@ function openForm(lapop) {
     // }
 }
 
+document.getElementById("bo").addEventListener("keydown", function(event){
+    if(event.code == "Escape")
+    {
+        closeForm();
+    }
+});
+
+
+
 function closeForm() {
-    var pop = document.getElementsByClassName("popupForm");
+    var pop = document.getElementsByClassName("popeur");
     for (var index = 0; index < pop.length; index++) {
         pop[index].style.display = "none";
     }
 }
+

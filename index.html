@@ -9,7 +9,7 @@
     </head>
 
 
-    <body>
+    <body id="bo">
         <div>
             SITE EN CHANTIER
         </div>
@@ -37,7 +37,7 @@
                 </article>
                 
                 <a href="#aPropos" >
-                    <button>Decouvir</button>
+                    <button>Découvir</button>
                 </a>
                 
             </section>
@@ -171,7 +171,7 @@
                     <button id="btnNav2" class="btnNav" onclick="openComp('comp2', 'btnNav2')">Compétence 2</button>
                     <button id="btnNav3" class="btnNav" onclick="openComp('comp3', 'btnNav3')">Compétence 3</button>
                     <button id="btnNav4" class="btnNav" onclick="openComp('comp4', 'btnNav4')">Compétence 4</button>
-                    <button id="btnNav5" class="btnNav" onclick="openComp('comp5', 'btnNav5')">Compétence 5</button>
+                    <button id="btnNav5" class="btnNav" onclick="openComp('comp5', 'btnNav5')">Compétence 5</button>z
                     <button id="btnNav6" class="btnNav" onclick="openComp('comp6', 'btnNav6')">Compétence 6</button>
                 </nav>
 
@@ -216,103 +216,105 @@
                                 Découvrir
                             </button>
 
-
-                            <div class="popupForm" id="pop1_1">
-                                <h1 class="topPopup">Puissance 4</h1>
-                                <button onclick="closeForm()" class="croix">x</button>
-                                <div class="centrePopup">
-                                    
-                                    <article class="popGauche">
-                                        <img src="./images/projets/P4.png" alt="photo du projet">
-                                        <div>
-                                            <h3>Description</h3>
-                                            <p>
-                                                Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
-                                                <br>
-                                                Pour y jouer rien de plus simple: <br>
-                                                <ul>
+                            <div class="popeur" id="pop1_1">
+                                <div class="popupForm" >
+                                    <h1 class="topPopup">Puissance 4</h1>
+                                    <button onclick="closeForm()" class="croix">x</button>
+                                    <div class="centrePopup">
+                                        
+                                        <article class="popGauche">
+                                            <img src="./images/projets/P4.png" alt="photo du projet">
+                                            <div>
+                                                <h3>Description</h3>
+                                                <p>
+                                                    Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
+                                                    <br>
+                                                    Pour y jouer rien de plus simple: <br>
+                                                    <ul>
+                                                        
+                                                        <li>
+                                                            Q pour aller à gauche
+                                                        </li>
+                                                        <li>
+                                                            D pour aller a droite
+                                                        </li>
+                                                        <li>
+                                                            ESPACE pour placer le pion
+                                                        </li>
+                                                    </ul>
+                                                    <br>
                                                     
+                                                </p>
+                                            </div>
+                                            
+                                            
+                                        </article>
+                                        
+                                        <hr>
+
+                                        <article class="popDroite">
+                                            <div>
+                                                <h3>Compétences utilisées</h3>
+                                                <p>
+                                                    Compétences techniques
+                                                </p>
+                                                <ul>
+                                                    <li>C</li>
+                                                    <li>DOXYGEN</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h3>Réalisation</h3>
+                                                <p>
+                                                    J'ai effectué ce projet individuellement et en étapes successives:
+                                                </p>
+                                                <ul>
                                                     <li>
-                                                        Q pour aller à gauche
+                                                        Pour commencer, j'ai créé une maquette simple de mon projet
                                                     </li>
                                                     <li>
-                                                        D pour aller a droite
+                                                        Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
                                                     </li>
                                                     <li>
-                                                        ESPACE pour placer le pion
+                                                        Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
+                                                    </li>
+                                                    <li>
+                                                        Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
+                                                    </li>
+                                                    <li>
+                                                        Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
                                                     </li>
                                                 </ul>
-                                                <br>
-                                                
-                                            </p>
-                                        </div>
+                                            </div>
+                                            <div>
+                                                <h3>
+                                                    Prise de recul
+                                                </h3>
+                                                <p>
+                                                    Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
+                                                    De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
+                                                </p>
+                                            </div>
+                                        </article>
+
                                         
                                         
-                                    </article>
-                                    
-                                    <hr>
-
-                                    <article class="popDroite">
-                                        <div>
-                                            <h3>Compétences utilisées</h3>
-                                            <p>
-                                                Compétences techniques
-                                            </p>
-                                            <ul>
-                                                <li>C</li>
-                                                <li>DOXYGEN</li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3>Réalisation</h3>
-                                            <p>
-                                                J'ai effectué ce projet individuellement et en étapes successives:
-                                            </p>
-                                            <ul>
-                                                <li>
-                                                    Pour commencer, j'ai créé une maquette simple de mon projet
-                                                </li>
-                                                <li>
-                                                    Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
-                                                </li>
-                                                <li>
-                                                    Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
-                                                </li>
-                                                <li>
-                                                    Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
-                                                </li>
-                                                <li>
-                                                    Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3>
-                                                Prise de recul
-                                            </h3>
-                                            <p>
-                                                Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
-                                                De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
-                                            </p>
-                                        </div>
-                                    </article>
-
-                                    
+                                    </div>
+                                    <a href="https://www.github.com">
+                                        <button class="btnBas">Voir sur github</button>
+                                    </a>
+                                    <button class="btnBas" onclick="closeForm()">Fermer</button>
                                     
                                 </div>
-                                <a href="https://www.github.com">
-                                    <button class="btnBas">Voir sur github</button>
-                                </a>
-                                <button class="btnBas" onclick="closeForm()">Fermer</button>
-                                
                             </div>
+                            
                             
                         </div>
                     </div>
 
 
                     <div>
-                        <img src="images/projets/hotel.png" alt="logo de l'hotel">
+                        <img src="images/projets/hotel.PNG" alt="logo de l'hotel">
                         <div>
                             <h3>
                                 Logiciel de gestion d'un hotel
@@ -340,91 +342,93 @@
                                 Découvrir
                             </button>
 
+                            <div class="popeur" id="pop1_2">
+                                <div class="popupForm" >
+                                    <h1 class="topPopup">Logiciel de gestion d'hotel</h1>
+                                    <button onclick="closeForm()" class="croix">x</button>
+                                    <div class="centrePopup">
+                                        
+                                        <article class="popGauche">
+                                            <img src="./images/projets/hotel.PNG" alt="photo du projet">
+                                            <div>
+                                                <h3>Description</h3>
+                                                <p>
+                                                    Ce projet consiste à créer un logiciel pour aider le personel d'un hotel à le gerer. <br>
+                                                    <br>
+                                                    L'apllication devait avoir une interface et des fonctionnalitées différentes pour les différents secteurs de l'hotel:<br>
+                                                    <ul>
+                                                        <li>
+                                                            Le bar
+                                                        </li>
+                                                        <li>
+                                                            La réception
+                                                        </li>
+                                                        <li>
+                                                            La gérance
+                                                        </li>
+                                                    </ul>
+                                                    <br>
+                                                    
+                                                </p>
+                                            </div>
+                                            
+                                            
+                                        </article>
+                                        
+                                        <hr>
 
-                            <div class="popupForm" id="pop1_2">
-                                <h1 class="topPopup">Logiciel de gestion d'hotel</h1>
-                                <button onclick="closeForm()" class="croix">x</button>
-                                <div class="centrePopup">
-                                    
-                                    <article class="popGauche">
-                                        <img src="./images/projets/hotel.PNG" alt="photo du projet">
-                                        <div>
-                                            <h3>Description</h3>
-                                            <p>
-                                                Ce projet consiste à créer un logiciel pour aider le personel d'un hotel à le gerer. <br>
-                                                <br>
-                                                L'apllication devait avoir une interface et des fonctionnalitées différentes pour les différents secteurs de l'hotel:<br>
+                                        <article class="popDroite">
+                                            <div>
+                                                <h3>Compétences utilisées</h3>
+                                                <p>
+                                                    Compétences techniques
+                                                </p>
                                                 <ul>
-                                                    <li>
-                                                        Le bar
-                                                    </li>
-                                                    <li>
-                                                        La réception
-                                                    </li>
-                                                    <li>
-                                                        La gérance
-                                                    </li>
+                                                    <li>Java</li>
+                                                    <li>JavaFX</li>
                                                 </ul>
-                                                <br>
-                                                
-                                            </p>
-                                        </div>
+                                            </div>
+                                            <div>
+                                                <h3>Réalisation</h3>
+                                                <p>
+                                                    En cours...
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <h3>
+                                                    Prise de recul
+                                                </h3>
+                                                <p>
+                                                    En cours... 
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                </p>
+                                            </div>
+                                        </article>
+
                                         
                                         
-                                    </article>
-                                    
-                                    <hr>
-
-                                    <article class="popDroite">
-                                        <div>
-                                            <h3>Compétences utilisées</h3>
-                                            <p>
-                                                Compétences techniques
-                                            </p>
-                                            <ul>
-                                                <li>Java</li>
-                                                <li>JavaFX</li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3>Réalisation</h3>
-                                            <p>
-                                                En cours...
-                                                <br>
-                                                <br>
-                                                <br>
-                                                <br>
-                                                <br>
-                                                <br>
-                                                <br>
-                                                <br>
-                                                <br>
-                                                <br>
-                                                <br>
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <h3>
-                                                Prise de recul
-                                            </h3>
-                                            <p>
-                                                En cours... 
-                                                <br>
-                                                <br>
-                                                <br>
-                                            </p>
-                                        </div>
-                                    </article>
-
-                                    
+                                    </div>
+                                    <a href="https://www.github.com">
+                                        <button class="btnBas">Voir sur github</button>
+                                    </a>
+                                    <button class="btnBas" onclick="closeForm()">Fermer</button>
                                     
                                 </div>
-                                <a href="https://www.github.com">
-                                    <button class="btnBas">Voir sur github</button>
-                                </a>
-                                <button class="btnBas" onclick="closeForm()">Fermer</button>
-                                
                             </div>
+                            
                             
                         </div>
                     </div>
@@ -467,97 +471,98 @@
                                 Découvrir
                             </button>
 
-
-                            <div class="popupForm" id="pop2_1">
-                                <h1 class="topPopup">Algorythme d'adversaire</h1>
-                                <button onclick="closeForm()" class="croix">x</button>
-                                <div class="centrePopup">
-                                    
-                                    <article class="popGauche">
-                                        <img src="./images/projets/P4.png" alt="photo du projet">
-                                        <div>
-                                            <h3>Description</h3>
-                                            <p>
-                                                Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
-                                                <br>
-                                                Pour y jouer rien de plus simple: <br>
-                                                <ul>
+                            <div class="popeur" id="pop2_1">
+                                <div class="popupForm">
+                                    <h1 class="topPopup">Algorythme d'adversaire</h1>
+                                    <button onclick="closeForm()" class="croix">x</button>
+                                    <div class="centrePopup">
+                                        
+                                        <article class="popGauche">
+                                            <img src="./images/projets/P4.png" alt="photo du projet">
+                                            <div>
+                                                <h3>Description</h3>
+                                                <p>
+                                                    Ce projet est la suite du projet de puisance 4. <br>
+                                                    Il s'agit désormais de créer un adversaire virtuel jouant le meilleur coups posible en fonction du dernier coup joué et de létat actuel du jeu
+                                                    <br>
+                                                    Il était capable par exemple: <br>
+                                                    <ul>
+                                                        
+                                                        <li>
+                                                            De déclencher/empecher des victoires
+                                                        </li>
+                                                        <li>
+                                                            D'élaborer/déjouer des pièges
+                                                        </li>
+                                                        <li>
+                                                            De placer son pion à un endroit avantageux.
+                                                        </li>
+                                                    </ul>
+                                                    <br>
                                                     
+                                                </p>
+                                            </div>
+                                            
+                                            
+                                        </article>
+                                        
+                                        <hr>
+
+                                        <article class="popDroite">
+                                            <div>
+                                                <h3>Compétences utilisées</h3>
+                                                <p>
+                                                    Compétences techniques
+                                                </p>
+                                                <ul>
+                                                    <li>C</li>
+                                                    <li>DOXYGEN</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h3>Réalisation</h3>
+                                                <p>
+                                                    J'ai effectué ce projet individuellement et en étapes successives:
+                                                </p>
+                                                <ul>
                                                     <li>
-                                                        Q pour aller à gauche
+                                                        Pour commencer, j'ai créé une maquette simple de mon projet
                                                     </li>
                                                     <li>
-                                                        D pour aller a droite
+                                                        Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
                                                     </li>
                                                     <li>
-                                                        ESPACE pour placer le pion
+                                                        Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
+                                                    </li>
+                                                    <li>
+                                                        Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
+                                                    </li>
+                                                    <li>
+                                                        Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
                                                     </li>
                                                 </ul>
-                                                <br>
-                                                
-                                            </p>
-                                        </div>
+                                            </div>
+                                            <div>
+                                                <h3>
+                                                    Prise de recul
+                                                </h3>
+                                                <p>
+                                                    Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
+                                                    De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
+                                                </p>
+                                            </div>
+                                        </article>
+
                                         
                                         
-                                    </article>
-                                    
-                                    <hr>
-
-                                    <article class="popDroite">
-                                        <div>
-                                            <h3>Compétences utilisées</h3>
-                                            <p>
-                                                Compétences techniques
-                                            </p>
-                                            <ul>
-                                                <li>C</li>
-                                                <li>DOXYGEN</li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3>Réalisation</h3>
-                                            <p>
-                                                J'ai effectué ce projet individuellement et en étapes successives:
-                                            </p>
-                                            <ul>
-                                                <li>
-                                                    Pour commencer, j'ai créé une maquette simple de mon projet
-                                                </li>
-                                                <li>
-                                                    Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
-                                                </li>
-                                                <li>
-                                                    Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
-                                                </li>
-                                                <li>
-                                                    Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
-                                                </li>
-                                                <li>
-                                                    Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3>
-                                                Prise de recul
-                                            </h3>
-                                            <p>
-                                                Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
-                                                De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
-                                            </p>
-                                        </div>
-                                    </article>
-
-                                    
+                                    </div>
+                                    <a href="https://www.github.com">
+                                        <button class="btnBas">Voir sur github</button>
+                                    </a>
+                                    <button class="btnBas" onclick="closeForm()">Fermer</button>
                                     
                                 </div>
-                                <a href="https://www.github.com">
-                                    <button class="btnBas">Voir sur github</button>
-                                </a>
-                                <button class="btnBas" onclick="closeForm()">Fermer</button>
-                                
                             </div>
-                            
                         </div>
                     </div>
 
@@ -590,97 +595,97 @@
                                 Découvrir
                             </button>
 
-
-                            <div class="popupForm" id="pop2_2">
-                                <h1 class="topPopup">Tour du cavalier</h1>
-                                <button onclick="closeForm()" class="croix">x</button>
-                                <div class="centrePopup">
-                                    
-                                    <article class="popGauche">
-                                        <img src="./images/projets/P4.png" alt="photo du projet">
-                                        <div>
-                                            <h3>Description</h3>
-                                            <p>
-                                                Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
-                                                <br>
-                                                Pour y jouer rien de plus simple: <br>
-                                                <ul>
+                            <div class="popeur" id="pop2_2">
+                                <div class="popupForm">
+                                    <h1 class="topPopup">Tour du cavalier</h1>
+                                    <button onclick="closeForm()" class="croix">x</button>
+                                    <div class="centrePopup">
+                                        
+                                        <article class="popGauche">
+                                            <img src="./images/projets/P4.png" alt="photo du projet">
+                                            <div>
+                                                <h3>Description</h3>
+                                                <p>
+                                                    Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
+                                                    <br>
+                                                    Pour y jouer rien de plus simple: <br>
+                                                    <ul>
+                                                        
+                                                        <li>
+                                                            Q pour aller à gauche
+                                                        </li>
+                                                        <li>
+                                                            D pour aller a droite
+                                                        </li>
+                                                        <li>
+                                                            ESPACE pour placer le pion
+                                                        </li>
+                                                    </ul>
+                                                    <br>
                                                     
+                                                </p>
+                                            </div>
+                                            
+                                            
+                                        </article>
+                                        
+                                        <hr>
+
+                                        <article class="popDroite">
+                                            <div>
+                                                <h3>Compétences utilisées</h3>
+                                                <p>
+                                                    Compétences techniques
+                                                </p>
+                                                <ul>
+                                                    <li>C</li>
+                                                    <li>DOXYGEN</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h3>Réalisation</h3>
+                                                <p>
+                                                    J'ai effectué ce projet individuellement et en étapes successives:
+                                                </p>
+                                                <ul>
                                                     <li>
-                                                        Q pour aller à gauche
+                                                        Pour commencer, j'ai créé une maquette simple de mon projet
                                                     </li>
                                                     <li>
-                                                        D pour aller a droite
+                                                        Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
                                                     </li>
                                                     <li>
-                                                        ESPACE pour placer le pion
+                                                        Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
+                                                    </li>
+                                                    <li>
+                                                        Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
+                                                    </li>
+                                                    <li>
+                                                        Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
                                                     </li>
                                                 </ul>
-                                                <br>
-                                                
-                                            </p>
-                                        </div>
+                                            </div>
+                                            <div>
+                                                <h3>
+                                                    Prise de recul
+                                                </h3>
+                                                <p>
+                                                    Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
+                                                    De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
+                                                </p>
+                                            </div>
+                                        </article>
+
                                         
                                         
-                                    </article>
-                                    
-                                    <hr>
-
-                                    <article class="popDroite">
-                                        <div>
-                                            <h3>Compétences utilisées</h3>
-                                            <p>
-                                                Compétences techniques
-                                            </p>
-                                            <ul>
-                                                <li>C</li>
-                                                <li>DOXYGEN</li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3>Réalisation</h3>
-                                            <p>
-                                                J'ai effectué ce projet individuellement et en étapes successives:
-                                            </p>
-                                            <ul>
-                                                <li>
-                                                    Pour commencer, j'ai créé une maquette simple de mon projet
-                                                </li>
-                                                <li>
-                                                    Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
-                                                </li>
-                                                <li>
-                                                    Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
-                                                </li>
-                                                <li>
-                                                    Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
-                                                </li>
-                                                <li>
-                                                    Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3>
-                                                Prise de recul
-                                            </h3>
-                                            <p>
-                                                Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
-                                                De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
-                                            </p>
-                                        </div>
-                                    </article>
-
-                                    
+                                    </div>
+                                    <a href="https://www.github.com">
+                                        <button class="btnBas">Voir sur github</button>
+                                    </a>
+                                    <button class="btnBas" onclick="closeForm()">Fermer</button>
                                     
                                 </div>
-                                <a href="https://www.github.com">
-                                    <button class="btnBas">Voir sur github</button>
-                                </a>
-                                <button class="btnBas" onclick="closeForm()">Fermer</button>
-                                
                             </div>
-                            
                         </div>
                     </div>
                     
@@ -723,97 +728,97 @@
                                 Découvrir
                             </button>
 
-
-                            <div class="popupForm" id="pop3_1">
-                                <h1 class="topPopup">Docker</h1>
-                                <button onclick="closeForm()" class="croix">x</button>
-                                <div class="centrePopup">
-                                    
-                                    <article class="popGauche">
-                                        <img src="./images/projets/P4.png" alt="photo du projet">
-                                        <div>
-                                            <h3>Description</h3>
-                                            <p>
-                                                Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
-                                                <br>
-                                                Pour y jouer rien de plus simple: <br>
-                                                <ul>
+                            <div class="popeur" id="pop3_1">
+                                <div class="popupForm">
+                                    <h1 class="topPopup">Docker</h1>
+                                    <button onclick="closeForm()" class="croix">x</button>
+                                    <div class="centrePopup">
+                                        
+                                        <article class="popGauche">
+                                            <img src="./images/projets/P4.png" alt="photo du projet">
+                                            <div>
+                                                <h3>Description</h3>
+                                                <p>
+                                                    Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
+                                                    <br>
+                                                    Pour y jouer rien de plus simple: <br>
+                                                    <ul>
+                                                        
+                                                        <li>
+                                                            Q pour aller à gauche
+                                                        </li>
+                                                        <li>
+                                                            D pour aller a droite
+                                                        </li>
+                                                        <li>
+                                                            ESPACE pour placer le pion
+                                                        </li>
+                                                    </ul>
+                                                    <br>
                                                     
+                                                </p>
+                                            </div>
+                                            
+                                            
+                                        </article>
+                                        
+                                        <hr>
+
+                                        <article class="popDroite">
+                                            <div>
+                                                <h3>Compétences utilisées</h3>
+                                                <p>
+                                                    Compétences techniques
+                                                </p>
+                                                <ul>
+                                                    <li>C</li>
+                                                    <li>DOXYGEN</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h3>Réalisation</h3>
+                                                <p>
+                                                    J'ai effectué ce projet individuellement et en étapes successives:
+                                                </p>
+                                                <ul>
                                                     <li>
-                                                        Q pour aller à gauche
+                                                        Pour commencer, j'ai créé une maquette simple de mon projet
                                                     </li>
                                                     <li>
-                                                        D pour aller a droite
+                                                        Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
                                                     </li>
                                                     <li>
-                                                        ESPACE pour placer le pion
+                                                        Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
+                                                    </li>
+                                                    <li>
+                                                        Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
+                                                    </li>
+                                                    <li>
+                                                        Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
                                                     </li>
                                                 </ul>
-                                                <br>
-                                                
-                                            </p>
-                                        </div>
+                                            </div>
+                                            <div>
+                                                <h3>
+                                                    Prise de recul
+                                                </h3>
+                                                <p>
+                                                    Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
+                                                    De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
+                                                </p>
+                                            </div>
+                                        </article>
+
                                         
                                         
-                                    </article>
-                                    
-                                    <hr>
-
-                                    <article class="popDroite">
-                                        <div>
-                                            <h3>Compétences utilisées</h3>
-                                            <p>
-                                                Compétences techniques
-                                            </p>
-                                            <ul>
-                                                <li>C</li>
-                                                <li>DOXYGEN</li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3>Réalisation</h3>
-                                            <p>
-                                                J'ai effectué ce projet individuellement et en étapes successives:
-                                            </p>
-                                            <ul>
-                                                <li>
-                                                    Pour commencer, j'ai créé une maquette simple de mon projet
-                                                </li>
-                                                <li>
-                                                    Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
-                                                </li>
-                                                <li>
-                                                    Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
-                                                </li>
-                                                <li>
-                                                    Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
-                                                </li>
-                                                <li>
-                                                    Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3>
-                                                Prise de recul
-                                            </h3>
-                                            <p>
-                                                Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
-                                                De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
-                                            </p>
-                                        </div>
-                                    </article>
-
-                                    
+                                    </div>
+                                    <a href="https://www.github.com">
+                                        <button class="btnBas">Voir sur github</button>
+                                    </a>
+                                    <button class="btnBas" onclick="closeForm()">Fermer</button>
                                     
                                 </div>
-                                <a href="https://www.github.com">
-                                    <button class="btnBas">Voir sur github</button>
-                                </a>
-                                <button class="btnBas" onclick="closeForm()">Fermer</button>
-                                
                             </div>
-                            
                         </div>
                     </div>
 
@@ -847,97 +852,98 @@
                                 Découvrir
                             </button>
 
+                            <div class="popeur" id="pop3_2">
 
-                            <div class="popupForm" id="pop3_2">
-                                <h1 class="topPopup">Installation d'un service réseaux</h1>
-                                <button onclick="closeForm()" class="croix">x</button>
-                                <div class="centrePopup">
-                                    
-                                    <article class="popGauche">
-                                        <img src="./images/projets/P4.png" alt="photo du projet">
-                                        <div>
-                                            <h3>Description</h3>
-                                            <p>
-                                                Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
-                                                <br>
-                                                Pour y jouer rien de plus simple: <br>
-                                                <ul>
+                                <div class="popupForm">
+                                    <h1 class="topPopup">Installation d'un service réseaux</h1>
+                                    <button onclick="closeForm()" class="croix">x</button>
+                                    <div class="centrePopup">
+                                        
+                                        <article class="popGauche">
+                                            <img src="./images/projets/P4.png" alt="photo du projet">
+                                            <div>
+                                                <h3>Description</h3>
+                                                <p>
+                                                    Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
+                                                    <br>
+                                                    Pour y jouer rien de plus simple: <br>
+                                                    <ul>
+                                                        
+                                                        <li>
+                                                            Q pour aller à gauche
+                                                        </li>
+                                                        <li>
+                                                            D pour aller a droite
+                                                        </li>
+                                                        <li>
+                                                            ESPACE pour placer le pion
+                                                        </li>
+                                                    </ul>
+                                                    <br>
                                                     
+                                                </p>
+                                            </div>
+                                            
+                                            
+                                        </article>
+                                        
+                                        <hr>
+
+                                        <article class="popDroite">
+                                            <div>
+                                                <h3>Compétences utilisées</h3>
+                                                <p>
+                                                    Compétences techniques
+                                                </p>
+                                                <ul>
+                                                    <li>C</li>
+                                                    <li>DOXYGEN</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h3>Réalisation</h3>
+                                                <p>
+                                                    J'ai effectué ce projet individuellement et en étapes successives:
+                                                </p>
+                                                <ul>
                                                     <li>
-                                                        Q pour aller à gauche
+                                                        Pour commencer, j'ai créé une maquette simple de mon projet
                                                     </li>
                                                     <li>
-                                                        D pour aller a droite
+                                                        Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
                                                     </li>
                                                     <li>
-                                                        ESPACE pour placer le pion
+                                                        Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
+                                                    </li>
+                                                    <li>
+                                                        Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
+                                                    </li>
+                                                    <li>
+                                                        Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
                                                     </li>
                                                 </ul>
-                                                <br>
-                                                
-                                            </p>
-                                        </div>
+                                            </div>
+                                            <div>
+                                                <h3>
+                                                    Prise de recul
+                                                </h3>
+                                                <p>
+                                                    Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
+                                                    De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
+                                                </p>
+                                            </div>
+                                        </article>
+
                                         
                                         
-                                    </article>
-                                    
-                                    <hr>
-
-                                    <article class="popDroite">
-                                        <div>
-                                            <h3>Compétences utilisées</h3>
-                                            <p>
-                                                Compétences techniques
-                                            </p>
-                                            <ul>
-                                                <li>C</li>
-                                                <li>DOXYGEN</li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3>Réalisation</h3>
-                                            <p>
-                                                J'ai effectué ce projet individuellement et en étapes successives:
-                                            </p>
-                                            <ul>
-                                                <li>
-                                                    Pour commencer, j'ai créé une maquette simple de mon projet
-                                                </li>
-                                                <li>
-                                                    Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
-                                                </li>
-                                                <li>
-                                                    Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
-                                                </li>
-                                                <li>
-                                                    Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
-                                                </li>
-                                                <li>
-                                                    Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3>
-                                                Prise de recul
-                                            </h3>
-                                            <p>
-                                                Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
-                                                De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
-                                            </p>
-                                        </div>
-                                    </article>
-
-                                    
+                                    </div>
+                                    <a href="https://www.github.com">
+                                        <button class="btnBas">Voir sur github</button>
+                                    </a>
+                                    <button class="btnBas" onclick="closeForm()">Fermer</button>
                                     
                                 </div>
-                                <a href="https://www.github.com">
-                                    <button class="btnBas">Voir sur github</button>
-                                </a>
-                                <button class="btnBas" onclick="closeForm()">Fermer</button>
-                                
                             </div>
-                            
                         </div>
                     </div>
                     
@@ -978,97 +984,97 @@
                                 Découvrir
                             </button>
 
-
-                            <div class="popupForm" id="pop4_1">
-                                <h1 class="topPopup">Puissance 4</h1>
-                                <button onclick="closeForm()" class="croix">x</button>
-                                <div class="centrePopup">
-                                    
-                                    <article class="popGauche">
-                                        <img src="./images/projets/P4.png" alt="photo du projet">
-                                        <div>
-                                            <h3>Description</h3>
-                                            <p>
-                                                Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
-                                                <br>
-                                                Pour y jouer rien de plus simple: <br>
-                                                <ul>
+                            <div class="popeur" id="pop4_1">
+                                <div class="popupForm">
+                                    <h1 class="topPopup">Puissance 4</h1>
+                                    <button onclick="closeForm()" class="croix">x</button>
+                                    <div class="centrePopup">
+                                        
+                                        <article class="popGauche">
+                                            <img src="./images/projets/P4.png" alt="photo du projet">
+                                            <div>
+                                                <h3>Description</h3>
+                                                <p>
+                                                    Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
+                                                    <br>
+                                                    Pour y jouer rien de plus simple: <br>
+                                                    <ul>
+                                                        
+                                                        <li>
+                                                            Q pour aller à gauche
+                                                        </li>
+                                                        <li>
+                                                            D pour aller a droite
+                                                        </li>
+                                                        <li>
+                                                            ESPACE pour placer le pion
+                                                        </li>
+                                                    </ul>
+                                                    <br>
                                                     
+                                                </p>
+                                            </div>
+                                            
+                                            
+                                        </article>
+                                        
+                                        <hr>
+
+                                        <article class="popDroite">
+                                            <div>
+                                                <h3>Compétences utilisées</h3>
+                                                <p>
+                                                    Compétences techniques
+                                                </p>
+                                                <ul>
+                                                    <li>C</li>
+                                                    <li>DOXYGEN</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h3>Réalisation</h3>
+                                                <p>
+                                                    J'ai effectué ce projet individuellement et en étapes successives:
+                                                </p>
+                                                <ul>
                                                     <li>
-                                                        Q pour aller à gauche
+                                                        Pour commencer, j'ai créé une maquette simple de mon projet
                                                     </li>
                                                     <li>
-                                                        D pour aller a droite
+                                                        Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
                                                     </li>
                                                     <li>
-                                                        ESPACE pour placer le pion
+                                                        Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
+                                                    </li>
+                                                    <li>
+                                                        Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
+                                                    </li>
+                                                    <li>
+                                                        Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
                                                     </li>
                                                 </ul>
-                                                <br>
-                                                
-                                            </p>
-                                        </div>
+                                            </div>
+                                            <div>
+                                                <h3>
+                                                    Prise de recul
+                                                </h3>
+                                                <p>
+                                                    Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
+                                                    De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
+                                                </p>
+                                            </div>
+                                        </article>
+
                                         
                                         
-                                    </article>
-                                    
-                                    <hr>
-
-                                    <article class="popDroite">
-                                        <div>
-                                            <h3>Compétences utilisées</h3>
-                                            <p>
-                                                Compétences techniques
-                                            </p>
-                                            <ul>
-                                                <li>C</li>
-                                                <li>DOXYGEN</li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3>Réalisation</h3>
-                                            <p>
-                                                J'ai effectué ce projet individuellement et en étapes successives:
-                                            </p>
-                                            <ul>
-                                                <li>
-                                                    Pour commencer, j'ai créé une maquette simple de mon projet
-                                                </li>
-                                                <li>
-                                                    Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
-                                                </li>
-                                                <li>
-                                                    Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
-                                                </li>
-                                                <li>
-                                                    Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
-                                                </li>
-                                                <li>
-                                                    Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3>
-                                                Prise de recul
-                                            </h3>
-                                            <p>
-                                                Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
-                                                De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
-                                            </p>
-                                        </div>
-                                    </article>
-
-                                    
+                                    </div>
+                                    <a href="https://www.github.com">
+                                        <button class="btnBas">Voir sur github</button>
+                                    </a>
+                                    <button class="btnBas" onclick="closeForm()">Fermer</button>
                                     
                                 </div>
-                                <a href="https://www.github.com">
-                                    <button class="btnBas">Voir sur github</button>
-                                </a>
-                                <button class="btnBas" onclick="closeForm()">Fermer</button>
-                                
                             </div>
-                            
                         </div>
                     </div>
 
@@ -1101,97 +1107,97 @@
                                 Découvrir
                             </button>
 
-
-                            <div class="popupForm" id="pop4_2">
-                                <h1 class="topPopup">Logiciel de gestion d'hotel</h1>
-                                <button onclick="closeForm()" class="croix">x</button>
-                                <div class="centrePopup">
-                                    
-                                    <article class="popGauche">
-                                        <img src="./images/projets/P4.png" alt="photo du projet">
-                                        <div>
-                                            <h3>Description</h3>
-                                            <p>
-                                                Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
-                                                <br>
-                                                Pour y jouer rien de plus simple: <br>
-                                                <ul>
+                            <div class="popeur" id="pop4_2">
+                                <div class="popupForm">
+                                    <h1 class="topPopup">Logiciel de gestion d'hotel</h1>
+                                    <button onclick="closeForm()" class="croix">x</button>
+                                    <div class="centrePopup">
+                                        
+                                        <article class="popGauche">
+                                            <img src="./images/projets/P4.png" alt="photo du projet">
+                                            <div>
+                                                <h3>Description</h3>
+                                                <p>
+                                                    Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
+                                                    <br>
+                                                    Pour y jouer rien de plus simple: <br>
+                                                    <ul>
+                                                        
+                                                        <li>
+                                                            Q pour aller à gauche
+                                                        </li>
+                                                        <li>
+                                                            D pour aller a droite
+                                                        </li>
+                                                        <li>
+                                                            ESPACE pour placer le pion
+                                                        </li>
+                                                    </ul>
+                                                    <br>
                                                     
+                                                </p>
+                                            </div>
+                                            
+                                            
+                                        </article>
+                                        
+                                        <hr>
+
+                                        <article class="popDroite">
+                                            <div>
+                                                <h3>Compétences utilisées</h3>
+                                                <p>
+                                                    Compétences techniques
+                                                </p>
+                                                <ul>
+                                                    <li>C</li>
+                                                    <li>DOXYGEN</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h3>Réalisation</h3>
+                                                <p>
+                                                    J'ai effectué ce projet individuellement et en étapes successives:
+                                                </p>
+                                                <ul>
                                                     <li>
-                                                        Q pour aller à gauche
+                                                        Pour commencer, j'ai créé une maquette simple de mon projet
                                                     </li>
                                                     <li>
-                                                        D pour aller a droite
+                                                        Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
                                                     </li>
                                                     <li>
-                                                        ESPACE pour placer le pion
+                                                        Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
+                                                    </li>
+                                                    <li>
+                                                        Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
+                                                    </li>
+                                                    <li>
+                                                        Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
                                                     </li>
                                                 </ul>
-                                                <br>
-                                                
-                                            </p>
-                                        </div>
+                                            </div>
+                                            <div>
+                                                <h3>
+                                                    Prise de recul
+                                                </h3>
+                                                <p>
+                                                    Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
+                                                    De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
+                                                </p>
+                                            </div>
+                                        </article>
+
                                         
                                         
-                                    </article>
-                                    
-                                    <hr>
-
-                                    <article class="popDroite">
-                                        <div>
-                                            <h3>Compétences utilisées</h3>
-                                            <p>
-                                                Compétences techniques
-                                            </p>
-                                            <ul>
-                                                <li>C</li>
-                                                <li>DOXYGEN</li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3>Réalisation</h3>
-                                            <p>
-                                                J'ai effectué ce projet individuellement et en étapes successives:
-                                            </p>
-                                            <ul>
-                                                <li>
-                                                    Pour commencer, j'ai créé une maquette simple de mon projet
-                                                </li>
-                                                <li>
-                                                    Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
-                                                </li>
-                                                <li>
-                                                    Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
-                                                </li>
-                                                <li>
-                                                    Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
-                                                </li>
-                                                <li>
-                                                    Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3>
-                                                Prise de recul
-                                            </h3>
-                                            <p>
-                                                Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
-                                                De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
-                                            </p>
-                                        </div>
-                                    </article>
-
-                                    
+                                    </div>
+                                    <a href="https://www.github.com">
+                                        <button class="btnBas">Voir sur github</button>
+                                    </a>
+                                    <button class="btnBas" onclick="closeForm()">Fermer</button>
                                     
                                 </div>
-                                <a href="https://www.github.com">
-                                    <button class="btnBas">Voir sur github</button>
-                                </a>
-                                <button class="btnBas" onclick="closeForm()">Fermer</button>
-                                
                             </div>
-                            
                         </div>
                     </div>
                     
@@ -1232,97 +1238,97 @@
                                 Découvrir
                             </button>
 
-
-                            <div class="popupForm" id="pop5_1">
-                                <h1 class="topPopup">Puissance 4</h1>
-                                <button onclick="closeForm()" class="croix">x</button>
-                                <div class="centrePopup">
-                                    
-                                    <article class="popGauche">
-                                        <img src="./images/projets/P4.png" alt="photo du projet">
-                                        <div>
-                                            <h3>Description</h3>
-                                            <p>
-                                                Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
-                                                <br>
-                                                Pour y jouer rien de plus simple: <br>
-                                                <ul>
+                            <div class="popeur" id="pop5_1">
+                                <div class="popupForm">
+                                    <h1 class="topPopup">Puissance 4</h1>
+                                    <button onclick="closeForm()" class="croix">x</button>
+                                    <div class="centrePopup">
+                                        
+                                        <article class="popGauche">
+                                            <img src="./images/projets/P4.png" alt="photo du projet">
+                                            <div>
+                                                <h3>Description</h3>
+                                                <p>
+                                                    Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
+                                                    <br>
+                                                    Pour y jouer rien de plus simple: <br>
+                                                    <ul>
+                                                        
+                                                        <li>
+                                                            Q pour aller à gauche
+                                                        </li>
+                                                        <li>
+                                                            D pour aller a droite
+                                                        </li>
+                                                        <li>
+                                                            ESPACE pour placer le pion
+                                                        </li>
+                                                    </ul>
+                                                    <br>
                                                     
+                                                </p>
+                                            </div>
+                                            
+                                            
+                                        </article>
+                                        
+                                        <hr>
+
+                                        <article class="popDroite">
+                                            <div>
+                                                <h3>Compétences utilisées</h3>
+                                                <p>
+                                                    Compétences techniques
+                                                </p>
+                                                <ul>
+                                                    <li>C</li>
+                                                    <li>DOXYGEN</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h3>Réalisation</h3>
+                                                <p>
+                                                    J'ai effectué ce projet individuellement et en étapes successives:
+                                                </p>
+                                                <ul>
                                                     <li>
-                                                        Q pour aller à gauche
+                                                        Pour commencer, j'ai créé une maquette simple de mon projet
                                                     </li>
                                                     <li>
-                                                        D pour aller a droite
+                                                        Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
                                                     </li>
                                                     <li>
-                                                        ESPACE pour placer le pion
+                                                        Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
+                                                    </li>
+                                                    <li>
+                                                        Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
+                                                    </li>
+                                                    <li>
+                                                        Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
                                                     </li>
                                                 </ul>
-                                                <br>
-                                                
-                                            </p>
-                                        </div>
+                                            </div>
+                                            <div>
+                                                <h3>
+                                                    Prise de recul
+                                                </h3>
+                                                <p>
+                                                    Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
+                                                    De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
+                                                </p>
+                                            </div>
+                                        </article>
+
                                         
                                         
-                                    </article>
-                                    
-                                    <hr>
-
-                                    <article class="popDroite">
-                                        <div>
-                                            <h3>Compétences utilisées</h3>
-                                            <p>
-                                                Compétences techniques
-                                            </p>
-                                            <ul>
-                                                <li>C</li>
-                                                <li>DOXYGEN</li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3>Réalisation</h3>
-                                            <p>
-                                                J'ai effectué ce projet individuellement et en étapes successives:
-                                            </p>
-                                            <ul>
-                                                <li>
-                                                    Pour commencer, j'ai créé une maquette simple de mon projet
-                                                </li>
-                                                <li>
-                                                    Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
-                                                </li>
-                                                <li>
-                                                    Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
-                                                </li>
-                                                <li>
-                                                    Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
-                                                </li>
-                                                <li>
-                                                    Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3>
-                                                Prise de recul
-                                            </h3>
-                                            <p>
-                                                Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
-                                                De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
-                                            </p>
-                                        </div>
-                                    </article>
-
-                                    
+                                    </div>
+                                    <a href="https://www.github.com">
+                                        <button class="btnBas">Voir sur github</button>
+                                    </a>
+                                    <button class="btnBas" onclick="closeForm()">Fermer</button>
                                     
                                 </div>
-                                <a href="https://www.github.com">
-                                    <button class="btnBas">Voir sur github</button>
-                                </a>
-                                <button class="btnBas" onclick="closeForm()">Fermer</button>
-                                
                             </div>
-                            
                         </div>
                     </div>
 
@@ -1355,97 +1361,97 @@
                                 Découvrir
                             </button>
 
-
-                            <div class="popupForm" id="pop5_2">
-                                <h1 class="topPopup">Logiciel de gestion d'hotel</h1>
-                                <button onclick="closeForm()" class="croix">x</button>
-                                <div class="centrePopup">
-                                    
-                                    <article class="popGauche">
-                                        <img src="./images/projets/P4.png" alt="photo du projet">
-                                        <div>
-                                            <h3>Description</h3>
-                                            <p>
-                                                Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
-                                                <br>
-                                                Pour y jouer rien de plus simple: <br>
-                                                <ul>
+                            <div class="popeur" id="pop5_2">
+                                <div class="popupForm">
+                                    <h1 class="topPopup">Logiciel de gestion d'hotel</h1>
+                                    <button onclick="closeForm()" class="croix">x</button>
+                                    <div class="centrePopup">
+                                        
+                                        <article class="popGauche">
+                                            <img src="./images/projets/P4.png" alt="photo du projet">
+                                            <div>
+                                                <h3>Description</h3>
+                                                <p>
+                                                    Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
+                                                    <br>
+                                                    Pour y jouer rien de plus simple: <br>
+                                                    <ul>
+                                                        
+                                                        <li>
+                                                            Q pour aller à gauche
+                                                        </li>
+                                                        <li>
+                                                            D pour aller a droite
+                                                        </li>
+                                                        <li>
+                                                            ESPACE pour placer le pion
+                                                        </li>
+                                                    </ul>
+                                                    <br>
                                                     
+                                                </p>
+                                            </div>
+                                            
+                                            
+                                        </article>
+                                        
+                                        <hr>
+
+                                        <article class="popDroite">
+                                            <div>
+                                                <h3>Compétences utilisées</h3>
+                                                <p>
+                                                    Compétences techniques
+                                                </p>
+                                                <ul>
+                                                    <li>C</li>
+                                                    <li>DOXYGEN</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h3>Réalisation</h3>
+                                                <p>
+                                                    J'ai effectué ce projet individuellement et en étapes successives:
+                                                </p>
+                                                <ul>
                                                     <li>
-                                                        Q pour aller à gauche
+                                                        Pour commencer, j'ai créé une maquette simple de mon projet
                                                     </li>
                                                     <li>
-                                                        D pour aller a droite
+                                                        Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
                                                     </li>
                                                     <li>
-                                                        ESPACE pour placer le pion
+                                                        Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
+                                                    </li>
+                                                    <li>
+                                                        Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
+                                                    </li>
+                                                    <li>
+                                                        Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
                                                     </li>
                                                 </ul>
-                                                <br>
-                                                
-                                            </p>
-                                        </div>
+                                            </div>
+                                            <div>
+                                                <h3>
+                                                    Prise de recul
+                                                </h3>
+                                                <p>
+                                                    Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
+                                                    De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
+                                                </p>
+                                            </div>
+                                        </article>
+
                                         
                                         
-                                    </article>
-                                    
-                                    <hr>
-
-                                    <article class="popDroite">
-                                        <div>
-                                            <h3>Compétences utilisées</h3>
-                                            <p>
-                                                Compétences techniques
-                                            </p>
-                                            <ul>
-                                                <li>C</li>
-                                                <li>DOXYGEN</li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3>Réalisation</h3>
-                                            <p>
-                                                J'ai effectué ce projet individuellement et en étapes successives:
-                                            </p>
-                                            <ul>
-                                                <li>
-                                                    Pour commencer, j'ai créé une maquette simple de mon projet
-                                                </li>
-                                                <li>
-                                                    Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
-                                                </li>
-                                                <li>
-                                                    Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
-                                                </li>
-                                                <li>
-                                                    Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
-                                                </li>
-                                                <li>
-                                                    Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3>
-                                                Prise de recul
-                                            </h3>
-                                            <p>
-                                                Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
-                                                De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
-                                            </p>
-                                        </div>
-                                    </article>
-
-                                    
+                                    </div>
+                                    <a href="https://www.github.com">
+                                        <button class="btnBas">Voir sur github</button>
+                                    </a>
+                                    <button class="btnBas" onclick="closeForm()">Fermer</button>
                                     
                                 </div>
-                                <a href="https://www.github.com">
-                                    <button class="btnBas">Voir sur github</button>
-                                </a>
-                                <button class="btnBas" onclick="closeForm()">Fermer</button>
-                                
                             </div>
-                            
                         </div>
                     </div>
                     
@@ -1486,97 +1492,97 @@
                                 Découvrir
                             </button>
 
-
-                            <div class="popupForm" id="po6_1">
-                                <h1 class="topPopup">Puissance 4</h1>
-                                <button onclick="closeForm()" class="croix">x</button>
-                                <div class="centrePopup">
-                                    
-                                    <article class="popGauche">
-                                        <img src="./images/projets/P4.png" alt="photo du projet">
-                                        <div>
-                                            <h3>Description</h3>
-                                            <p>
-                                                Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
-                                                <br>
-                                                Pour y jouer rien de plus simple: <br>
-                                                <ul>
+                            <div class="popeur" id="po6_1">
+                                <div class="popupForm">
+                                    <h1 class="topPopup">Puissance 4</h1>
+                                    <button onclick="closeForm()" class="croix">x</button>
+                                    <div class="centrePopup">
+                                        
+                                        <article class="popGauche">
+                                            <img src="./images/projets/P4.png" alt="photo du projet">
+                                            <div>
+                                                <h3>Description</h3>
+                                                <p>
+                                                    Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
+                                                    <br>
+                                                    Pour y jouer rien de plus simple: <br>
+                                                    <ul>
+                                                        
+                                                        <li>
+                                                            Q pour aller à gauche
+                                                        </li>
+                                                        <li>
+                                                            D pour aller a droite
+                                                        </li>
+                                                        <li>
+                                                            ESPACE pour placer le pion
+                                                        </li>
+                                                    </ul>
+                                                    <br>
                                                     
+                                                </p>
+                                            </div>
+                                            
+                                            
+                                        </article>
+                                        
+                                        <hr>
+
+                                        <article class="popDroite">
+                                            <div>
+                                                <h3>Compétences utilisées</h3>
+                                                <p>
+                                                    Compétences techniques
+                                                </p>
+                                                <ul>
+                                                    <li>C</li>
+                                                    <li>DOXYGEN</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h3>Réalisation</h3>
+                                                <p>
+                                                    J'ai effectué ce projet individuellement et en étapes successives:
+                                                </p>
+                                                <ul>
                                                     <li>
-                                                        Q pour aller à gauche
+                                                        Pour commencer, j'ai créé une maquette simple de mon projet
                                                     </li>
                                                     <li>
-                                                        D pour aller a droite
+                                                        Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
                                                     </li>
                                                     <li>
-                                                        ESPACE pour placer le pion
+                                                        Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
+                                                    </li>
+                                                    <li>
+                                                        Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
+                                                    </li>
+                                                    <li>
+                                                        Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
                                                     </li>
                                                 </ul>
-                                                <br>
-                                                
-                                            </p>
-                                        </div>
+                                            </div>
+                                            <div>
+                                                <h3>
+                                                    Prise de recul
+                                                </h3>
+                                                <p>
+                                                    Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
+                                                    De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
+                                                </p>
+                                            </div>
+                                        </article>
+
                                         
                                         
-                                    </article>
-                                    
-                                    <hr>
-
-                                    <article class="popDroite">
-                                        <div>
-                                            <h3>Compétences utilisées</h3>
-                                            <p>
-                                                Compétences techniques
-                                            </p>
-                                            <ul>
-                                                <li>C</li>
-                                                <li>DOXYGEN</li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3>Réalisation</h3>
-                                            <p>
-                                                J'ai effectué ce projet individuellement et en étapes successives:
-                                            </p>
-                                            <ul>
-                                                <li>
-                                                    Pour commencer, j'ai créé une maquette simple de mon projet
-                                                </li>
-                                                <li>
-                                                    Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
-                                                </li>
-                                                <li>
-                                                    Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
-                                                </li>
-                                                <li>
-                                                    Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
-                                                </li>
-                                                <li>
-                                                    Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3>
-                                                Prise de recul
-                                            </h3>
-                                            <p>
-                                                Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
-                                                De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
-                                            </p>
-                                        </div>
-                                    </article>
-
-                                    
+                                    </div>
+                                    <a href="https://www.github.com">
+                                        <button class="btnBas">Voir sur github</button>
+                                    </a>
+                                    <button class="btnBas" onclick="closeForm()">Fermer</button>
                                     
                                 </div>
-                                <a href="https://www.github.com">
-                                    <button class="btnBas">Voir sur github</button>
-                                </a>
-                                <button class="btnBas" onclick="closeForm()">Fermer</button>
-                                
                             </div>
-                            
                         </div>
                     </div>
 
@@ -1609,97 +1615,97 @@
                                 Découvrir
                             </button>
 
-
-                            <div class="popupForm" id="pop6_2">
-                                <h1 class="topPopup">Logiciel de gestion d'hotel</h1>
-                                <button onclick="closeForm()" class="croix">x</button>
-                                <div class="centrePopup">
-                                    
-                                    <article class="popGauche">
-                                        <img src="./images/projets/P4.png" alt="photo du projet">
-                                        <div>
-                                            <h3>Description</h3>
-                                            <p>
-                                                Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
-                                                <br>
-                                                Pour y jouer rien de plus simple: <br>
-                                                <ul>
+                            <div class="popeur" id="pop6_2"></div>
+                                <div class="popupForm">
+                                    <h1 class="topPopup">Logiciel de gestion d'hotel</h1>
+                                    <button onclick="closeForm()" class="croix">x</button>
+                                    <div class="centrePopup">
+                                        
+                                        <article class="popGauche">
+                                            <img src="./images/projets/P4.png" alt="photo du projet">
+                                            <div>
+                                                <h3>Description</h3>
+                                                <p>
+                                                    Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
+                                                    <br>
+                                                    Pour y jouer rien de plus simple: <br>
+                                                    <ul>
+                                                        
+                                                        <li>
+                                                            Q pour aller à gauche
+                                                        </li>
+                                                        <li>
+                                                            D pour aller a droite
+                                                        </li>
+                                                        <li>
+                                                            ESPACE pour placer le pion
+                                                        </li>
+                                                    </ul>
+                                                    <br>
                                                     
+                                                </p>
+                                            </div>
+                                            
+                                            
+                                        </article>
+                                        
+                                        <hr>
+
+                                        <article class="popDroite">
+                                            <div>
+                                                <h3>Compétences utilisées</h3>
+                                                <p>
+                                                    Compétences techniques
+                                                </p>
+                                                <ul>
+                                                    <li>C</li>
+                                                    <li>DOXYGEN</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h3>Réalisation</h3>
+                                                <p>
+                                                    J'ai effectué ce projet individuellement et en étapes successives:
+                                                </p>
+                                                <ul>
                                                     <li>
-                                                        Q pour aller à gauche
+                                                        Pour commencer, j'ai créé une maquette simple de mon projet
                                                     </li>
                                                     <li>
-                                                        D pour aller a droite
+                                                        Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
                                                     </li>
                                                     <li>
-                                                        ESPACE pour placer le pion
+                                                        Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
+                                                    </li>
+                                                    <li>
+                                                        Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
+                                                    </li>
+                                                    <li>
+                                                        Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
                                                     </li>
                                                 </ul>
-                                                <br>
-                                                
-                                            </p>
-                                        </div>
+                                            </div>
+                                            <div>
+                                                <h3>
+                                                    Prise de recul
+                                                </h3>
+                                                <p>
+                                                    Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
+                                                    De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
+                                                </p>
+                                            </div>
+                                        </article>
+
                                         
                                         
-                                    </article>
-                                    
-                                    <hr>
-
-                                    <article class="popDroite">
-                                        <div>
-                                            <h3>Compétences utilisées</h3>
-                                            <p>
-                                                Compétences techniques
-                                            </p>
-                                            <ul>
-                                                <li>C</li>
-                                                <li>DOXYGEN</li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3>Réalisation</h3>
-                                            <p>
-                                                J'ai effectué ce projet individuellement et en étapes successives:
-                                            </p>
-                                            <ul>
-                                                <li>
-                                                    Pour commencer, j'ai créé une maquette simple de mon projet
-                                                </li>
-                                                <li>
-                                                    Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
-                                                </li>
-                                                <li>
-                                                    Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
-                                                </li>
-                                                <li>
-                                                    Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
-                                                </li>
-                                                <li>
-                                                    Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3>
-                                                Prise de recul
-                                            </h3>
-                                            <p>
-                                                Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
-                                                De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
-                                            </p>
-                                        </div>
-                                    </article>
-
-                                    
+                                    </div>
+                                    <a href="https://www.github.com">
+                                        <button class="btnBas">Voir sur github</button>
+                                    </a>
+                                    <button class="btnBas" onclick="closeForm()">Fermer</button>
                                     
                                 </div>
-                                <a href="https://www.github.com">
-                                    <button class="btnBas">Voir sur github</button>
-                                </a>
-                                <button class="btnBas" onclick="closeForm()">Fermer</button>
-                                
                             </div>
-                            
                         </div>
                     </div>
                     
