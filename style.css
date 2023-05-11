@@ -5,6 +5,7 @@
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
+    border: none;
     
     --charte1_1 : #BDD9F2;
     --charte1_2 : #0597F2;
@@ -12,11 +13,11 @@
     --charte1_4 : #05AFF2;
     --charte1_5 : #D8EBF2;
 
-    --charte2_1 : #022340;
-    --charte2_2 : #0788D9;
-    --charte2_3 : #0568A6;
-    --charte2_4 : #07B2D9;
-    --charte2_5 : #07D9D9;
+    --charte2_1 : #0597F2;
+    --charte2_2 : #D9B504;
+    --charte2_3 : #BF3604;
+    --charte2_4 : #F2490C;
+    --charte2_5 : #0D0D0D;
 
      
 
@@ -51,6 +52,8 @@ header
     display: flex;
     align-items: center;
     justify-content: center;
+
+    display: none;
 }
 header>nav
 {
@@ -79,16 +82,17 @@ header>nav>a
     justify-content: flex-start;
     background-image: url(images/fonds/fond_header.jpg);
     
+    backdrop-filter: blur(15px);
+    /* filter: blur(1); */
     background-size: cover;
 }
-
 
 #couverture>article
 {
     padding: 3px 20px;
     border-radius: 20px;
     text-align: center;
-    
+     backdrop-filter: blur(15px);
 }
 #couverture>article>h1
 {
@@ -109,17 +113,21 @@ header>nav>a
     left: 50%;
     transform: translate(-50%);
     padding: 10px 20px; 
-    background-color: var(--charte1_2);
-    color: white;
+    background-color: var(--charte2_1);
+    color: var(--charte2_5);
     font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s;
 }
 #couverture>a>button:hover
 {
-    color: black;
-    background-color: var(--charte1_3);
+    color: white;
+    background-color: var(--charte2_5);
     padding: 15px 30px; 
     top: 69.5%;
     border-radius: 15px;
+    
 }
 
 
@@ -167,7 +175,7 @@ header>nav>a
 #aPropos>article>div>p>a
 {
     font-size: 1.1em;
-    color: var(--charte1_2);
+    color: var(--charte2_3);
     text-decoration: underline;
 }
 
@@ -175,8 +183,9 @@ header>nav>a
 /* actuellement*/
 #actuellement
 {
-    background-image: url(./images/fonds/fond_ciel.jpg);
+    background-image: url(./images/fonds/fond_actuellment.jpg);
     background-attachment: fixed;
+    background-size: cover;
     width: 100%;
     height: 400px;
 }
@@ -187,19 +196,21 @@ header>nav>a
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-shadow: 2px 0 0 white, 2px 2px 0 white, 0 2px 0 white, -2px 2px 0 white, -2px 0 0 white, -2px -2px 0 white, 0 -2px 0 white, 2px -2px 0 white;
+    
 }
 
 #actuellement>article>h2
 {
     font-size: 2em;
     margin-bottom: 80px;
+    color: white;
 }
 #actuellement>article>p
 {
     font-size: 1.5em;
     line-height: 50px;
     text-align: center;
+    color: white;
 }
 
 
@@ -257,13 +268,11 @@ header>nav>a
 #mesComp>progress
 {
     width: 100%;
-    /*background-color: var(--charte1_5);
-    border-radius: 100px;*/
     height: 10px;
 } 
 #mesComp>progress::-moz-progress-bar
 {
-    background-color: var(--charte1_2);
+    background-color: var(--charte2_5);
 } 
 
 #cv
@@ -337,16 +346,15 @@ header>nav>a
 {
     display: flex;
     justify-content: space-between;
-    width: 90%;
-    margin: 80px 5%;
+    width: 80%;
+    margin: 80px 10%;
     padding: 10px 20px;
-    background-color: var(--charte1_4);
-    border-radius: 35px;
+    background-color: var(--charte2_5);
     
 }
 .btnNav
 {
-    background-color: var(--charte1_1);
+    background-color: var(--charte2_4);
     
     height: 40px;
     list-style: none;
@@ -365,7 +373,11 @@ header>nav>a
     margin: 30px 0;
 }
 
-
+#btnNav1
+{
+    color: var(--charte2_4);
+    background: var(--charte2_5);
+}
 .comp
 {
     display: none;
@@ -382,11 +394,7 @@ header>nav>a
 {
     display: flex;
 }
-#btnNav1
-{
-    color: white;
-    background: black;
-}
+
 
 
 .comp>div
@@ -441,7 +449,7 @@ header>nav>a
 
 
 
-button
+.comp button
 {
     background-color: var(--charte1_2);
     color: white;
@@ -453,7 +461,7 @@ button
     transition: 0.3s;
 }
 
-button:hover
+.comp button:hover
 {
     background-color: white;
     color: black;
@@ -560,11 +568,11 @@ button:hover
 
 
 
-ul, ol
+/* ul, ol
 {
     margin-left: 20px;
     text-align: left;
-}
+} */
 
 .btnBas
 {
