@@ -18,6 +18,8 @@
     --charte2_4 : #07B2D9;
     --charte2_5 : #07D9D9;
 
+     
+
 }
 
 body>div
@@ -32,141 +34,289 @@ body>div
     transform: translate(-50%, -95%);
 
 }
-/* @media screen and (min-width:1000px) { */
+
+
 
 /**************
-    HEADER
+    HEADER 
+
 **************/
-header>a>section
+header
 {
-    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 15%;
+    transform: translate(-15%);
+    height: 80px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(images/fonds/fond_ciel.jpg);
-    
-    background-size: cover;
 }
-
-#PPheader
+header>nav
 {
-    border-radius: 100%;
-    width: 300px;
-    margin-bottom: 20px;
+    border: 1px white solid;
 }
-
-#PPheader:hover
+header>nav>a
 {
-    width: 350px;
+    color: white;
+    font-size: 2em;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
-
-header>a>section>div
-{
-    padding: 3px 20px;
-    border-radius: 20px;
-    text-align: center;
-    font-size: 18px;
-}
-
-
 
 
 /**************
     MAIN
 **************/
 
-#sec1
+/*couverture*/
+#couverture
 {
     height: 100vh;
-    background-color: var(--charte1_5);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: flex-start;
+    background-image: url(images/fonds/fond_header.jpg);
+    
+    background-size: cover;
 }
 
 
-#infos
+#couverture>article
 {
-    display: flex;
-    width: 80%;
-    align-items: center;
-    justify-content: stretch;
-    margin-bottom: 20px;
-}
-
-#PPmain
-{
-    border-radius: 100%;
-    height: 250px;
-}
-#infos>div
-{
-    display: flex;
-    background-color: var(--charte1_1);
-    width: 100%;
+    padding: 3px 20px;
     border-radius: 20px;
-    height: 250px;
-    padding: 10px;
-    margin-left: 10px;
+    text-align: center;
+    
 }
-#infos>div>div
+#couverture>article>h1
 {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+    color: white;
+    font-size: 40px;
+    margin: 10px 60px;
 }
-#competences
+#couverture>article>h2
 {
-    padding-left: 2%;
+    color: white;
+    font-size: 24px;
+    margin: 10px 60px;
 }
-#competences>div
+#couverture>a>button
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: ;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px 20px; 
+    background-color: var(--charte1_2);
+    color: white;
+    font-size: 24px;
 }
-#competences>div>figure
+#couverture>a>button:hover
 {
-    padding-right: 20px;
-}
-
-
-
-#infos>div>div>p
-{
-    line-height: 25px;
-    text-align: left;
-    margin-left: 30px;
-    height: 50%;
-}
-#infos>div>div>p>a
-{
-    line-height: 10px;
-    margin-left: 10px;
-}
-
-.icones
-{
-     margin-left: -25px;
-    width: 15px;
-}
-.icones_comp
-{
-    height: 35px;
-    width: 35px;
-}
-
-
-
-#presentation
-{
+    color: black;
     background-color: var(--charte1_3);
-    padding: 20px 2%;
-    width: 76%;
-    border-radius: 20px;
+    padding: 15px 30px; 
+    top: 69.5%;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+/* A propos*/
+
+#aPropos
+{
+    background-color: white;
+    width: 100%
+}
+#aPropos>article
+{
+    width: 40%;
+    padding: 100px 30%;
+    display: flex;
+    flex-direction: column;
+}
+#aPropos>article>h2
+{
+    text-align: center;
+    font-size: 2em;
+}
+#aPropos>article>div
+{
+    margin-top: 50px;
+    display: flex;
+}
+#aPropos>article>div>img
+{
+    width: 200px;
+    object-fit: contain;
+    
+}
+#aPropos>article>div>p
+{
+    padding-left: 20px;
+    text-align: justify;
     line-height: 25px;
+    font-size: 1em;
+}
+#aPropos>article>div>p>a
+{
+    font-size: 1.1em;
+    color: var(--charte1_2);
+    text-decoration: underline;
+}
+
+
+/* actuellement*/
+#actuellement
+{
+    background-image: url(./images/fonds/fond_ciel.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+}
+#actuellement>article
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 0 0 white, 2px 2px 0 white, 0 2px 0 white, -2px 2px 0 white, -2px 0 0 white, -2px -2px 0 white, 0 -2px 0 white, 2px -2px 0 white;
+}
+
+#actuellement>article>h2
+{
+    font-size: 2em;
+    margin-bottom: 80px;
+}
+#actuellement>article>p
+{
+    font-size: 1.5em;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+
+
+/* competences*/
+
+#mesCompetences
+{
+   background-color: white;
+   display: flex;
+   width: 100%;
+   padding-top: 150px;
+}
+
+#mesComp
+{
+    width: 30%;
+    margin: 0 10%;
+    margin-bottom: 30px;
+}
+
+
+#titreComp
+{
+    width: 450px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: -100px ;
+}
+
+#titreComp>h1
+{
+    font-size: 2.2em;
+    text-align: center;
+}
+#titreComp>p
+{
+    text-align: center;
+    font-size: 1em;
+}
+
+#mesComp>h2
+{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+#mesComp>h3
+{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+#mesComp>progress
+{
+    width: 100%;
+    /*background-color: var(--charte1_5);
+    border-radius: 100px;*/
+    height: 10px;
+} 
+#mesComp>progress::-moz-progress-bar
+{
+    background-color: var(--charte1_2);
+} 
+
+#cv
+{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#cv>img
+{
+   width: 60%;
+   height: 600px;
+   object-fit: contain;
+}
+#cv>a
+{
+    width: 150px;
+    margin: 30px 0;
+}
+
+
+/*citation*/
+#citation
+{
+    background-image: u;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(./images/fonds/fond_noir.jpg);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#citation>article
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#citation>article>q
+{
+    color: white;
+    line-height: 25px;
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+#citation>article>p
+{
+    color: lightgray;
+    margin-top: 15px;
+    font-size: 1.5em;
 }
 
 
@@ -176,78 +326,83 @@ header>a>section>div
 
 #projets
 {
-    background-color: var(--charte1_5);
+    background-color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 30px;
 }
 #projets>nav
 {
     display: flex;
     justify-content: space-between;
     width: 90%;
-    margin: 0px 5%;
-    padding: 10px;
+    margin: 80px 5%;
+    padding: 10px 20px;
     background-color: var(--charte1_4);
     border-radius: 35px;
     
 }
-#projets>nav>button
+.btnNav
 {
     background-color: var(--charte1_1);
-    width: 10%;
+    
     height: 40px;
     list-style: none;
     border-radius: 25px;
-    font-size: 14px;
+    font-size: 1.2em;
     color: black;
 }
 
-#projets>nav>button:active
+.btnNav:active
 {
     color: white;
 }
 
 #projets>h2
 {
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 
-#compVide
-{
-    height: 600px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .comp
 {
-    /* display: flex; */
     display: none;
     
     flex-direction: column;
     align-items: center;
 
-    margin-top: 50px;
     width: 80%;
+    height: 700px;
     background-color: var(--charte1_3);
     border-radius: 30px;
 }
+#comp1
+{
+    display: flex;
+}
+#btnNav1
+{
+    color: white;
+    background: black;
+}
+
 
 .comp>div
 {
     display: flex;
     justify-content: stretch;
+    align-items: center;
     margin: 25px;
     width: 80%;
 }
-.comp>div>a>img
+.comp>div>img
 {
     width: 200px;
     height: 200px;
     border-radius: 100%;
+    margin-right: 15px;
 }
 .comp>div>div
 {
@@ -261,29 +416,30 @@ header>a>section>div
     width: 90%;
     margin: 10px 5%;
 }
-.liens
+.compInfo
 {
     display: flex;
-    justify-content: space-between;
     width: 90%;
     margin: 15px 5%;
 }
-.comp>div>div>div>strong>a
+.compInfo>p
 {
-    text-decoration: underline;
-    color: var(--charte1_2);
-
+    text-align: left;
+    width: 30%;
+}
+.compInfo>p:first-child
+{
+    margin-right: 40%;
+}
+.comp>div>div>button
+{
+    margin: 20px;
 }
 
 
-footer
-{
-    padding-top: 30px;
-    text-align: center;
-    background-color: var(--charte1_5);
-}
 
-/* } */
+
+
 
 button
 {
@@ -299,7 +455,7 @@ button
 
 button:hover
 {
-    background-color: var(--charte1_4);
+    background-color: white;
     color: black;
 }
 
@@ -313,21 +469,35 @@ button:hover
 
 
 
-
-
-.popupForm
+.popeur
 {
     display: none;
     /* display: flex; */
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: var(--charte1_4);
 
+    align-items: center;
+    justify-content: center;
     position: fixed;
     top:  50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100vmax;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popupForm
+{
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--charte1_4);
+/* 
+    position: fixed;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
 
     margin: 0;
     padding: 20px;
@@ -346,7 +516,7 @@ button:hover
 
 .croix
 {
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 10px;
 }
@@ -393,6 +563,7 @@ button:hover
 ul, ol
 {
     margin-left: 20px;
+    text-align: left;
 }
 
 .btnBas
@@ -420,3 +591,16 @@ ul, ol
     font-size: 1em;
 }
 
+
+/******************
+       Footer
+******************/
+
+
+
+footer
+{
+    padding-top: 30px;
+    text-align: center;
+    background-color: var(--charte1_5);
+}
