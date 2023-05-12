@@ -1,9 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap');
 *
 {
     padding: 0;
     margin: 0;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
+    /* font-family: 'IBM Plex Sans', sans-serif; */
     color: black;
     border: none;
     
@@ -14,7 +17,7 @@
     --charte1_5 : #D8EBF2;
 
     --charte2_1 : #0597F2;
-    --charte2_2 : #D9B504;
+    --charte2_2 : #c8c7c7;
     --charte2_3 : #BF3604;
     --charte2_4 : #F2490C;
     --charte2_5 : #0D0D0D;
@@ -22,7 +25,6 @@
      
 
 }
-
 body>div
 {
     font-size: 28px;
@@ -82,7 +84,7 @@ header>nav>a
     justify-content: flex-start;
     background-image: url(images/fonds/fond_header.jpg);
     
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(1px);
     /* filter: blur(1); */
     background-size: cover;
 }
@@ -92,7 +94,8 @@ header>nav>a
     padding: 3px 20px;
     border-radius: 20px;
     text-align: center;
-     backdrop-filter: blur(15px);
+    /* background-size: 100%; */
+    /* backdrop-filter: blur(15px); */
 }
 #couverture>article>h1
 {
@@ -113,17 +116,20 @@ header>nav>a
     left: 50%;
     transform: translate(-50%);
     padding: 10px 20px; 
-    background-color: var(--charte2_1);
-    color: var(--charte2_5);
+    color: white;
+    background-color: black;
+    /* border: solid 2px white; */
+
     font-size: 24px;
-    border: none;
+    
     border-radius: 5px;
     transition: 0.2s;
 }
 #couverture>a>button:hover
 {
-    color: white;
-    background-color: var(--charte2_5);
+    background-color: white;
+    color: black;
+    border: solid 2px black;
     padding: 15px 30px; 
     top: 69.5%;
     border-radius: 15px;
@@ -153,6 +159,7 @@ header>nav>a
 {
     text-align: center;
     font-size: 2em;
+    color: var(--charte2_3);
 }
 #aPropos>article>div
 {
@@ -203,7 +210,7 @@ header>nav>a
 {
     font-size: 2em;
     margin-bottom: 80px;
-    color: white;
+    color: var(--charte2_4);
 }
 #actuellement>article>p
 {
@@ -247,6 +254,7 @@ header>nav>a
 {
     font-size: 2.2em;
     text-align: center;
+    color: var(--charte2_3);
 }
 #titreComp>p
 {
@@ -269,6 +277,7 @@ header>nav>a
 {
     width: 100%;
     height: 10px;
+    background-color: var(--charte2_2);
 } 
 #mesComp>progress::-moz-progress-bar
 {
@@ -289,10 +298,25 @@ header>nav>a
    height: 600px;
    object-fit: contain;
 }
-#cv>a
+#cv>a>button
 {
-    width: 150px;
-    margin: 30px 0;
+    margin-top: 30px;
+    color: var(--charte2_5);
+    background-color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.3s;
+    border: solid 2px black;
+}
+
+#cv>a>button:hover
+{
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
 }
 
 
@@ -344,23 +368,20 @@ header>nav>a
 }
 #projets>nav
 {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 80px 10%;
-    padding: 10px 20px;
+    margin: 80px 0 50px 0;
     background-color: var(--charte2_5);
-    
+    border-radius: 20px;
 }
 .btnNav
 {
-    background-color: var(--charte2_4);
-    
+    background-color: black;
+    width: 150px;
     height: 40px;
     list-style: none;
-    border-radius: 25px;
+    /* border-radius: 25px; */
     font-size: 1.2em;
-    color: black;
+    color: var(--charte2_4);
+    border: solid 2px black;
 }
 
 .btnNav:active
@@ -371,13 +392,28 @@ header>nav>a
 #projets>h2
 {
     margin: 30px 0;
+    color: var(--charte2_3);
 }
 
 #btnNav1
 {
-    color: var(--charte2_4);
-    background: var(--charte2_5);
+    color: black;
+    background: white;
+    border-radius: 20px 0 0 20px;
+
 }
+
+#btnNav6
+{
+    border-radius: 0 20px 20px 0;
+
+}
+
+
+
+
+
+
 .comp
 {
     display: none;
@@ -386,16 +422,27 @@ header>nav>a
     align-items: center;
 
     width: 80%;
-    height: 700px;
-    background-color: var(--charte1_3);
+    /* height: 700px; */
+    /* background-color: var(--charte2_5); */
     border-radius: 30px;
 }
 #comp1
 {
     display: flex;
 }
-
-
+.comp *
+{
+    color: black;/*couleur du haut*/
+}
+.comp>h2
+{
+    color: var(--charte2_3);
+}
+.comp>p
+{
+    margin-bottom: 50px;
+    
+}
 
 .comp>div
 {
@@ -404,17 +451,25 @@ header>nav>a
     align-items: center;
     margin: 25px;
     width: 80%;
+    background-color: var(--charte2_5);
+    border-radius: 50px;
+    padding: 20px;
+}
+.comp>div *
+{
+    color: white;
 }
 .comp>div>img
 {
     width: 200px;
     height: 200px;
-    border-radius: 100%;
+    border-radius: 50px;
+    border: 3px solid var(--charte2_4);
     margin-right: 15px;
 }
 .comp>div>div
 {
-    background-color: var(--charte1_1);
+    /* background-color: var(--charte2_5); */
     border-radius: 20px;
     width: 80%;
 }
@@ -424,34 +479,41 @@ header>nav>a
     width: 90%;
     margin: 10px 5%;
 }
+.comp>div>div>h3
+{
+    color: var(--charte2_4);
+    font-size: 1.5em;
+}
 .compInfo
 {
     display: flex;
     width: 90%;
     margin: 15px 5%;
 }
+
 .compInfo>p
 {
     text-align: left;
     width: 30%;
 }
+.compInfo strong
+{
+    color: var(--charte2_4);
+}
 .compInfo>p:first-child
 {
     margin-right: 40%;
 }
-.comp>div>div>button
+
+
+
+
+
+
+
+.comp>button
 {
-    margin: 20px;
-}
-
-
-
-
-
-
-.comp button
-{
-    background-color: var(--charte1_2);
+    background-color: var(--charte2_4);
     color: white;
     padding: 10px 15px;
     border: none;
@@ -459,9 +521,10 @@ header>nav>a
     cursor: pointer;
     font-size: 1em;
     transition: 0.3s;
+    margin: -80px 0 20px 0;
 }
 
-.comp button:hover
+.comp>div>div>button:hover
 {
     background-color: white;
     color: black;
@@ -500,7 +563,8 @@ header>nav>a
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-color: var(--charte1_4);
+    background-color: var(--charte2_5);
+    /* backdrop-filter: blur(15px); */
 /* 
     position: fixed;
     top:  50%;
@@ -510,7 +574,7 @@ header>nav>a
     margin: 0;
     padding: 20px;
     width: 760px;
-    height: 710px;
+    height: 620px;
 
     border: solid black 1px;
     border-radius: 10px;
@@ -524,6 +588,15 @@ header>nav>a
 
 .croix
 {
+    background-color: var(--charte2_4);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.3s;
+
     position: fixed;
     top: 10px;
     right: 10px;
@@ -533,8 +606,8 @@ header>nav>a
     display: flex;
     margin-top: 20px;
     width: 760px;
-    height: 600px;
-    background-color: var(--charte1_1);
+    height: 500px;
+    background-color: white;
     border-radius: 20px;
 }
 
@@ -554,7 +627,7 @@ header>nav>a
 {
     width: 100%;
     margin: 15px 0;
-    border: solid 3px var(--charte1_4);
+    border: solid 3px var(--charte2_4);
     border-radius: 15px;
 }
 
@@ -568,38 +641,44 @@ header>nav>a
 
 
 
-/* ul, ol
-{
-    margin-left: 20px;
-    text-align: left;
-} */
 
-.btnBas
-{
-    margin: 7px;
-    margin-bottom: -2px;
-    width: 760px;
-}
+
+
 .popDroite>div
 {
     margin: 20px 0;
 }
 
-.popDroite>div>h3
+.popDroite>div>h3, .popGauche>div>h3
 {
     font-size: 1.2em;
     font-weight: bold;
     margin: 5px 0;
     text-align: start;
+    color: var(--charte2_3);
 }
 
 
-.popDroite>div>ul>li, .popDroite>div>p
+.popDroite>div>ul>li, .popDroite>div>p, .popGauche>div>p, .popGauche>div>ul>li
 {
-    font-size: 1em;
+    font-size: 0.9em;
+    color: black;
 }
 
-
+.btnBas
+{
+    background-color: var(--charte2_4);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.3s;
+    margin: 7px;
+    margin-bottom: -2px;
+    width: 760px;
+}
 /******************
        Footer
 ******************/
@@ -610,5 +689,5 @@ footer
 {
     padding-top: 30px;
     text-align: center;
-    background-color: var(--charte1_5);
+    background-color: white;
 }
