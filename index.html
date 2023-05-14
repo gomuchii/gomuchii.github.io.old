@@ -65,7 +65,7 @@
             <section id="actuellement">
                 <article>
                     <h2>
-                        Actuellement : 
+                        Actuellement
                     </h2>
                     <p>
                         Etudiant en 1ère année de BUT Informatique <br>
@@ -173,6 +173,7 @@
                     <button id="btnNav4" class="btnNav" onclick="openComp('comp4', 'btnNav4')">Compétence 4</button>
                     <button id="btnNav5" class="btnNav" onclick="openComp('comp5', 'btnNav5')">Compétence 5</button>
                     <button id="btnNav6" class="btnNav" onclick="openComp('comp6', 'btnNav6')">Compétence 6</button>
+                    <button id="btnNavPerso" class="btnNav" onclick="openComp('compPerso', 'btnNavPerso')">Perso</button>
                 </nav>
 
 
@@ -188,19 +189,23 @@
                         Développer des applications informatiques simples
                     </p>
                     <div>
-                        <img src="images/projets/P4.png" alt="image de puissance 4">
-                        <div>
+                        <div class="descProj">
                             <h3>
                                 Puissance 4
                             </h3>
-                            <p>
-                                Elaboration d'un Puissance 4 executable et jouable dans un terminal. <br>
-                                Ce jeu pouvait etre joué à 2, chacun son tour, directement dans le même terminal. <br>
-                                
-                            </p>
+                            
+                            <div class="desc">
+                                <img src="images/projets/P4.png" alt="image de puissance 4">
+                                <p>
+                                    Elaboration d'un Puissance 4 executable et jouable dans un terminal. <br>
+                                    Ce jeu pouvait etre joué à 2, chacun son tour, directement dans le même terminal. <br>
+                                    
+                                </p>
+                            </div>
                             <div class="compInfo">
                                 <p>
                                     <strong>Etat:</strong> Fini<br>
+                                    <br>
                                     <br>
                                     <strong>Date:</strong> Novembre 2022
                                 </p>
@@ -212,122 +217,30 @@
                                 
                                 
                             </div>
-                            
-
-                            <div class="popeur" id="pop1_1">
-                                <div class="popupForm" >
-                                    <h1 class="topPopup">Puissance 4</h1>
-                                    <button onclick="closeForm()" class="croix">x</button>
-                                    <div class="centrePopup">
-                                        
-                                        <article class="popGauche">
-                                            <img src="./images/projets/P4.png" alt="photo du projet">
-                                            <div>
-                                                <h3>Description</h3>
-                                                <p>
-                                                    Voici mon premier projet au sein de mon BUT Informatique. Il s'agit d'un jeu de puissance 4 développé en C et jouable à 2 dans un même terminal (de préférence sous linux). <br>
-                                                    <br>
-                                                    Pour y jouer rien de plus simple: <br>
-                                                    <ul>
-                                                        
-                                                        <li>
-                                                            Q pour aller à gauche
-                                                        </li>
-                                                        <li>
-                                                            D pour aller a droite
-                                                        </li>
-                                                        <li>
-                                                            ESPACE pour placer le pion
-                                                        </li>
-                                                    </ul>
-                                                    <br>
-                                                    
-                                                </p>
-                                            </div>
-                                            
-                                            
-                                        </article>
-                                        
-                                        <hr>
-
-                                        <article class="popDroite">
-                                            <div>
-                                                <h3>Compétences utilisées</h3>
-                                                <p>
-                                                    Compétences techniques
-                                                </p>
-                                                <ul>
-                                                    <li>C</li>
-                                                    <li>DOXYGEN</li>
-                                                </ul>
-                                            </div>
-                                            <div>
-                                                <h3>Réalisation</h3>
-                                                <p>
-                                                    J'ai effectué ce projet individuellement et en étapes successives:
-                                                </p>
-                                                <ul>
-                                                    <li>
-                                                        Pour commencer, j'ai créé une maquette simple de mon projet
-                                                    </li>
-                                                    <li>
-                                                        Ensuite, j'ai rédigé un cahier de tests, avec les resultats attendus.
-                                                    </li>
-                                                    <li>
-                                                        Puis, j'ai écris un algorithme en pseudo-code  et l'ai décomposé en fonctions.
-                                                    </li>
-                                                    <li>
-                                                        Par la suite, j'ai programmé le puissance 4 en C, rédigé la documentation DOXYGEN et réglé les bugs.
-                                                    </li>
-                                                    <li>
-                                                        Et pour finir, j'ai complété le cahier de tests en fournissant les traces d'execution.
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div>
-                                                <h3>
-                                                    Prise de recul
-                                                </h3>
-                                                <p>
-                                                    Ce projet, étant mon premier, m'a permis de découvrir la programmation logicielle. Il m'a permis de mettre au clair mes connaissances et de les aplliquer sur un projet concret. <br>
-                                                    De plus, il m'a permis de découvir comment se déroulait un projet et comment le documenter.
-                                                </p>
-                                            </div>
-                                        </article>
-
-                                        
-                                        
-                                    </div>
-                                    <a href="https://www.github.com">
-                                        <button class="btnBas">Voir sur github</button>
-                                    </a>
-                                    <button class="btnBas" onclick="closeForm()">Fermer</button>
-                                    
-                                </div>
-                            </div>
-                            
-                            
+                                
+                            <button onclick="openForm('pop1_1')">
+                                Découvrir
+                            </button>
                         </div>
                         
-                    </div>
-                    <button onclick="openForm('pop1_1')">
-                        Découvrir
-                    </button>
 
-                    <div>
-                        <img src="images/projets/hotel.PNG" alt="logo de l'hotel">
-                        <div>
+
+                        <div class="descProj">
                             <h3>
                                 Logiciel de gestion d'un hotel
                             </h3>
-                            <p>
-                                Création d'un logiciel de gestion d'un hotel, avec son interface en JavaFX. <br>
-                                Ce logiciel est desiné à n'etre utilisé que par le personel de l'hotel<br>
-                                
-                            </p>
+                            
+                            <div class="desc">
+                                <img src="images/projets/hotel.PNG" alt="logo de l'hotel">
+                                <p>
+                                    Création d'un logiciel de gestion d'un hotel, avec son interface en JavaFX. <br>
+                                    Ce logiciel est desiné à n'etre utilisé que par le personel de l'hotel<br>
+                                </p>
+                            </div>
                             <div class="compInfo">
                                 <p>
                                     <strong>Etat:</strong> En cours<br>
+                                    <br>
                                     <br>
                                     <strong>Date:</strong> mai 2023
                                 </p>
@@ -335,104 +248,20 @@
                                     <strong>Nb de personnes:</strong> 4 <br>
                                     <br>  
                                     <strong>Langages:</strong>  JAVA, JavaFX
-                                </p>
-                                
-                                
+                                </p>   
                             </div>
                             <button onclick="openForm('pop1_2')">
                                 Découvrir
                             </button>
 
-                            <div class="popeur" id="pop1_2">
-                                <div class="popupForm" >
-                                    <h1 class="topPopup">Logiciel de gestion d'hotel</h1>
-                                    <button onclick="closeForm()" class="croix">x</button>
-                                    <div class="centrePopup">
-                                        
-                                        <article class="popGauche">
-                                            <img src="./images/projets/hotel.PNG" alt="photo du projet">
-                                            <div>
-                                                <h3>Description</h3>
-                                                <p>
-                                                    Ce projet consiste à créer un logiciel pour aider le personel d'un hotel à le gerer. <br>
-                                                    <br>
-                                                    L'apllication devait avoir une interface et des fonctionnalitées différentes pour les différents secteurs de l'hotel:<br>
-                                                    <ul>
-                                                        <li>
-                                                            Le bar
-                                                        </li>
-                                                        <li>
-                                                            La réception
-                                                        </li>
-                                                        <li>
-                                                            La gérance
-                                                        </li>
-                                                    </ul>
-                                                    <br>
-                                                    
-                                                </p>
-                                            </div>
-                                            
-                                            
-                                        </article>
-                                        
-                                        <hr>
-
-                                        <article class="popDroite">
-                                            <div>
-                                                <h3>Compétences utilisées</h3>
-                                                <p>
-                                                    Compétences techniques
-                                                </p>
-                                                <ul>
-                                                    <li>Java</li>
-                                                    <li>JavaFX</li>
-                                                </ul>
-                                            </div>
-                                            <div>
-                                                <h3>Réalisation</h3>
-                                                <p>
-                                                    En cours...
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                </p>
-                                            </div>
-                                            <div>
-                                                <h3>
-                                                    Prise de recul
-                                                </h3>
-                                                <p>
-                                                    En cours... 
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                </p>
-                                            </div>
-                                        </article>
-
-                                        
-                                        
-                                    </div>
-                                    <a href="https://www.github.com">
-                                        <button class="btnBas">Voir sur github</button>
-                                    </a>
-                                    <button class="btnBas" onclick="closeForm()">Fermer</button>
-                                    
-                                </div>
-                            </div>
                             
+                                
+                                
                             
                         </div>
                     </div>
+                    
+                    
                     
                 </article>
 

@@ -1,12 +1,15 @@
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
 *
 {
     padding: 0;
     margin: 0;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     /* font-family: 'IBM Plex Sans', sans-serif; */
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Figtree', sans-serif;
     color: black;
     border: none;
     
@@ -35,7 +38,7 @@ body>div
     top:  5%;
     left: 50%;
     transform: translate(-50%, -95%);
-
+    z-index: 5;
 }
 
 
@@ -84,7 +87,7 @@ header>nav>a
     justify-content: flex-start;
     background-image: url(images/fonds/fond_header.jpg);
     
-    backdrop-filter: blur(1px);
+    /* backdrop-filter: blur(1px); */
     /* filter: blur(1); */
     background-size: cover;
 }
@@ -129,9 +132,9 @@ header>nav>a
 {
     background-color: white;
     color: black;
-    border: solid 2px black;
-    padding: 15px 30px; 
-    top: 69.5%;
+    /* border: solid 2px black; */
+    /* padding: 15px 30px; */
+    top: 70%;
     border-radius: 15px;
     
 }
@@ -150,8 +153,8 @@ header>nav>a
 }
 #aPropos>article
 {
-    width: 40%;
-    padding: 100px 30%;
+    width: 45%;
+    padding: 50px 30%;
     display: flex;
     flex-direction: column;
 }
@@ -159,7 +162,7 @@ header>nav>a
 {
     text-align: center;
     font-size: 2em;
-    color: var(--charte2_3);
+    color: black;
 }
 #aPropos>article>div
 {
@@ -174,7 +177,7 @@ header>nav>a
 }
 #aPropos>article>div>p
 {
-    padding-left: 20px;
+    padding-left: 50px;
     text-align: justify;
     line-height: 25px;
     font-size: 1em;
@@ -208,9 +211,10 @@ header>nav>a
 
 #actuellement>article>h2
 {
-    font-size: 2em;
-    margin-bottom: 80px;
-    color: var(--charte2_4);
+    font-size: 2.2em;
+    font-weight: 900;
+    margin-bottom: 50px;
+    color: white;
 }
 #actuellement>article>p
 {
@@ -237,7 +241,7 @@ header>nav>a
 {
     width: 30%;
     margin: 0 10%;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 
@@ -254,7 +258,7 @@ header>nav>a
 {
     font-size: 2.2em;
     text-align: center;
-    color: var(--charte2_3);
+    color: black;
 }
 #titreComp>p
 {
@@ -316,7 +320,7 @@ header>nav>a
 {
     background-color: black;
     color: white;
-    padding: 15px 20px;
+    /* padding: 15px 20px; */
 }
 
 
@@ -326,7 +330,7 @@ header>nav>a
     background-image: u;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(./images/fonds/fond_noir.jpg);
     width: 100%;
-    height: 300px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -368,20 +372,24 @@ header>nav>a
 }
 #projets>nav
 {
-    margin: 80px 0 50px 0;
+    margin: 80px 0 20px 0;
     background-color: var(--charte2_5);
     border-radius: 20px;
+    border-spacing: none;
 }
 .btnNav
 {
-    background-color: black;
+    background-color: white;
     width: 150px;
     height: 40px;
     list-style: none;
+    margin: 0;
+
     /* border-radius: 25px; */
     font-size: 1.2em;
-    color: var(--charte2_4);
+    color: black;
     border: solid 2px black;
+    
 }
 
 .btnNav:active
@@ -391,23 +399,18 @@ header>nav>a
 
 #projets>h2
 {
-    margin: 30px 0;
-    color: var(--charte2_3);
+    margin: 20px 0;
+    color: black;
 }
 
 #btnNav1
 {
-    color: black;
-    background: white;
-    border-radius: 20px 0 0 20px;
-
+    color: white;
+    background: black;
+    border-radius: 20px;
 }
 
-#btnNav6
-{
-    border-radius: 0 20px 20px 0;
 
-}
 
 
 
@@ -421,69 +424,79 @@ header>nav>a
     flex-direction: column;
     align-items: center;
 
-    width: 80%;
-    /* height: 700px; */
-    /* background-color: var(--charte2_5); */
-    border-radius: 30px;
+    width: 100%;
+    margin-top: 50px;
 }
 #comp1
 {
     display: flex;
 }
+
+
 .comp *
 {
     color: black;/*couleur du haut*/
 }
 .comp>h2
 {
-    color: var(--charte2_3);
+    color: black;
 }
 .comp>p
 {
-    margin-bottom: 50px;
-    
+    margin-bottom: 20px;
 }
 
 .comp>div
 {
     display: flex;
-    justify-content: stretch;
-    align-items: center;
+    justify-content: center;
+
     margin: 25px;
-    width: 80%;
-    background-color: var(--charte2_5);
-    border-radius: 50px;
-    padding: 20px;
+    width: 100%;
 }
-.comp>div *
+
+.descProj
 {
-    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    /* border:solid 1px var(--charte2_5); */
+    padding: 30px;
+    width: 30%;
+    margin: 0 5%;
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px;
+
 }
-.comp>div>img
+.descProj>h3
 {
-    width: 200px;
-    height: 200px;
-    border-radius: 50px;
-    border: 3px solid var(--charte2_4);
-    margin-right: 15px;
+    color: black;
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
-.comp>div>div
+
+
+.desc
 {
-    /* background-color: var(--charte2_5); */
-    border-radius: 20px;
-    width: 80%;
+    display: flex;
+    align-items: center;
 }
-.comp>div>div>p
+.desc>img
+{
+    width: 46%;
+    object-fit: contain;
+    border-radius: 25px;
+    border: 4px solid var(--charte2_4);
+    margin: 10px 2%;
+}
+
+.desc>p
 {
     text-align: justify;
-    width: 90%;
-    margin: 10px 5%;
+    width: 46%;
+    margin: 10px 2%;
 }
-.comp>div>div>h3
-{
-    color: var(--charte2_4);
-    font-size: 1.5em;
-}
+
 .compInfo
 {
     display: flex;
@@ -494,15 +507,15 @@ header>nav>a
 .compInfo>p
 {
     text-align: left;
-    width: 30%;
+    width: 40%;
 }
 .compInfo strong
 {
-    color: var(--charte2_4);
+    color:black;
 }
 .compInfo>p:first-child
 {
-    margin-right: 40%;
+    margin-right: 20%;
 }
 
 
@@ -511,23 +524,25 @@ header>nav>a
 
 
 
-.comp>button
+.descProj>button
 {
     background-color: var(--charte2_4);
     color: white;
     padding: 10px 15px;
+    width: 120px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
     transition: 0.3s;
-    margin: -80px 0 20px 0;
+    margin: 10px 0 20px 0;
 }
 
 .comp>div>div>button:hover
 {
     background-color: white;
     color: black;
+    border: 1px solid black;
 }
 
 
@@ -573,7 +588,7 @@ header>nav>a
 
     margin: 0;
     padding: 20px;
-    width: 760px;
+    width: 620px;
     height: 620px;
 
     border: solid black 1px;
@@ -605,10 +620,11 @@ header>nav>a
 {
     display: flex;
     margin-top: 20px;
-    width: 760px;
-    height: 500px;
+    width: 600px;
+    height: 470px;
     background-color: white;
     border-radius: 20px;
+    padding: 15px;
 }
 
 /* .popupForm>div::-webkit-scrollbar
@@ -623,12 +639,10 @@ header>nav>a
     margin: 0 3%;
     font-size: 1em;
 }
-.popGauche>img
+
+.popGauche>div
 {
-    width: 100%;
-    margin: 15px 0;
-    border: solid 3px var(--charte2_4);
-    border-radius: 15px;
+    height: 300px;
 }
 
 .popDroite
@@ -646,16 +660,21 @@ header>nav>a
 
 .popDroite>div
 {
-    margin: 20px 0;
-}
+    margin: 0;
+    height: 300px;
 
+}
+.pti
+{
+    height: 200px;
+}
 .popDroite>div>h3, .popGauche>div>h3
 {
     font-size: 1.2em;
     font-weight: bold;
     margin: 5px 0;
     text-align: start;
-    color: var(--charte2_3);
+    color: var(--charte2_4);
 }
 
 
@@ -677,7 +696,7 @@ header>nav>a
     transition: 0.3s;
     margin: 7px;
     margin-bottom: -2px;
-    width: 760px;
+    width: 610px;
 }
 /******************
        Footer
