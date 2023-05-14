@@ -1,7 +1,14 @@
+document.getElementById('aPropos').addEventListener('click', e => {
+    // e.preventDefault();
+    // smooth scroll
+    document.getElementById('projets').scrollTo({top: 1, behavior: 'smooth'});
+  });
 function openComp(comp, num) {
-    document.getElementById("comp1").style.display = "none";
-    document.getElementById("btnNav1").style.background = "var(--charte1_1)";
-    document.getElementById("btnNav1").style.color = "black"
+
+    
+    // document.getElementById('projets').scrollTo({top: 175, behavior: 'smooth'});
+    // document.location.href='#projets'
+
 
     var compAFermer = document.getElementsByClassName("comp");
     for (let index = 0; index < compAFermer.length; index++) {
@@ -16,11 +23,15 @@ function openComp(comp, num) {
         {
             btn[i].style.color = "white";
             btn[i].style.background = "black";
+            btn[i].style.borderRadius = "20px";
         }
         else
         {
             btn[i].style.color = "black";
-            btn[i].style.background = "var(--charte1_1)";
+            btn[i].style.background = "white";
+            btn[i].style.borderRadius = "0px";
+            // btn[i].style.margin = "0px";
+            
         }
     }
 }
