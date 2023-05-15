@@ -1,13 +1,9 @@
-document.getElementById('aPropos').addEventListener('click', e => {
-    // e.preventDefault();
-    // smooth scroll
-    document.getElementById('projets').scrollTo({top: 1, behavior: 'smooth'});
-  });
+
 function openComp(comp, num) {
 
     
-    // document.getElementById('projets').scrollTo({top: 175, behavior: 'smooth'});
-    // document.location.href='#projets'
+    
+    
 
 
     var compAFermer = document.getElementsByClassName("comp");
@@ -34,6 +30,7 @@ function openComp(comp, num) {
             
         }
     }
+    document.location.href='#nav'
 }
 
 function openForm(lapop) {
