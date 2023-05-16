@@ -153,12 +153,16 @@ header>nav>a
 #aPropos
 {
     background-color: white;
-    width: 100%
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #aPropos>article
 {
-    width: 45%;
-    padding: 50px 27.5%;
+    width: 50%;
+    max-width: 800px;
+    padding: 50px 0;
     display: flex;
     flex-direction: column;
 }
@@ -172,11 +176,13 @@ header>nav>a
 {
     margin-top: 50px;
     display: flex;
+    width: 100%;
 }
 #aPropos>article>div>img
 {
-    width: 200px;
-    object-fit: contain;
+    width: 50%;
+    border-radius: 25px;
+    border: 4px solid var(--charte2_4);
     
 }
 #aPropos>article>div>p
@@ -185,6 +191,7 @@ header>nav>a
     text-align: justify;
     line-height: 25px;
     font-size: 1em;
+    width: 80%;
 }
 #aPropos>article>div>p>a
 {
@@ -281,13 +288,23 @@ header>nav>a
     font-size: 1.1em;
     font-weight: bold;
 }
-#mesComp>progress
+.barre
+{
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+.barre>img
+{
+    width: 40px;
+}
+.barre>progress
 {
     width: 100%;
     height: 10px;
     background-color: var(--charte2_2);
 } 
-#mesComp>progress::-moz-progress-bar
+.barre>progress::-moz-progress-bar
 {
     background-color: var(--charte2_5);
 } 
@@ -303,7 +320,6 @@ header>nav>a
 #cv>img
 {
    width: 60%;
-   height: 600px;
    object-fit: contain;
 }
 #cv>a>button
@@ -332,12 +348,13 @@ header>nav>a
 #citation
 {
     background-image: u;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(./images/fonds/fond_noir.jpg);
+    background: url(./images/fonds/fond_noir.jpg);
     width: 100%;
     height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-attachment:fixed;
 }
 #citation>article
 {
@@ -349,15 +366,17 @@ header>nav>a
 {
     color: white;
     line-height: 25px;
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-style: italic;
+    font-weight: bold;
 }
 
 #citation>article>p
 {
-    color: lightgray;
+    color: white;
     margin-top: 15px;
-    font-size: 1.5em;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 
@@ -463,8 +482,8 @@ header>nav>a
     align-items: center ;
     /* border:solid 1px var(--charte2_5); */
     padding: 30px 30px 80px 30px;
-    width: 30%;
-    margin: 0 5%;
+    width: 35%;
+    margin: 0 2%;
     background-color: rgb(231, 231, 231);
     border-radius: 10px;
 
