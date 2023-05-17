@@ -176,27 +176,28 @@ header>nav>a
 {
     margin-top: 50px;
     display: flex;
+    align-items: center ;
     width: 100%;
 }
 #aPropos>article>div>img
 {
-    width: 50%;
+    width: 200px;
+    height: 200px;
     border-radius: 25px;
     border: 4px solid var(--charte2_4);
     
 }
 #aPropos>article>div>p
 {
-    padding-left: 50px;
+    padding-left: 70px;
     text-align: justify;
     line-height: 25px;
     font-size: 1em;
-    width: 80%;
 }
 #aPropos>article>div>p>a
 {
     font-size: 1.1em;
-    color: var(--charte2_3);
+    color: var(--charte2_4);
     text-decoration: underline;
 }
 
@@ -225,7 +226,7 @@ header>nav>a
     font-size: 2.2em;
     font-weight: 900;
     margin-bottom: 50px;
-    color: white;
+    color: var(--charte2_4);
 }
 #actuellement>article>p
 {
@@ -244,70 +245,81 @@ header>nav>a
 {
    background-color: white;
    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
    width: 100%;
    padding-top: 150px;
 }
 
-#mesComp
-{
-    width: 30%;
-    margin: 0 10%;
-    margin-bottom: 50px;
-}
 
 
-#titreComp
-{
-    width: 450px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    margin-top: -100px ;
-}
-
-#titreComp>h1
+#mesCompetences>h1
 {
     font-size: 2.2em;
     text-align: center;
     color: black;
 }
-#titreComp>p
+#mesCompetences>p
 {
     text-align: center;
     font-size: 1em;
 }
 
-#mesComp>h2
+#artComp
 {
-    text-align: center;
-    font-size: 1.5em;
-    margin: 10px 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
-#mesComp>h3
+
+#mesComp
 {
-    font-size: 1.1em;
-    font-weight: bold;
+    width: 50%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.barre
+
+
+#FrontEnd
+{
+    
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.barres
 {
     display: flex;
     align-items: center;
-    margin: 5px 0;
+    justify-content: center;
 }
-.barre>img
+
+.barreComp
+{
+    width: 100px;
+    height: 40px;
+    background-color: #0597F2;
+    display: flex;
+    justify-content: center;
+}
+
+.barreComp>img
 {
     width: 40px;
 }
-.barre>progress
-{
-    width: 100%;
-    height: 10px;
-    background-color: var(--charte2_2);
-} 
-.barre>progress::-moz-progress-bar
-{
-    background-color: var(--charte2_5);
-} 
+
+
+
+
+
+
+
 
 #cv
 {
@@ -354,7 +366,7 @@ header>nav>a
     display: flex;
     align-items: center;
     justify-content: center;
-    background-attachment:fixed;
+    /* background-attachment:fixed; */
 }
 #citation>article
 {
@@ -373,7 +385,7 @@ header>nav>a
 
 #citation>article>p
 {
-    color: white;
+    color: var(--charte2_4);
     margin-top: 15px;
     font-size: 2em;
     font-weight: bold;
@@ -463,6 +475,7 @@ header>nav>a
 {
     font-size: 20px;
     margin-bottom: 20px;
+    color: var(--charte2_4);
 }
 
 .comp>div
