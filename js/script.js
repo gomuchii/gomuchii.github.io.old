@@ -29,6 +29,29 @@ function openComp(comp, num) {
     document.location.href='#nav'
 }
 
+var barre = document.getElementsByClassName("barreComp");
+for (let i = 0; i < barre.length; i++) {
+    barre[i].style.width = "100px"
+    barre[i].addEventListener("mouseout", function(event)
+    {
+        var enfants = barre[i].children;
+        enfants[0].style.display = "block";
+        enfants[1].style.display = "none";
+        barre[i].style.width = "80px"
+    });
+    barre[i].addEventListener("mouseover", function(event)
+    {
+        var enfants = barre[i].children;
+        enfants[0].style.display = "none";
+        enfants[1].style.display = "inline";
+        barre[i].style.width = "150px";
+    });
+    
+
+    
+}
+
+
 // function openForm(lapop) {
 //     var pop = document.getElementsByClassName("popeur");
 //     for (var index = 0; index < pop.length; index++) {

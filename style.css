@@ -307,11 +307,18 @@ header>nav>a
     background-color: #0597F2;
     display: flex;
     justify-content: center;
+    align-items: center;
+    border: solid 1px black;
 }
 
 .barreComp>img
 {
     width: 40px;
+    object-fit: contain;
+}
+.barreComp>p
+{
+    display: none;
 }
 
 
