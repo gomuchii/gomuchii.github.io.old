@@ -28,28 +28,116 @@ function openComp(comp, num) {
     }
     document.location.href='#nav'
 }
+// document.getElementById("Front-end").addEventListener("mouseover", function(event)
+// {
+//     enfants = event.target.children;
+//     enfants[0].style.display = "block";
+//     enfants[2].style.display = "block";
+// });
 
-var barre = document.getElementsByClassName("barreComp");
-for (let i = 0; i < barre.length; i++) {
-    barre[i].style.width = "100px"
-    barre[i].addEventListener("mouseout", function(event)
-    {
-        var enfants = barre[i].children;
-        enfants[0].style.display = "block";
-        enfants[1].style.display = "none";
-        barre[i].style.width = "80px"
-    });
-    barre[i].addEventListener("mouseover", function(event)
-    {
-        var enfants = barre[i].children;
-        enfants[0].style.display = "none";
-        enfants[1].style.display = "inline";
-        barre[i].style.width = "150px";
-    });
+
+
+
+
+document.getElementById("imgFront").addEventListener("mouseover", function(event)
+{
+    // event.target.parentNode.style.background = "orange";
+    var enfants = event.target.parentNode.children;
+    // enfants[0].style.color = "white";
+    // enfants[2].style.color = "white";
+    enfants[0].style.transition = "0.5s";
+    enfants[0].style.transform = "translate(0%)";
+    enfants[2].style.transition = "0.5s";
+    enfants[2].style.transform = "translate(0%)";
+    // setTimeout(2000);
+    //  event.target.parentNode.style.background = "orange";
+    // for (let i of enfants[0].children) {
+    //     for (let j of i.children) {
+    //         j.style.color = "black";
+    //     }
+    // }
+});
+document.getElementById("imgFront").addEventListener("mouseout", function(event)
+{
+    // event.target.parentNode.style.background = "green";
+    var enfants = event.target.parentNode.children;
+    // enfants[0].style.color = "white";
+    // enfants[2].style.color = "white";
+    enfants[0].style.transition = "0.5s";
+    enfants[0].style.transform = "translate(150%) scale(0.3)";
+    enfants[2].style.transition = "0.5s";
+    enfants[2].style.transform = "translate(-150%) scale(0.3)";
+    // enfants[0].style.transform = "scale(0.5)";
+    // sleep(20);
+    //  event.target.parentNode.style.background = "green";
+    
+    // for (let i of enfants[0].children) {
+    //     for (let j of i.children) {
+    //         j.style.color = "white";
+    //     }
+    // }
+});
+
+document.getElementById("imgBack").addEventListener("mouseover", function(event)
+{
+    var enfants = event.target.parentNode.children;
+    enfants[0].style.transition = "0.5s";
+    enfants[0].style.transform = "translate(0%)";
+    enfants[2].style.transition = "0.5s";
+    enfants[2].style.transform = "translate(0%)";
+});
+document.getElementById("imgBack").addEventListener("mouseout", function(event)
+{
+    var enfants = event.target.parentNode.children;
+    enfants[0].style.transition = "0.5s";
+    enfants[0].style.transform = "translate(150%) scale(0.3)";
+    enfants[2].style.transition = "0.5s";
+    enfants[2].style.transform = "translate(-150%) scale(0.3)";
+    
+});
+
+document.getElementById("imgSys").addEventListener("mouseover", function(event)
+{
+    var enfants = event.target.parentNode.children;
+    enfants[0].style.transition = "0.5s";
+    enfants[0].style.transform = "translate(0%)";
+    enfants[2].style.transition = "0.5s";
+    enfants[2].style.transform = "translate(0%)";
+});
+document.getElementById("imgSys").addEventListener("mouseout", function(event)
+{
+    var enfants = event.target.parentNode.children;
+    enfants[0].style.transition = "0.5s";
+    enfants[0].style.transform = "translate(150%) scale(0.3)";
+    enfants[2].style.transition = "0.5s";
+    enfants[2].style.transform = "translate(-150%) scale(0.3)";
+    
+});
+
+
+
+// var barre = document.getElementsByClassName("barreComp");
+// for (let i = 0; i < barre.length; i++) {
+//     barre[i].addEventListener("mouseout", function(event)
+//     {
+//         var enfants = barre[i].children;
+//         enfants[0].style.display = "block";
+//         enfants[1].style.display = "none";
+//         barre[i].style.width = "25%"
+//         enfants[1].style.color = "black";
+//     });
+//     barre[i].addEventListener("mouseover", function(event)
+//     {
+//         var enfants = barre[i].children;
+//         enfants[0].style.display = "none";
+//         enfants[1].style.display = "inline";
+//         barre[i].style.width = "35%";
+//         enfants[1].style.color = "var(--charte2_4)";
+//     });
     
 
     
-}
+// }
 
 
 // function openForm(lapop) {

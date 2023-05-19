@@ -12,7 +12,7 @@ html
     text-decoration: none;
     /* font-family: Arial, Helvetica, sans-serif; */
     /* font-family: 'IBM Plex Sans', sans-serif; */
-    font-family: 'Cabin', sans-serif;
+    /* font-family: 'Cabin', sans-serif; */
     font-family: 'Figtree', sans-serif;
     color: black;
     border: none;
@@ -264,103 +264,93 @@ header>nav>a
 {
     text-align: center;
     font-size: 1em;
-}
-
-#artComp
-{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-#mesComp
-{
-    width: 50%;
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-#FrontEnd
-{
     
+}
+
+#artComp1
+{
     display: flex;
     width: 100%;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
-.barres
+
+#Front-end, #Back-end, #System
 {
+    width: 40%;
+    margin: 50px 2% 50px 2%;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
-.barreComp
+#Back-end>img, #Front-end>img, #System>img
 {
-    width: 100px;
-    height: 40px;
-    background-color: #0597F2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 1px black;
-}
-
-.barreComp>img
-{
-    width: 40px;
-    object-fit: contain;
-}
-.barreComp>p
-{
-    display: none;
-}
-
-
-
-
-
-
-
-
-#cv
-{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-#cv>img
-{
-   width: 60%;
-   object-fit: contain;
-}
-#cv>a>button
-{
-    margin-top: 30px;
-    color: var(--charte2_5);
-    background-color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
+    width: 40%;
     cursor: pointer;
-    font-size: 1em;
-    transition: 0.3s;
-    border: solid 2px black;
+    transition: transform 1s;
+    z-index: 5;
+    background-color: white;
+    border: 6px solid var(--charte2_4);
+    padding: 1px;
+    border-radius: 100%;
 }
 
-#cv>a>button:hover
+
+
+.premDiv
 {
-    background-color: black;
-    color: white;
-    /* padding: 15px 20px; */
+    width: 35%;
+    margin: 0 5% 0 0;
+    transform: translate(150%) scale(0.3); 
 }
+.secDiv
+{
+    width: 35%;
+    margin: 0 0 0 5%;
+    transform: translate(-150%) scale(0.3);
+}
+
+#Front-end>div>ul, #Back-end>div>ul, #System>div>ul
+{
+    list-style: none;
+}
+.secDiv>ul>li
+{
+    line-height: 3em;
+    font-size: 2em;
+    text-align: left;
+}
+.premDiv>ul>li
+{
+    line-height: 3em;
+    font-size: 2em;
+    text-align: right;
+}
+
+.haut
+{
+    transform: rotate(10deg);
+}
+.bas
+{
+    transform: rotate(-10deg);
+}
+
+#artComp2
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
 
 
 /*citation*/
@@ -369,9 +359,10 @@ header>nav>a
     background-image: u;
     background: url(./images/fonds/fond_noir.jpg);
     width: 100%;
-    height: 250px;
+    height: 300px;
     display: flex;
     align-items: center;
+    justify-content: center;
     justify-content: center;
     /* background-attachment:fixed; */
 }
@@ -380,6 +371,8 @@ header>nav>a
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 #citation>article>q
 {
@@ -395,6 +388,7 @@ header>nav>a
     color: var(--charte2_4);
     margin-top: 15px;
     font-size: 2em;
+    margin: 30px 0 0 0;
     font-weight: bold;
 }
 
@@ -415,7 +409,7 @@ header>nav>a
 }
 #projets>nav
 {
-    margin: 80px 0 20px 0;
+    padding: 80px 0 20px 0;
     /* background-color: var(--charte2_5); */
     border-radius: 20px;
     border-spacing: none;
