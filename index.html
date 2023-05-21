@@ -15,7 +15,7 @@
             SITE EN CHANTIER
         </div>
 
-        <header>
+        <header id="header">
             <nav>
                 <a href="#couverture">Accueil</a>
                 <a href="#aPropos">Profil</a>
@@ -46,19 +46,29 @@
             <section id="aPropos">
                 <article>
                     <h2>A propos de moi</h2>
-                    <div>
+                    <div id="presentation">
                         <img src="./images/114.jpg" alt="">
                         
                         
                         <p>
-                            Bonjour, moi c'est Yoann, ravi de vous voir ici! <br>
+                            Bonjour, moi c'est Yoann, ravi de vous voir ici ! <br>
                             <br>
                             Passionné de la programmation depuis mes 15 ans, je me suis formé par moi-même grâce à OpenClassroom, puis j'ai intégré un BUT Informatique après mon baccalauréat général en 2022. <br>
-                            J'ai effectué de nombreux <a href="#projets">projets</a>, qu'ils soient personels ou en lien avec mes études, ce qui m'a peu à peu forgé mon niveau actuel. <br>
-                            Lors de ces derniers, j'ai aimé surmonter les difficultés rencontrées ainsi qu'explorer de nombreuses options, faire en sorte que le projet soit completement fini(le travail baclé/abandonné c'est pas pour moi). <br>
+                            J'ai effectué de nombreux <a href="#projets">projets</a>, qu'ils soient personnels ou en lien avec mes études, ce qui m'a peu à peu forgé mon niveau actuel. <br>
+                            Lors de ces derniers, j'ai aimé surmonter les difficultés rencontrées ainsi qu'explorer de nombreuses options, faire en sorte que le projet soit complètement fini afin de pouvoir être fier du résultat. <br>
                         </p>
                     </div>
-                    
+                    <div id="btnPresentation">
+                        <button>
+                            Github
+                        </button>
+                        <button>
+                            CV
+                        </button>
+                        <button>
+                            Linkedin
+                        </button>
+                    </div>
                     
                 </article>
             </section>
@@ -77,9 +87,9 @@
 
 
             <section id="mesCompetences">
-                <h1>
+                <h2>
                     Mes compétences
-                </h1>
+                </h2>
                 <p>
                     Elles évoluent constamment, par la force de ma curiosité et ma soif d'apprendre
                 </p>
@@ -104,8 +114,8 @@
                     <div id="Back-end">
                         <div class="premDiv">
                             <ul>
-                                <li>PHP</li>
-                                <li>SQL</li>
+                                <li class="midhaut">PHP</li>
+                                <li class="midbas">SQL</li>
                             </ul>
                         </div>
                         <img src="./images/comp/serveur.png" alt="" id="imgBack">
@@ -221,15 +231,17 @@
                     <div id="System">
                         <div class="premDiv">
                             <ul>
-                                <li class="haut">HTML</li>
-                                <li>CSS</li>
-                                <li class="bas">JavaScript</li>
+                                <li class="haut">Bash</li>
+                                <li>Docker</li>
+                                <li class="bas">Git</li>
                             </ul>
                         </div>
                         <img src="./images/comp/systeme.png" alt="" id="imgSys">
                         <div class="secDiv">
                             <ul>
-                                <li>JavaFX</li>
+                                <li class="midbas">Batch</li>
+                                <li></li>
+                                <li class="midhaut">VBScript</li>
                             </ul>
                         </div>
                     </div>
@@ -241,9 +253,9 @@
                     <q>
                         Codez toujours comme si la perseonne qui allait maintenir votre<br> code était un violent psychopathe qui sait où vous habitez.
                     </q>
-                    <p>
+                    <h3>
                         John Woods
-                    </p>
+                    </h3>
                 </article>
             </section>
             
@@ -268,9 +280,9 @@
 
                 
                 <article id="comp1" class="comp">
-                    <h2>
+                    <h3>
                         Développer des applications informatiques simples
-                    </h2>
+                    </h3>
                     <div>
                         <div class="descProj">
                             <h3>
@@ -352,9 +364,9 @@
                 </article>
 
                 <article id="comp2" class="comp">
-                    <h2>
+                    <h3>
                         Appréhender et construire des algorythmes
-                    </h2>
+                    </h3>
                     <div>
                         <div class="descProj">
                             <h3>
@@ -371,17 +383,19 @@
                             <div class="compInfo">
                                 <p>
                                     <strong>Etat:</strong> Fini
-                                    <br>
-                                    <br>
-                                    <strong>Date:</strong> Decembre 2022
+                                    
                                 </p>
                                 <p>
-                                    <strong>Nb de personnes:</strong> 2 <br>
-                                    <br>  
+                                    <strong>Nb de personnes:</strong> 2 
+                                    
+                                </p>
+                                <p>
+                                    <strong>Date:</strong> Décembre 2022
+
+                                </p>
+                                <p>
                                     <strong>Langages:</strong>  C
                                 </p>
-                                
-                                
                             </div>
                             <button onclick="openForm('pop2_1')">
                                 Découvrir
@@ -397,7 +411,7 @@
                                 Tour du cavalier
                             </h3>
                             <div class="desc">
-                                <img src="images/projets/P4.png" alt="image de logiciel">
+                                <img src="images/projets/cavalier.png" alt="image de logiciel">
                                 <p>
                                     Algorythme en backtracking, capable de donner, pour nimporte quelle configuration d'echiqier et pour nimporte quelle position de départ du cavalier, un tour du cavalier, s'il existe. <br>
                                 </p>
@@ -406,17 +420,19 @@
                             <div class="compInfo">
                                 <p>
                                     <strong>Etat:</strong> Fini
-                                    <br>
-                                    <br>
-                                    <strong>Date:</strong> Avril 2023
+                                    
                                 </p>
                                 <p>
-                                    <strong>Nb de personnes:</strong> 2 <br>
-                                    <br>  
-                                    <strong>Langages:</strong>  Python
+                                    <strong>Nb de personnes:</strong> 2 
+                                    
                                 </p>
-                                
-                                
+                                <p>
+                                    <strong>Date:</strong> Avril 2023
+
+                                </p>
+                                <p>
+                                    <strong>Langages:</strong> Python
+                                </p>
                             </div>
                             <button onclick="openForm('pop2_2')">
                                 Découvrir
@@ -430,16 +446,16 @@
 
 
                 <article id="comp3" class="comp">
-                    <h2>
+                    <h3>
                         Installer et configurer un poste de travail
-                    </h2>
+                    </h3>
                     <div>
                         <div class="descProj">
                             <h3>
                                 Docker
                             </h3>
                             <div class="desc">
-                                <img src="images/projets/P4.png" alt="image de puissance 4">
+                                <img src="images/projets/docker.png" alt="image de puissance 4">
                                 <p>
                                     Création d'un evironnement de travail similaire sur tout les ordinateurs grace à docker. <br>
                                     Cet environnement permettait de génerer un fichier PDF à partir d'un document texte rempli par l'utilisateur. <br>
@@ -449,17 +465,19 @@
                             <div class="compInfo">
                                 <p>
                                     <strong>Etat:</strong> Fini
-                                    <br>
-                                    <br>
-                                    <strong>Date:</strong> Janvier 20223
+                                    
                                 </p>
                                 <p>
-                                    <strong>Nb de personnes:</strong> 4 <br>
-                                    <br>  
+                                    <strong>Nb de personnes:</strong> 4
+                                    
+                                </p>
+                                <p>
+                                    <strong>Date:</strong> Janvier 2023
+
+                                </p>
+                                <p>
                                     <strong>Langages:</strong> Bash, HTML, CSS, PHP
                                 </p>
-                                
-                                
                             </div>
                             <button onclick="openForm('pop3_1')">
                                 Découvrir
@@ -476,27 +494,28 @@
                             </h3>
 
                             <div class="desc">
-                                <img src="images/projets/P4.png" alt="image de logiciel">
+                                <img src="images/projets/soon.jpg" alt="image de logiciel">
                                 <p>
                                     Création d'un résau privé <br>
                                     
                                 </p>  
                             </div>
-                            
                             <div class="compInfo">
                                 <p>
-                                    <strong>Etat:</strong> pas commencé
-                                    <br>
-                                    <br>
-                                    <strong>Date:</strong> mai 2023
+                                    <strong>Etat:</strong> A venir
+                                    
                                 </p>
                                 <p>
-                                    <strong>Nb de personnes:</strong> ? <br>
-                                    <br>  
-                                    <strong>Langages:</strong>  ?, ?
+                                    <strong>Nb de personnes:</strong> ?
+                                    
                                 </p>
-                                
-                                
+                                <p>
+                                    <strong>Date:</strong> Mai 2023
+
+                                </p>
+                                <p>
+                                    <strong>Langages:</strong> ?
+                                </p>
                             </div>
                             <button onclick="openForm('pop3_2')">
                                 Découvrir
@@ -508,38 +527,38 @@
                     
                 </article>
                 <article id="comp4" class="comp">
-                    <h2>
+                    <h3>
                         Concevoir et mettre en place une base de données à partir d'un cahier des charges client
-                    </h2>
+                    </h3>
                     <div>
                         
                         <div class="descProj">
                             <h3>
-                                Puissance 4
+                                Transmusicales
                             </h3>
                             <div class="desc">
-                                <img src="images/projets/P4.png" alt="image de puissance 4">
+                                <img src="images/projets/transmusicales.png" alt="logo des transmusicales">
                                 <p>
-                                    Elaboration d'un Puissance 4 executable et jouable dans un terminal. <br>
-                                    Ce jeu pouvait etre joué à 2, chacun son tour, directement dans le même terminal. <br>
-                                    
+                                    Elaboration d'une base de donnée pour les transmusicales. <br>
+                                    bla
                                 </p>
                             </div>
-                            
                             <div class="compInfo">
                                 <p>
                                     <strong>Etat:</strong> Fini
-                                    <br>
-                                    <br>
-                                    <strong>Date:</strong> Novembre 2022
+                                    
                                 </p>
                                 <p>
-                                    <strong>Nb de personnes:</strong> 1 <br>
-                                    <br>  
-                                    <strong>Langages:</strong>  C, DOXYGEN
+                                    <strong>Nb de personnes:</strong> 2
+                                    
                                 </p>
-                                
-                                
+                                <p>
+                                    <strong>Date:</strong> Décembre 2022
+
+                                </p>
+                                <p>
+                                    <strong>Langages:</strong>  SQL, UML
+                                </p>
                             </div>
                             <button onclick="openForm('pop4_1')">
                                 Découvrir
@@ -551,30 +570,31 @@
                         
                         <div class="descProj">
                             <h3>
-                                Logiciel de gestion d'un hotel
+                                Parcoursup
                             </h3>
                             <div class="desc">
-                                <img src="images/projets/P4.png" alt="image de logiciel">
+                                <img src="images/projets/parcoursup.jpg" alt="logo de Parcoursup">
                                 <p>
-                                    Logiciel de gestion d'un hotel, avec son interface en JavaFX. <br>
+                                    Création d'une base de données pour Parcoursup. <br>
                                     
                                 </p>
                             </div>
-                            
                             <div class="compInfo">
                                 <p>
                                     <strong>Etat:</strong> En cours
-                                    <br>
-                                    <br>
-                                    <strong>Date:</strong> mai 2023
+                                    
                                 </p>
                                 <p>
-                                    <strong>Nb de personnes:</strong> 4 <br>
-                                    <br>  
-                                    <strong>Langages:</strong>  JAVA, JavaFX
+                                    <strong>Nb de personnes:</strong> 2
+                                    
                                 </p>
-                                
-                                
+                                <p>
+                                    <strong>Date:</strong> Mai 2023
+
+                                </p>
+                                <p>
+                                    <strong>Langages:</strong> SQL, UML
+                                </p>
                             </div>
                             <button onclick="openForm('pop4_2')">
                                 Découvrir
@@ -586,37 +606,39 @@
                     
                 </article>
                 <article id="comp5" class="comp">
-                    <h2>
+                    <h3>
                         Identifier les besoins métiers des clients et des utilisateurs
-                    </h2>
+                    </h3>
                     <div>
                        
                         <div class="descProj">
                             <h3>
-                                Puissance 4
+                                Sport KOH
                             </h3>
                             <div class="desc">
-                                <img src="images/projets/P4.png" alt="image de puissance 4">
+                                <img src="images/projets/logo.png" alt="image de puissance 4" >
                                 <p>
-                                    Elaboration d'un Puissance 4 executable et jouable dans un terminal. <br>
-                                    Ce jeu pouvait etre joué à 2, chacun son tour, directement dans le même terminal. <br>
+                                    Création d'un site vitrine pour l'entreprise fictive Sport KOH.<br>
+                                    Ce site permettait de pouvoir consulter les séjours proposés. <br>
                                     
                                 </p>
                             </div>
                             <div class="compInfo">
                                 <p>
                                     <strong>Etat:</strong> Fini
-                                    <br>
-                                    <br>
-                                    <strong>Date:</strong> Novembre 2022
+                                    
                                 </p>
                                 <p>
-                                    <strong>Nb de personnes:</strong> 1 <br>
-                                    <br>  
-                                    <strong>Langages:</strong>  C, DOXYGEN
+                                    <strong>Nb de personnes:</strong> 4
+                                    
                                 </p>
-                                
-                                
+                                <p>
+                                    <strong>Date:</strong> Novembre 2022
+
+                                </p>
+                                <p>
+                                    <strong>Langages:</strong>  HTML, CSS
+                                </p>
                             </div>
                             <button onclick="openForm('pop5_1')">
                                 Découvrir
@@ -627,29 +649,32 @@
 
                         <div class="descProj">
                             <h3>
-                                Logiciel de gestion d'un hotel
+                                Hotel du cavalier
                             </h3>
                             <div class="desc">
-                                <img src="images/projets/P4.png" alt="image de logiciel">
+                                <img src="images/projets/hotel.PNG" alt="image de logiciel">
                                 <p>
-                                    Logiciel de gestion d'un hotel, avec son interface en JavaFX. <br>
+                                    Gestion du projet de création d'un logiciel de gestion d'hotel. <br>
+                                    Analyse, planification, répartition des taches... <br>
                                     
                                 </p>
                             </div>
                             <div class="compInfo">
                                 <p>
                                     <strong>Etat:</strong> En cours
-                                    <br>
-                                    <br>
-                                    <strong>Date:</strong> mai 2023
+                                    
                                 </p>
                                 <p>
-                                    <strong>Nb de personnes:</strong> 4 <br>
-                                    <br>  
-                                    <strong>Langages:</strong>  JAVA, JavaFX
+                                    <strong>Nb de personnes:</strong> 4
+                                    
                                 </p>
-                                
-                                
+                                <p>
+                                    <strong>Date:</strong> Mai 2023
+
+                                </p>
+                                <p>
+                                    <strong>Langages:</strong>  Aucun
+                                </p>
                             </div>
                             <button onclick="openForm('pop5_2')">
                                 Découvrir
@@ -661,36 +686,37 @@
                     
                 </article>
                 <article id="comp6" class="comp">
-                    <h2>
+                    <h3>
                         Identifier ses aptitudes pour travailler dans une équipe
-                    </h2>
+                    </h3>
                     <div>
                         <div class="descProj">
                             <h3>
-                                Puissance 4
+                                RSE de Heineken
                             </h3>
                             <div class="desc">
-                                <img src="images/projets/P4.png" alt="image de puissance 4">
+                                <img src="images/projets/heineken.png" alt="logo de Heineken">
                                 <p>
-                                    Elaboration d'un Puissance 4 executable et jouable dans un terminal. <br>
-                                    Ce jeu pouvait etre joué à 2, chacun son tour, directement dans le même terminal. <br>
+                                    Etude de la RSE de heineken et tableau des caractéristiques de l'entreprise <br>
                                     
                                 </p>
                             </div>
                             <div class="compInfo">
                                 <p>
                                     <strong>Etat:</strong> Fini
-                                    <br>
-                                    <br>
-                                    <strong>Date:</strong> Novembre 2022
+                                    
                                 </p>
                                 <p>
-                                    <strong>Nb de personnes:</strong> 1 <br>
-                                    <br>  
-                                    <strong>Langages:</strong>  C, DOXYGEN
+                                    <strong>Nb de personnes:</strong> 4
+                                    
                                 </p>
-                                
-                                
+                                <p>
+                                    <strong>Date:</strong> Octobre 2022
+
+                                </p>
+                                <p>
+                                    <strong>Langages:</strong> Aucun
+                                </p>
                             </div>
                             <button onclick="openForm('pop6_1')">
                                 Découvrir
@@ -701,28 +727,30 @@
 
                         <div class="descProj">
                             <h3>
-                                Logiciel de gestion d'un hotel
+                                Team building
                             </h3>
                             <div class="desc">
-                                <img src="images/projets/P4.png" alt="image de logiciel">
+                                <img src="images/projets/Océanopolis.jpg" alt="logo de Océanopolis">
                                 <p>
-                                    Logiciel de gestion d'un hotel, avec son interface en JavaFX. <br>
+                                    Création d'un évenement de team buiding pour la société Océanopolis, avec son flyers et son film évenementiel. <br>
                                 </p>
                             </div>
                             <div class="compInfo">
                                 <p>
                                     <strong>Etat:</strong> En cours
-                                    <br>
-                                    <br>
-                                    <strong>Date:</strong> mai 2023
+                                    
                                 </p>
                                 <p>
-                                    <strong>Nb de personnes:</strong> 4 <br>
-                                    <br>  
-                                    <strong>Langages:</strong>  JAVA, JavaFX
+                                    <strong>Nb de personnes:</strong> 4
+                                    
                                 </p>
-                                
-                                
+                                <p>
+                                    <strong>Date:</strong> Mai 2023
+
+                                </p>
+                                <p>
+                                    <strong>Langages:</strong>  Aucun
+                                </p>
                             </div>
                             <button onclick="openForm('pop6_2')">
                                 Découvrir
@@ -734,7 +762,149 @@
                     
                 </article>
                 <article id = "compPerso" class="comp">
+                    <h3>
+                        Les projets réalisés en dehors des cours
+                    </h3>
+                    <div>
+                        <div class="descProj">
+                            <h3>
+                                Portfolio
+                            </h3>
+                            <div class="desc">
+                                <img src="images/114.jpg" alt="logo de Heineken">
+                                <p>
+                                    Création du portfolio que vous avez sous les yeux. Maquettage, charte graphique et animations.
+                                    
+                                </p>
+                            </div>
+                            <div class="compInfo">
+                                <p>
+                                    <strong>Etat:</strong> Fini
+                                    
+                                </p>
+                                <p>
+                                    <strong>Nb de personnes:</strong> 1
+                                    
+                                </p>
+                                <p>
+                                    <strong>Date:</strong> Mai 2023
 
+                                </p>
+                                <p>
+                                    <strong>Langages:</strong> HTML, CSS, JavaScript
+                                </p>
+                            </div>
+                            <button onclick="openForm('pop6_1')">
+                                Découvrir
+                            </button>
+
+                           
+                        </div>
+
+                        <div class="descProj">
+                            <h3>
+                                Concours 24H IUT
+                            </h3>
+                            <div class="desc">
+                                <img src="images/projets/24hinfo.png" alt="logo de 24hinfo">
+                                <p>
+                                    Participation à un concours de programmation avec 3 épreuves de 8 heures : algorythmie, développement web et cybersécurité <br>
+                                </p>
+                            </div>
+                            <div class="compInfo">
+                                <p>
+                                    <strong>Etat:</strong> Fini
+                                    
+                                </p>
+                                <p>
+                                    <strong>Nb de personnes:</strong> 4
+                                    
+                                </p>
+                                <p>
+                                    <strong>Date:</strong> Mai 2023
+
+                                </p>
+                                <p>
+                                    <strong>Langages:</strong> Python, Html, Css, JavaScript, Autres
+                                </p>
+                            </div>
+                            <button onclick="openForm('pop6_2')">
+                                Découvrir
+                            </button>
+
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <div class="descProj">
+                            <h3>
+                                Questionnaire amateur
+                            </h3>
+                            <div class="desc">
+                                <img src="images/projets/vbscript.png" alt="logo de Heineken">
+                                <p>
+                                    Création d'une suite de popUp windows et traitement des réponses
+                                    
+                                </p>
+                            </div>
+                            <div class="compInfo">
+                                <p>
+                                    <strong>Etat:</strong> Fini
+                                    
+                                </p>
+                                <p>
+                                    <strong>Nb de personnes:</strong> 1
+                                    
+                                </p>
+                                <p>
+                                    <strong>Date:</strong> Février 2023
+
+                                </p>
+                                <p>
+                                    <strong>Langages:</strong> Batch, VBScript
+                                </p>
+                            </div>
+                            <button onclick="openForm('pop6_1')">
+                                Découvrir
+                            </button>
+
+                           
+                        </div>
+
+                        <div class="descProj">
+                            <h3>
+                                Concours 24H IUT
+                            </h3>
+                            <div class="desc">
+                                <img src="images/projets/24hinfo.png" alt="logo de 24hinfo">
+                                <p>
+                                    Participation à un concours de programmation avec 3 épreuves de 8 heures : algorythmie, développement web et cybersécurité <br>
+                                </p>
+                            </div>
+                            <div class="compInfo">
+                                <p>
+                                    <strong>Etat:</strong> Fini
+                                    
+                                </p>
+                                <p>
+                                    <strong>Nb de personnes:</strong> 4
+                                    
+                                </p>
+                                <p>
+                                    <strong>Date:</strong> Mai 2023
+
+                                </p>
+                                <p>
+                                    <strong>Langages:</strong> Python, Html, Css, JavaScript, Autres
+                                </p>
+                            </div>
+                            <button onclick="openForm('pop6_2')">
+                                Découvrir
+                            </button>
+
+                            
+                        </div>
+                    </div>
                 </article>
 
 

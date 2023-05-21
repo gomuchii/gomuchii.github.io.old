@@ -1,4 +1,33 @@
 
+
+window.addEventListener("scroll", function(){
+    console.log(this.window.scrollY);
+	if(this.window.scrollY > 200){
+ 
+		this.document.getElementById("header").style.background = "rgba(0, 0, 0, 0.5)";
+        enfants = this.document.getElementById("header").children;
+        for (const i of enfants) {
+            i.style.transition = "0.5s";
+            i.style.left = "70%";
+            i.style.top = "auto"
+            i.style.flexDirection = "row";
+            i.style.margin = "0";
+        }
+	}
+	else{
+ 
+		this.document.getElementById("header").style.background = "rgba(0, 0, 0, 0)";
+        enfants = this.document.getElementById("header").children;
+        for (const i of enfants) {
+            i.style.transition = "0.5s";
+            i.style.left = "0%";
+            i.style.top = "0%";
+            i.style.flexDirection = "column";
+            i.style.margin = "10px 0 0 10px";
+        }
+	}
+}, false);
+
 function openComp(comp, num) {
 
 
@@ -15,7 +44,7 @@ function openComp(comp, num) {
         {
             btn[i].style.color = "white";
             btn[i].style.background = "black";
-            btn[i].style.borderRadius = "20px";
+            btn[i].style.borderRadius = "100px";
         }
         else
         {
