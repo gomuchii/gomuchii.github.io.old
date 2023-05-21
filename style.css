@@ -528,7 +528,7 @@ header>nav>a
 
 .comp>h3
 {
-    font-size: 20px;
+    font-size: 1.6em;
     margin-bottom: 20px;
     color: var(--charte2_4);
 }
@@ -643,8 +643,50 @@ header>nav>a
 
 footer
 {
-    padding-top: 30px;
+    /* background-color: ; */
+    width: 100%;
+    background-color: var(--charte2_5);
+    margin-top: 50px;
+}
+footer *
+{
+    color: white;
+
+}
+footer>div
+{
     text-align: center;
-    background-color: white;
-    height: 500PX;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer>div>div
+{
+    margin: 20px 0;
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* border: 1px solid white; */
+}
+footer>div>div>a
+{
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-align: left;
+    width: fit-content;
+}
+footer>div>div>a:hover
+{
+    background-color: var(--charte2_4);
+    border-radius: 10px;
+}
+footer>p
+{
+    padding: 20px 0 20px 0;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid white;
 }
