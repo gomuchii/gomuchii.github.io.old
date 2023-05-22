@@ -9,6 +9,7 @@ window.addEventListener("scroll", function(){
         for (const i of enfants) {
             i.style.transition = "0.5s";
             i.style.left = "70%";
+            i.style.right = "0";
             i.style.top = "auto"
             i.style.flexDirection = "row";
             i.style.margin = "0";
@@ -21,6 +22,7 @@ window.addEventListener("scroll", function(){
         for (const i of enfants) {
             i.style.transition = "0.5s";
             i.style.left = "0%";
+            i.style.right = "auto";
             i.style.top = "0%";
             i.style.flexDirection = "column";
             i.style.margin = "10px 0 0 10px";
