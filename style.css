@@ -41,8 +41,7 @@ body>div
     background-color: white;
     position: fixed;
     top:  95%;
-    left: 10%;
-    transform: translate(-50%, -95%);
+    left: 30px;
     z-index: 999;
 }
 
@@ -313,21 +312,29 @@ header>nav>a
 {
     font-size: 1.5em;
     text-align: center;
-    padding: 0.25em;
 }
-#mesCompetences>h3:hover
-{
-    font-size: 1.8em;
-    padding: 0em;
-}
-#artComp1
+
+#artComp1,#artComp2
 {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
 }
-
+#System>p
+{
+    position: absolute;
+    color: black;
+    margin-bottom: -18%;
+    font-size: 1.5em;
+}
+#Front-end>p, #Back-end>p
+{
+    position: absolute;
+    color: black;
+    margin-bottom: -18%;
+    font-size: 1.5em;
+}
 #Front-end, #Back-end, #System
 {
     width: 40%;
@@ -399,13 +406,7 @@ header>nav>a
     transform: rotate(-5deg);
 }
 
-#artComp2
-{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
+
 
 
 
@@ -479,7 +480,7 @@ header>nav>a
 {
     font-size: 1.1em
 }
-#projets>nav
+#nav
 {
     padding: 80px 0 20px 0;
     /* background-color: var(--charte2_5); */
@@ -496,6 +497,7 @@ header>nav>a
     /* border-radius: 25px; */
     font-size: 1.3em;
     color: black;
+    font-weight: bold;
     /* border: solid 2px black; */
     /* transition: 0.2s; */
     
@@ -700,3 +702,34 @@ footer>p
     width: 100%;
     border-top: 1px solid white;
 }
+
+
+
+
+
+
+/******************
+    Media queries
+******************/
+
+@media (max-width: 1300px) 
+{ 
+
+    
+    .btnNav
+    {
+        font-size: 1em;
+        width: 140px;
+        
+    }
+  
+
+
+
+
+
+}
+  /*modif:
+    projets, header, couverture, polices, nav, 
+    */
+/*sur du mobile, afficher le menu sous forme de liste déroulante*/
