@@ -26,7 +26,7 @@ html
     --charte2_1 : #0597F2;
     --charte2_2 : #c8c7c7;
     --charte2_3 : #BF3604;
-    --charte2_4 : #F2490C;
+    --charte2_4 : #ff5d22;
     --charte2_5 : #0D0D0D;
 
      
@@ -103,13 +103,16 @@ header>nav>a
     /* backdrop-filter: blur(1px); */
     /* filter: blur(1); */
     background-size: cover;
+    background-position: top;
 }
 
 #couverture>article
 {
-    padding: 3px 20px;
+    position: absolute;
+    right: 50px;
+    bottom: 15%;
     border-radius: 20px;
-    text-align: center;
+    text-align: right;
     /* background-size: 100%; */
     /* backdrop-filter: blur(15px); */
 }
@@ -117,26 +120,26 @@ header>nav>a
 {
     color: white;
     font-size: 3em;
-    margin: 10px 60px;
+    margin: 10px 0;
 }
 #couverture>article>h2
 {
     color: white;
     font-size: 2em;
-    margin: 10px 60px;
+    margin: 10px 0;
+    
 }
 #couverture>a>button
 {
     position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    right: 50px;
+    bottom: 50px;
     padding: 15px 30px; 
     color: white;
     background-color: var(--charte2_4);
     /* border: solid 3px black; */
     
-    font-size: 1.7em;
+    font-size: 1.5em;
     
     border-radius: 10px;
     transition: 0.05s;
@@ -716,20 +719,42 @@ footer>p
 { 
 
     
-    .btnNav
+    /* .btnNav
     {
         font-size: 1em;
         width: 140px;
         
-    }
-  
-
-
-
-
+    } */
 
 }
   /*modif:
     projets, header, couverture, polices, nav, 
     */
 /*sur du mobile, afficher le menu sous forme de liste déroulante*/
+
+/* @media screen and (min-aspect-ratio: 16/9)
+{
+    #couverture>a>button
+    {
+        top: 85%;
+    }
+} */
+@media (max-width: 1400px) 
+{
+    #couverture>a>button
+    {
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 800px) 
+{
+    
+}
+@media (max-width: 500px) 
+{
+    
+}
+@media (max-width: 300px) 
+{
+    
+}
