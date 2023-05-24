@@ -59,7 +59,7 @@ header
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     
     /* display: none; */
     transition: 0.5s;
@@ -83,6 +83,10 @@ header>nav>a
     font-size: 1.5em;
     padding: 8px 20px;
     border-radius: 10px;
+}
+header>img
+{
+    display: none;
 }
 
 
@@ -110,7 +114,7 @@ header>nav>a
 {
     position: absolute;
     right: 50px;
-    bottom: 15%;
+    bottom: 120px;
     border-radius: 20px;
     text-align: right;
     /* background-size: 100%; */
@@ -137,21 +141,26 @@ header>nav>a
     padding: 15px 30px; 
     color: white;
     background-color: var(--charte2_4);
+    /* transform: translate(-50%, -50%); */
     /* border: solid 3px black; */
     
     font-size: 1.5em;
     
     border-radius: 10px;
-    transition: 0.05s;
+    /* transition: 0.05s; */
     /* transition: 0.2s; */
 }
 #couverture>a>button:hover
 {
     background-color: black;
     color: white;
-    /* border: solid 2px black; */
-    padding: 25px 40px;
-    /* border-radius: 15px; */
+    border: solid 2px var(--charte2_4);
+    /* padding: 25px 40px;
+    right: 40px;
+    bottom: 40px; 
+    border-radius: 20px;*/
+    right: 48px;
+    bottom: 48px;
     
 }
 
@@ -741,6 +750,7 @@ footer>p
 } */
 @media (max-width: 1400px) 
 {
+    /*couverture*/
     #couverture>a>button
     {
         font-size: 1.2em;
@@ -748,13 +758,51 @@ footer>p
 }
 @media (max-width: 800px) 
 {
-    
+    header
+    {
+        background-color: rgba(0, 0, 0, 1);
+    }
+    header>nav
+    {
+        left: 50%;
+        transform: translate(-50%);
+        flex-direction: row;
+        margin: 0;
+        top: auto;
+        justify-content: space-around;
+        width: 100%;
+    }
+    header>nav>a
+    {
+        padding: 8px 10px;
+    }
+    /*couverture*/
 }
 @media (max-width: 500px) 
 {
-    
+    header
+    {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    /*header*/
+    header>img
+    {
+        position: fixed;
+        top: 12px;
+        right: 12px;
+        display: block;
+        width: 50px;
+        border-radius: 100%;
+        background-color: white;
+        padding: 2px;
+    }
+    header>nav
+    {
+        display: none;
+    }
+    /*couverture*/
 }
 @media (max-width: 300px) 
 {
-    
+    /*couverture*/
 }
