@@ -874,6 +874,17 @@ footer>p
         padding-left: 0;
         font-size: 0.75em;
     }
+    #btnPresentation>button
+    {
+        font-size: 1em;
+        padding: 8px 15px;
+        width: 15em;
+        margin: 20px 10px;
+    }
+    #btnPresentation>button:hover
+    {
+        margin: 20px 10px;
+    }
 }
 @media (max-width: 300px) 
 {
