@@ -794,10 +794,6 @@ footer>p
         white-space: nowrap;
         text-align: right;
     }
-    #couverture>article>p
-    {
-        
-    }
     #couverture>a>button
     {
         display: none;
@@ -830,6 +826,54 @@ footer>p
         display: none;
     }
     /*couverture*/
+
+    #couverture
+    {
+        height: 50vh;
+        
+    }
+    #couverture>article
+    {
+        right: 50%;
+        bottom: 52vh;
+        translate: 50%;
+        text-align: center;
+        white-space: nowrap;
+    }
+    #couverture>article>h1
+    {
+        font-size: 2em;
+    }
+    #couverture>article>h2
+    {
+        font-size: 1.5em;
+    }
+
+    #couverture>a>button
+    {
+        display: none;
+    }
+
+    /*A propos*/
+    #aPropos>article
+    {
+        width: 80%;
+        max-width: none;
+    }
+    #aPropos>article>h2
+    {
+        font-size: 1.5em;
+    }
+    #presentation
+    {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    #presentation>p
+    {
+        padding-left: 0;
+        font-size: 0.75em;
+    }
 }
 @media (max-width: 300px) 
 {
