@@ -84,6 +84,11 @@ header>nav>a
     padding: 8px 20px;
     border-radius: 10px;
 }
+#navHeader>a:hover
+{
+    background-color: black;
+    border-radius: 100px;
+}
 header>img
 {
     display: none;
@@ -229,7 +234,7 @@ header>img
     align-items: center;
 
 }
-#btnPresentation>button
+#btnPresentation>a>button
 {
     padding: 15px 30px;
     background-color: var(--charte2_4);
@@ -238,7 +243,7 @@ header>img
     font-size: 1.1em;
     color: white;
 }
-#btnPresentation>button:hover
+#btnPresentation>a>button:hover
 {
     background-color: white;
     border: 2px solid black;
@@ -694,22 +699,33 @@ footer>div
 footer>div>div
 {
     margin: 20px 0;
-    width: 500px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* border: 1px solid white; */
 }
 footer>div>div>a
 {
-    margin: 10px 0;
-    padding: 10px 20px;
-    text-align: left;
-    width: fit-content;
+    margin: 10px 20px;
+    padding: 10px;
 }
 footer>div>div>a:hover
 {
     background-color: var(--charte2_4);
     border-radius: 10px;
+}
+footer>div>div>a>img
+{
+    width: 60px;
+    color: white;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px;
+}
+#imgF1
+{
+    border-radius: 40px;
 }
 footer>p
 {
@@ -881,18 +897,18 @@ footer>p
         font-size: 0.8em;
         margin-top: 20px;
     }
-    #btnPresentation>button
+    #btnPresentation>a>button
     {
         font-size: 1em;
         padding: 8px 15px;
         width: 10em;
         margin: 20px 10px -20px 10px;
     }
-    #btnPresentation>button:hover
+    #btnPresentation>a>button:hover
     {
         margin: 20px 10px -20px 10px;
     }
-    #btnPresentation>button:active
+    #btnPresentation>a>button:active
     {
         background-color: white;
         border: 2px solid black;
