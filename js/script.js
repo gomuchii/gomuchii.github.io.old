@@ -46,7 +46,7 @@ window.addEventListener("resize", function(){
         i.style.flexDirection = "column";
         i.style.margin = "10px 0 0 10px";
     }
-    else if (this.screen.width<=800 && this.screen.width >500) 
+    else if (window.screen.width<=800 && this.screen.width >500) 
     {
         this.document.getElementById("header").style.background = "rgba(0, 0, 0, 1)";
         this.document.getElementById("burger").style.display ="none";
@@ -60,7 +60,7 @@ window.addEventListener("resize", function(){
         i.style.margin = "0";
         
     }
-    else if (this.screen.width<=500) 
+    else if (window.screen.width<=500) 
     {
         this.document.getElementById("header").style.background = "rgba(0, 0, 0, 0)";
         enfants = this.document.getElementById("header").children;
@@ -121,7 +121,7 @@ function openComp(comp, num) {
 
 document.getElementById("imgFront").addEventListener("mouseover", function(event)
 {
-    if(this.screen.width>800)
+    if(window.screen.width>800)
     {
         // event.target.parentNode.style.background = "orange";
         var enfants = event.target.parentNode.children;
@@ -143,7 +143,7 @@ document.getElementById("imgFront").addEventListener("mouseover", function(event
 });
 document.getElementById("imgFront").addEventListener("mouseout", function(event)
 {
-    if(this.screen.width>800)
+    if(window.screen.width>800)
     {
         // event.target.parentNode.style.background = "green";
         var enfants = event.target.parentNode.children;
@@ -168,7 +168,7 @@ document.getElementById("imgFront").addEventListener("mouseout", function(event)
 
 document.getElementById("imgBack").addEventListener("mouseover", function(event)
 {
-    if(this.screen.width>800)
+    if(window.screen.width>800)
     {
         var enfants = event.target.parentNode.children;
         enfants[0].style.transition = "0.5s";
@@ -180,7 +180,7 @@ document.getElementById("imgBack").addEventListener("mouseover", function(event)
 });
 document.getElementById("imgBack").addEventListener("mouseout", function(event)
 {
-    if(this.screen.width>800)
+    if(window.screen.width>800)
     {
         var enfants = event.target.parentNode.children;
         enfants[0].style.transition = "0.5s";
@@ -194,7 +194,7 @@ document.getElementById("imgBack").addEventListener("mouseout", function(event)
 
 document.getElementById("imgSys").addEventListener("mouseover", function(event)
 {
-    if(this.screen.width>800)
+    if(window.screen.width>800)
     {
         var enfants = event.target.parentNode.children;
         enfants[0].style.transition = "0.5s";
@@ -206,7 +206,7 @@ document.getElementById("imgSys").addEventListener("mouseover", function(event)
 });
 document.getElementById("imgSys").addEventListener("mouseout", function(event)
 {
-    if(this.screen.width>800)
+    if(window.screen.width>800)
     {
         var enfants = event.target.parentNode.children;
         enfants[0].style.transition = "0.5s";
