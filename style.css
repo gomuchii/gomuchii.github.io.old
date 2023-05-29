@@ -232,6 +232,17 @@ header>img
     display: flex;
     justify-content: center;
     align-items: center;
+    
+
+}
+#btnPresentation>a
+{
+    padding: 0;
+    margin: 25px 20px 0 20px;
+}
+#btnPresentation>a:hover
+{
+    margin: 25px 18px -4px 18px;
 
 }
 #btnPresentation>a>button
@@ -239,16 +250,15 @@ header>img
     padding: 15px 30px;
     background-color: var(--charte2_4);
     border-radius: 10px;
-    margin: 25px 20px 0 20px;
     font-size: 1.1em;
     color: white;
+    cursor: pointer;
 }
 #btnPresentation>a>button:hover
 {
     background-color: white;
     border: 2px solid black;
     color: black;
-    margin: 25px 18px -4px 18px;
 
 }
 
