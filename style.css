@@ -643,10 +643,48 @@ header>img
     padding: 10px 0;
 }
 
+.appCrit
+{
+    text-align: left;
+    width: 90%;
+    margin: 10px 0 0 5%;
+}
+.appCrit>h4
+{
+    margin-top: 10px;
+    font-size: 1.25em;
+    line-height: 2.5em;
+}
 
 
+.descProj>a
+{
+    position: absolute;
+    bottom: 0;
+    margin: 20px;
+}
 
 
+.descProj>a>button
+{
+    background-color: var(--charte2_4);
+    color: white;
+    padding: 10px 15px;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0s;
+    
+}
+
+.descProj>a>button:hover
+{
+    background-color: rgb(231, 231, 231);
+    color: black;
+    border: 1px solid black;
+}
 
 
 
@@ -673,7 +711,6 @@ header>img
     color: black;
     border: 1px solid black;
 }
-
 
 
 
