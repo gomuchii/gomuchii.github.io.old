@@ -579,7 +579,7 @@ header>img
 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
 
     margin: 25px;
     width: 100%;
@@ -1118,7 +1118,6 @@ footer>p
     {
         width: 80%;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
