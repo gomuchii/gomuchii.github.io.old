@@ -33,7 +33,7 @@ html
 
 }
 
-body>div
+/* body>div
 {
     font-size: 28px;
     font-weight: bold;
@@ -43,7 +43,7 @@ body>div
     bottom:  0;
     left: 0;
     z-index: 999;
-}
+} */
 
 
 
@@ -285,7 +285,7 @@ header>img
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    width: 100%;
 }
 
 #actuellement>article>h2
@@ -509,6 +509,8 @@ header>img
 {
     font-size: 1.1em;
     width: 40%;
+    min-width: 500px;
+    max-width: 670px;
 }
 #nav
 {
@@ -688,7 +690,7 @@ header>img
 
 
 
-.descProj>button
+/* .descProj>button
 {
     position: absolute;
     bottom: 0;
@@ -710,7 +712,7 @@ header>img
     background-color: rgb(231, 231, 231);
     color: black;
     border: 1px solid black;
-}
+} */
 
 
 
@@ -825,6 +827,19 @@ footer>p
     #couverture>a>button
     {
         font-size: 1.2em;
+    }
+    #nav
+    {
+        
+    }
+    .btnNav
+    {
+        width: 150px;
+        font-size: 1.1em;
+    }
+    #btnNavPerso
+    {
+        width: 70px;
     }
 }
 @media (max-width: 800px) and (min-width: 501px) 
@@ -944,23 +959,30 @@ footer>p
         font-size: 0.8em;
         margin-top: 20px;
     }
+    #btnPresentation>a
+    {
+        margin: 20px 10px -20px 10px;
+    }
+    #btnPresentation>a:hover
+    {
+        margin: 20px 10px -24px 10px;
+    }
+    #btnPresentation>a:active
+    {
+        margin: 20px 10px -24px 10px;
+    }
     #btnPresentation>a>button
     {
         font-size: 1em;
-        padding: 8px 15px;
-        width: 10em;
-        margin: 20px 10px -20px 10px;
+        padding: 10px 15px;
+        width: 5em;
     }
-    #btnPresentation>a>button:hover
-    {
-        margin: 20px 10px -20px 10px;
-    }
+    
     #btnPresentation>a>button:active
     {
         background-color: white;
         border: 2px solid black;
         color: black;
-        margin: 18px 8px -22px 8px;
     }
 
     /*Actuellement*/
@@ -1092,25 +1114,69 @@ footer>p
     {
         font-size: 1em;
         width: 80%;
-    }
-    .descProj
-    {
-        width: 70%;
-        margin: 2% 0;
+        margin-bottom: 60px;
     }
 
+
+    #nav
+    {
+        width: 100%;
+        margin: 20px 0 20px 0;
+        padding: 0;
+        /* background-color: var(--charte2_5); */
+        border-radius: 20px;
+        border-spacing: none;
+        z-index: 9;
+    }
+    .btnNav
+    {
+        background-color: white;
+        width: 180px;
+        padding: 8px 10px;
+        margin: 0 -2px 0 -2px;
+        cursor: pointer;
+        /* border-radius: 25px; */
+        font-size: 1.3em;
+        color: black;
+        font-weight: bold;
+        /* border: solid 2px black; */
+        /* transition: 0.2s; */
+        
+    }
 
     .comp>div
     {
         flex-direction: column;
         width: 100%;
+        align-items: center;
+    }
+
+    .descProj
+    {
+        width: 70%;
+        margin: 2% 0;
+    }
+    .descProj>h3
+    {
+        color: black;
+        font-size: 1.5em;
+        margin-bottom: 10px;
     }
 
 
-
-
-
-
+    .desc
+    {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .desc>p
+    {
+        text-align: justify;
+        width: 85%;
+        margin: 10px 2%;
+    }
 
 
     /*footer*/
