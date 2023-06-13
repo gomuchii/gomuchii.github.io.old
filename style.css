@@ -464,7 +464,8 @@ header>img
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 40%;
+    width: 80%;
+    max-width: 700px;
 }
 #citation>article>q
 {
@@ -880,6 +881,25 @@ footer>p
     {
         display: none;
     }
+
+    .comp>div
+    {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .descProj
+    {
+        width: 70%;
+        margin: 2% 0;
+    }
+    .descProj>h3
+    {
+        color: black;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
 }
 @media (max-width: 800px) and (min-width: 501px)  and (max-height:501px)
 {
@@ -1187,6 +1207,16 @@ footer>p
         justify-content: center;
         align-items: center;
     }
+    #typeContact>a
+    {
+        margin: 2px 10px;
+        padding: 5px;
+    }
+    #typeContact>a>img
+    {
+        width: 50px;
+    }
+    
 }
 @media (max-width: 300px) 
 {
