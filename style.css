@@ -302,7 +302,21 @@ header>img
     text-align: center;
     color: white;
 }
+#actuellement>article>p>a
+{
+    font-size: 1em;
+    line-height: 30px;
+    text-align: center;
+    padding: 3px 3px;
+    color: white;
+}
+#actuellement>article>p>a:hover
+{
+    background-color: var(--charte2_4);
+    border-radius: 10px;
+    padding: 3px 3px;
 
+}
 
 
 
@@ -497,13 +511,13 @@ header>img
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
+    padding-top: 50px;
     width: 100%;
 }
 #projets>h2
 {
     font-size: 2.5em;
-    margin: 20px 0;
+    padding: 20px 0;
     color: black;
 }
 #projets>p
@@ -610,6 +624,7 @@ header>img
 }
 
 
+
 .desc
 {
     display: flex;
@@ -666,7 +681,15 @@ header>img
     bottom: 0;
     margin: 20px;
 }
-
+.descProj>p
+{
+    position: absolute;
+    bottom: 0;
+    margin: 20px;
+    color: var(--charte2_4);
+    font-size: 1.3em;
+    font-weight: bold;
+}
 
 .descProj>a>button
 {
